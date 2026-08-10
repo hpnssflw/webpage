@@ -127,7 +127,8 @@ a:focus-visible {
 .feed .date,
 .post .date,
 .all-posts,
-.post .back {
+.post .back,
+.tag {
   text-transform: uppercase;
 }
 
@@ -328,9 +329,14 @@ a:focus-visible {
 }
 
 .feed .date {
-  display: block;
   font-size: var(--fs-xs);
   color: var(--muted);
+}
+
+.feed .meta {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   margin-bottom: 12px;
 }
 
@@ -338,7 +344,6 @@ a:focus-visible {
   color: var(--muted);
 }
 
-.feed .date + .tag,
 .post .date + .tag {
   margin-left: 8px;
 }

@@ -148,7 +148,9 @@ a:focus-visible {
 .feed .excerpt,
 .post h1,
 .post .subtitle,
-.post .body {
+.post .body,
+.topic-name,
+.topic-gloss {
   text-transform: lowercase;
 }
 
@@ -336,16 +338,27 @@ a:focus-visible {
 .feed .meta {
   display: flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 6px;
   margin-bottom: 12px;
+}
+
+/* Tag rides at the same size as the date it sits next to — .feed .date
+   wins fs-xs by specificity above, so .tag and .sep need the same bump
+   here or they'd render smaller (10px .mono default) next to a 12px date. */
+.feed .meta .tag,
+.feed .meta .sep {
+  font-size: var(--fs-xs);
 }
 
 .tag {
   color: var(--muted);
 }
 
-.post .date + .tag {
-  margin-left: 8px;
+/* "·" between date and tag — same muted mono treatment as the date/tag
+   spans it sits between (see hero contact line / footer for the same
+   separator convention on plain, non-mono text). */
+.sep {
+  color: var(--muted);
 }
 
 .feed .title {
@@ -404,7 +417,6 @@ a:focus-visible {
   color: var(--text-strong);
   line-height: 1.45;
   margin-bottom: 8px;
-  text-transform: lowercase;
 }
 
 .topic-gloss {
@@ -412,7 +424,6 @@ a:focus-visible {
   font-size: 0.8125rem; /* 13 — matches .feed .excerpt */
   color: var(--muted);
   max-width: 34em;
-  text-transform: lowercase;
 }
 
 /* --- Post ------------------------------------------------------ */
@@ -423,6 +434,15 @@ a:focus-visible {
 
 .post .date {
   color: var(--muted);
+}
+
+/* Same flat date + sep + tag pattern as .feed .meta, just block instead of
+   flex-in-a-link; carries the margin-bottom the old single .date <p> used
+   to own. */
+.post .meta {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
   margin: 0 0 26px;
 }
 
@@ -551,6 +571,14 @@ footer a {
 
   #hero .contact {
     margin-top: 34px;
+  }
+
+  #focus {
+    padding-bottom: 64px;
+  }
+
+  .topics li + li {
+    margin-top: 24px;
   }
 
   #lab {

@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(foreach \\($c in @\\('python','py','node','npx'\\)\\) { $p = Get-Command $c -ErrorAction SilentlyContinue; if \\($p\\) { \"$c -> $\\($p.Source\\)\" } else { \"$c -> not found\" } })",
+      "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:8000/\" -UseBasicParsing; \"GET / -> $\\($r.StatusCode\\)\"; foreach \\($p in @\\('styles.css','assets/grid-texture.svg','lab/','lab/cheap-models-strong-graphs.html'\\)\\) { try { $x = Invoke-WebRequest -Uri \"http://localhost:8000/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)\" } catch { \"GET /$p -> FAILED: $\\($_.Exception.Message\\)\" } })",
+      "PowerShell(foreach \\($p in @\\('','styles.css','assets/grid-texture.svg','lab/','lab/cheap-models-strong-graphs.html'\\)\\) { try { $x = Invoke-WebRequest -Uri \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)  $\\($x.RawContentLength\\) bytes\" } catch { \"GET /$p -> FAILED: $\\($_.Exception.Message\\)\" } })",
+      "PowerShell(foreach \\($p in @\\('','photo.jpg','styles.css'\\)\\) { try { $x = Invoke-WebRequest -Uri \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)  $\\($x.RawContentLength\\) bytes\" } catch { \"GET /$p -> FAILED: $\\($_.Exception.Message\\)\" } })",
+      "PowerShell(foreach \\($p in @\\('','styles.css','photo.jpg'\\)\\) { try { $x = Invoke-WebRequest -Uri \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)  $\\($x.RawContentLength\\) bytes\" } catch { \"GET /$p -> FAILED: $\\($_.Exception.Message\\)\" } })",
+      "Bash(rm -f assets/grid-texture.svg)",
+      "Bash(rmdir assets *)",
+      "PowerShell(foreach \\($p in @\\('','styles.css','ui.js','photo.jpg','lab/','lab/cheap-models-strong-graphs.html'\\)\\) { try { $x = Invoke-WebRequest -Uri \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)  $\\($x.RawContentLength\\) bytes\" } catch { \"GET /$p -> FAILED: $\\($_.Exception.Message\\)\" } }; \"---\"; $css = \\(Invoke-WebRequest \"http://localhost:4321/styles.css\" -UseBasicParsing\\).Content; foreach \\($v in @\\('mono','editorial','grotesk','terminal','humanist','display','air'\\)\\) { $n = \\([regex]::Matches\\($css, [regex]::Escape\\(\"data-variant=\"\"$v\"\"\"\\)\\)\\).Count; \"variant $v -> $n rule\\(s\\)\" })",
+      "PowerShell(foreach \\($p in @\\('','styles.css','photo.jpg','assets/grid-texture.svg','lab/','lab/cheap-models-strong-graphs.html','ui.js'\\)\\) { try { $x = Invoke-WebRequest -Uri \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)  $\\($x.RawContentLength\\) bytes\" } catch { \"GET /$p -> $\\($_.Exception.Message\\)\" } }; \"---\"; $h = \\(Invoke-WebRequest \"http://localhost:4321/\" -UseBasicParsing\\).Content; foreach \\($t in @\\('fonts.googleapis','ui.js','data-variant','class=\"grad\"','localStorage'\\)\\) { \"leftover '$t' -> $\\(\\([regex]::Matches\\($h,[regex]::Escape\\($t\\)\\)\\).Count\\)\" })",
+      "PowerShell($x = Invoke-WebRequest \"http://localhost:4321/\" -UseBasicParsing; \"GET / -> $\\($x.StatusCode\\)  $\\($x.RawContentLength\\) bytes\")",
+      "PowerShell(foreach \\($p in @\\('','styles.css','lab/','lab/cheap-models-strong-graphs.html'\\)\\) { try { $x = Invoke-WebRequest \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)  $\\($x.RawContentLength\\) bytes\" } catch { \"GET /$p -> $\\($_.Exception.Message\\)\" } })",
+      "PowerShell(foreach \\($p in @\\('','styles.css','photo.jpg','lab/','lab/cheap-models-strong-graphs.html'\\)\\) { try { $x = Invoke-WebRequest \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)  $\\($x.RawContentLength\\) bytes\" } catch { \"GET /$p -> $\\($_.Exception.Message\\)\" } })",
+      "PowerShell($x = Invoke-WebRequest \"http://localhost:4321/\" -UseBasicParsing; \"GET / -> $\\($x.StatusCode\\)\"; if \\($x.Content -match 'class=\"accent\"'\\) { \"accent span present\" } else { \"accent span MISSING\" }; $c = Invoke-WebRequest \"http://localhost:4321/styles.css\" -UseBasicParsing; if \\($c.Content -match '\\\\.accent \\\\{'\\) { \"accent rule present\" } else { \"accent rule MISSING\" })",
+      "PowerShell(foreach \\($p in @\\('','styles.css','lab/','lab/cheap-models-strong-graphs.html'\\)\\) { try { $x = Invoke-WebRequest \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)\" } catch { \"GET /$p -> $\\($_.Exception.Message\\)\" } }; $h = \\(Invoke-WebRequest \"http://localhost:4321/\" -UseBasicParsing\\).Content; if \\($h -match 'body class=\"home\"'\\) { \"home class present\" } else { \"home class MISSING\" })",
+      "PowerShell(foreach \\($p in @\\('','styles.css','lab/','lab/cheap-models-strong-graphs.html'\\)\\) { try { $x = Invoke-WebRequest \"http://localhost:4321/$p\" -UseBasicParsing; \"GET /$p -> $\\($x.StatusCode\\)\" } catch { \"GET /$p -> $\\($_.Exception.Message\\)\" } })",
+      "PowerShell($x = Invoke-WebRequest \"http://localhost:4321/\" -UseBasicParsing; \"GET / -> $\\($x.StatusCode\\)\")",
+      "Bash(python -m http.server 8420)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8420/index.html)",
+      "Bash(netstat -ano)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:8420/index.html\" -UseBasicParsing -TimeoutSec 5; $r.StatusCode } catch { \"ERR: $_\" })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:8420/styles.css\" -UseBasicParsing -TimeoutSec 5; \"OK $\\($r.StatusCode\\) length=$\\($r.Content.Length\\)\" } catch { \"ERR: $_\" })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:8420/index.html\" -UseBasicParsing -TimeoutSec 5; \"OK $\\($r.StatusCode\\)\" } catch { \"ERR: $_\" })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:8420/styles.css\" -UseBasicParsing -TimeoutSec 5; \"OK $\\($r.StatusCode\\)\" } catch { \"ERR: $_\" })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:8420/styles.css\" -UseBasicParsing -TimeoutSec 8; \"OK $\\($r.StatusCode\\)\" } catch { \"ERR: $_\" })",
+      "Bash(python3 *)",
+      "Bash(curl -sv http://localhost:8000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5500/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5500/ --max-time 3)",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 5500 -ErrorAction SilentlyContinue\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue\")",
+      "PowerShell(Invoke-WebRequest -Uri http://127.0.0.1:5500/ -UseBasicParsing -TimeoutSec 5 | Select-Object StatusCode)",
+      "Bash(powershell -Command 'Get-Process python -ErrorAction SilentlyContinue | Where-Object {\\(Get-NetTCPConnection -OwningProcess $_.Id -ErrorAction SilentlyContinue | Where-Object LocalPort -in 5500,8000\\)} | Stop-Process -Force')",
+      "Bash(curl -s http://127.0.0.1:5678/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5678/styles.css)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5678/photo.jpg)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5678/lab/cheap-models-strong-graphs.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5678/lab/)"
+    ]
+  }
+}

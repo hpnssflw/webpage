@@ -334,6 +334,15 @@ a:focus-visible {
   margin-bottom: 12px;
 }
 
+.tag {
+  color: var(--muted);
+}
+
+.feed .date + .tag,
+.post .date + .tag {
+  margin-left: 8px;
+}
+
 .feed .title {
   display: block;
   font-size: 1rem; /* 16 — a step up from the base 12px content tier */

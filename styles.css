@@ -366,6 +366,41 @@ a:focus-visible {
   color: var(--muted);
 }
 
+/* --- FOCUS ------------------------------------------------------ */
+
+#focus {
+  padding-bottom: 100px;
+}
+
+.topics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topics li + li {
+  margin-top: 32px;
+}
+
+.topic-name {
+  display: block;
+  font-size: 1rem; /* 16 — matches .feed .title */
+  font-weight: var(--w-normal);
+  letter-spacing: 0;
+  color: var(--text-strong);
+  line-height: 1.45;
+  margin-bottom: 8px;
+  text-transform: lowercase;
+}
+
+.topic-gloss {
+  display: block;
+  font-size: 0.8125rem; /* 13 — matches .feed .excerpt */
+  color: var(--muted);
+  max-width: 34em;
+  text-transform: lowercase;
+}
+
 /* --- Post ------------------------------------------------------ */
 
 .post {

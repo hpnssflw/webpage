@@ -74,7 +74,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Pages one level down (/lab/, /focus/) resolve the texture one level up. */
+/* Pages one level down (/lab/, /researcher/) resolve the texture one level up. */
 body.subpage {
   background-image: url("../assets/grid-texture.svg");
 }
@@ -393,15 +393,15 @@ a:focus-visible {
   color: var(--muted);
 }
 
-/* --- FOCUS ------------------------------------------------------ */
+/* --- RESEARCHER -------------------------------------------------- */
 
-#focus {
+#researcher {
   padding-bottom: 100px;
 }
 
-/* Standalone page (/focus/) — needs top air the hero normally provides.
+/* Standalone page (/researcher/) — needs top air the hero normally provides.
    Same pattern as #lab.standalone. */
-#focus.standalone {
+#researcher.standalone {
   padding-top: 140px;
 }
 
@@ -438,7 +438,7 @@ a:focus-visible {
   padding: 140px 0 160px;
 }
 
-/* The plan article is nested inside #focus.standalone, not a standalone
+/* The plan article is nested inside #researcher.standalone, not a standalone
    page of its own — it doesn't need .post's page-level vertical padding,
    just separation from the topics list above it. */
 .post.plan {
@@ -587,11 +587,11 @@ footer a {
     margin-top: 34px;
   }
 
-  #focus {
+  #researcher {
     padding-bottom: 64px;
   }
 
-  #focus.standalone {
+  #researcher.standalone {
     padding-top: 88px;
   }
 

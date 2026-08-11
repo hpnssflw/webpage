@@ -415,6 +415,13 @@ a:focus-visible {
   margin-top: 32px;
 }
 
+/* Standalone page (/researcher/) — the topics list is the last thing
+   before the back link there, unlike on the homepage where the section's
+   own bottom padding is enough. */
+#researcher.standalone .topics {
+  margin-bottom: 48px;
+}
+
 .topic-name {
   display: block;
   font-size: 1rem; /* 16 — matches .feed .title */
@@ -436,14 +443,6 @@ a:focus-visible {
 
 .post {
   padding: 140px 0 160px;
-}
-
-/* The plan article is nested inside #researcher.standalone, not a standalone
-   page of its own — it doesn't need .post's page-level vertical padding,
-   just separation from the topics list above it. */
-.post.plan {
-  padding: 0;
-  margin: 96px 0 64px;
 }
 
 .post .date {
@@ -613,10 +612,6 @@ footer a {
 
   .post {
     padding: 88px 0 96px;
-  }
-
-  .post.plan {
-    margin: 56px 0 40px;
   }
 
   .post h1 {

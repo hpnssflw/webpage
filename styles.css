@@ -399,6 +399,12 @@ a:focus-visible {
   padding-bottom: 100px;
 }
 
+/* Standalone page (/focus/) — needs top air the hero normally provides.
+   Same pattern as #lab.standalone. */
+#focus.standalone {
+  padding-top: 140px;
+}
+
 .topics {
   list-style: none;
   margin: 0;
@@ -430,6 +436,14 @@ a:focus-visible {
 
 .post {
   padding: 140px 0 160px;
+}
+
+/* The plan article is nested inside #focus.standalone, not a standalone
+   page of its own — it doesn't need .post's page-level vertical padding,
+   just separation from the topics list above it. */
+.post.plan {
+  padding: 0;
+  margin-top: 96px;
 }
 
 .post .date {
@@ -577,6 +591,10 @@ footer a {
     padding-bottom: 64px;
   }
 
+  #focus.standalone {
+    padding-top: 88px;
+  }
+
   .topics li + li {
     margin-top: 24px;
   }
@@ -595,6 +613,10 @@ footer a {
 
   .post {
     padding: 88px 0 96px;
+  }
+
+  .post.plan {
+    margin-top: 56px;
   }
 
   .post h1 {

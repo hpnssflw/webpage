@@ -74,7 +74,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Pages inside /lab/ resolve the texture one level up. */
+/* Pages one level down (/lab/, /focus/) resolve the texture one level up. */
 body.subpage {
   background-image: url("../assets/grid-texture.svg");
 }
@@ -443,7 +443,7 @@ a:focus-visible {
    just separation from the topics list above it. */
 .post.plan {
   padding: 0;
-  margin-top: 96px;
+  margin: 96px 0 64px;
 }
 
 .post .date {
@@ -616,7 +616,7 @@ footer a {
   }
 
   .post.plan {
-    margin-top: 56px;
+    margin: 56px 0 40px;
   }
 
   .post h1 {

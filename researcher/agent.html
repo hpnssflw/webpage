@@ -23,7 +23,7 @@
       </p>
 
       <div class="body">
-        <h2><span class="num">01</span>Goal</h2>
+        <h2 id="goal"><span class="num">01</span>Goal</h2>
         <p>
           The agent's only job is to read so I don't have to read
           everything myself. Once a week it hands me a short, curated
@@ -33,7 +33,7 @@
           not a LAB post itself.
         </p>
 
-        <h2><span class="num">02</span>Sources</h2>
+        <h2 id="sources"><span class="num">02</span>Sources</h2>
         <p>Four kinds of source, each with a different signal-to-noise ratio:</p>
         <ul>
           <li>Web search — broad net, catches whatever isn't already covered below.</li>
@@ -42,7 +42,7 @@
           <li>Blog and RSS feeds — a curated list maintained by hand, the highest-signal source once it exists.</li>
         </ul>
 
-        <h2><span class="num">03</span>Pipeline</h2>
+        <h2 id="pipeline"><span class="num">03</span>Pipeline</h2>
         <p>Five stages, each one a small, replaceable piece:</p>
         <ul>
           <li>Collect — each source connector runs independently and returns a flat list of candidate links.</li>
@@ -52,7 +52,7 @@
           <li>Deliver — the digest goes out by email on a fixed schedule.</li>
         </ul>
 
-        <h2><span class="num">04</span>Proposed stack</h2>
+        <h2 id="stack"><span class="num">04</span>Proposed stack</h2>
         <ul>
           <li>A single Python script, run on a schedule rather than a long-lived service — nothing here needs to be always-on.</li>
           <li><code>feedparser</code> for RSS/blog sources, the Hacker News Algolia API and Reddit's public JSON endpoints for the aggregators, a web search API (or Claude's built-in web search) for the broad net.</li>
@@ -61,7 +61,7 @@
           <li>A scheduled GitHub Action or plain cron for the trigger; SMTP or a transactional email API (Resend) for delivery.</li>
         </ul>
 
-        <h2><span class="num">05</span>Cadence &amp; format</h2>
+        <h2 id="cadence"><span class="num">05</span>Cadence &amp; format</h2>
         <p>
           Weekly to start — daily would just move the same reading load
           into more, smaller interruptions. Each digest groups items
@@ -70,7 +70,7 @@
           if the volume feels wrong in either direction.
         </p>
 
-        <h2>What's still open</h2>
+        <h2 id="open-questions">What's still open</h2>
         <ul>
           <li>Daily vs weekly — start weekly, watch whether Friday's digest already feels stale by Wednesday.</li>
           <li>Resurfacing — a link dismissed once shouldn't come back next week just because dedupe only tracks URLs verbatim.</li>
@@ -78,7 +78,7 @@
           <li>Budget — search and LLM calls both cost money per run; weekly cadence keeps this small, but the number should get watched once it's real.</li>
         </ul>
 
-        <h2>Status</h2>
+        <h2 id="status">Status</h2>
         <p>Planning — not yet built. This page is where the plan lives and changes as it gets built.</p>
       </div>
 

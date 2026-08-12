@@ -1,0 +1,15 @@
+# Applies to every topic unless overridden in that topic's own file.
+max_age_days: 10
+min_relevance: 6 # 1-10 scale
+max_items: 8
+attention:
+  enabled: true
+  min_score_gain: 50
+
+llm:
+  base_url: https://api.deepseek.com
+  model: deepseek-chat
+
+delivery:
+  to: hypnosisflow@gmail.com
+  from: agent@localhost

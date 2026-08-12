@@ -1,2 +1,9 @@
 .superpowers/
 .worktrees/
+
+# Research agent (docs/agent-plan.md) — implementation not started yet,
+# but these paths shouldn't be committed once it is.
+agent/.env
+agent/seen.json
+agent/__pycache__/
+agent/venv/

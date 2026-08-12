@@ -150,8 +150,7 @@ a:focus-visible {
 .post .subtitle,
 .post .body,
 .topic-name,
-.topic-gloss,
-.plan-toc {
+.topic-gloss {
   text-transform: lowercase;
 }
 
@@ -416,28 +415,12 @@ a:focus-visible {
   margin-top: 32px;
 }
 
-/* Standalone page (/researcher/) — the topics list and plan outline below
+/* Standalone page (/researcher/) — the topics list and the plan link below
    it aren't followed by the section's own bottom padding immediately, so
    each needs to supply its own gap to the next block. */
 #researcher.standalone .topics,
-#researcher.standalone .plan-toc {
+#researcher.standalone .plan-link {
   margin-bottom: 48px;
-}
-
-.plan-toc {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.plan-toc li + li {
-  margin-top: 12px;
-}
-
-.plan-toc a {
-  display: block;
-  font-size: var(--fs-xs);
-  color: var(--muted);
 }
 
 .topic-name {
@@ -503,10 +486,8 @@ a:focus-visible {
 }
 
 /* The numeral is meta, so it stays uppercase-tier styling inside a
-   lowercase heading. Same treatment reused for the plan outline's numbers
-   on /researcher/. */
-.post .body h2 .num,
-.plan-toc .num {
+   lowercase heading. */
+.post .body h2 .num {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   font-weight: var(--w-normal);

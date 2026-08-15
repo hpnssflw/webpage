@@ -19,7 +19,7 @@ changed.
 
 ## Research Agent
 
-**Status: in progress — Task 1 of 6 done.**
+**Status: in progress — Task 2 of 6 done.**
 
 - Narrative plan (public, on the site): `researcher/agent.html`
 - Technical plan (background/design, not the task list): `docs/agent-plan.md`
@@ -29,15 +29,18 @@ changed.
 - `agent/` exists: package scaffold, YAML config (`defaults.yaml` +
   `topics/*.yaml`), the `Candidate`/`Drop`/`TopicConfig` dataclasses
   (`sources/base.py`), and the config loader (`config.py`). Shipped in
-  commit `cd77594` — Task 1 of the plan above. Verified this session:
-  `load_settings`/`load_topics` load and merge topic overrides correctly.
+  commit `cd77594` — Task 1 of the plan above.
+- `agent/date_guard.py` (recency window) and `agent/sources/hn.py` (HN
+  Algolia connector) shipped in commit `c4ab1ec` — Task 2. Verified this
+  session: synthetic date-guard check passes, and a live Algolia query for
+  the `ai-agents` topic returned 32 timezone-aware candidates, 0 drops.
 
 ### How to resume in a new session
 
 1. Read this file and `docs/superpowers/plans/2026-08-12-research-agent.md`
    (the canonical task list — `docs/agent-plan.md` is background/design
    context, not what to execute against).
-2. Confirm the next task (**Task 2 — Hacker News connector + recency
-   window**) with the user before writing any code.
+2. Confirm the next task (**Task 3 — Dedupe state**) with the user before
+   writing any code.
 3. See `CLAUDE.md` for this repo's actual conventions (no branch/PR flow —
    direct commits to `master`).

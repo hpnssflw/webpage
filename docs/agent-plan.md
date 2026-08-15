@@ -85,6 +85,13 @@ created — it isn't yet, because nothing reads it yet.
 
 ## Task breakdown for the first build session
 
+> This was the original high-level outline. It's since been superseded in
+> detail by `docs/superpowers/plans/2026-08-12-research-agent.md`, which
+> is the authoritative task list and numbering to execute against (its
+> Task 1–6 do not map 1:1 onto TASK-001–006 below — e.g. TASK-006 here,
+> the remaining sources, is out of scope there and deferred past v1).
+> Kept below for context on the original scope, not as a checklist.
+
 Smallest useful v1 first — one source end-to-end, not all four at once:
 
 - **TASK-001** — Scaffold `agent/` (the layout above), `requirements.txt`,
@@ -112,4 +119,7 @@ Smallest useful v1 first — one source end-to-end, not all four at once:
 
 ## Status
 
-Planning complete. Implementation not started. Pick up at **TASK-001**.
+Task 1 (scaffold) shipped — commit `cd77594`. See
+`docs/superpowers/plans/2026-08-12-research-agent.md` for the current,
+authoritative task list. Next up: **Task 2 — Hacker News connector +
+recency window**.

@@ -1,6 +1,9 @@
 .superpowers/
 .worktrees/
 
+# Generated status report (status-report skill) — regenerate on demand.
+STATUS.html
+
 # Research agent (docs/agent-plan.md, docs/superpowers/specs/2026-08-12-research-agent-design.md)
 agent/.env
 agent/state.json

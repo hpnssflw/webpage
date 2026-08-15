@@ -19,17 +19,25 @@ changed.
 
 ## Research Agent
 
-**Status: planned, not started.**
+**Status: in progress — Task 1 of 6 done.**
 
 - Narrative plan (public, on the site): `researcher/agent.html`
-- Technical plan (canonical for implementation): `docs/agent-plan.md`
-- Nothing under `agent/` exists yet — that directory doesn't exist in the
-  repo. The first implementation task creates it.
+- Technical plan (background/design, not the task list): `docs/agent-plan.md`
+- Canonical implementation plan (the actual step-by-step tasks):
+  `docs/superpowers/plans/2026-08-12-research-agent.md` — supersedes the
+  coarser TASK-001–007 breakdown at the bottom of `docs/agent-plan.md`.
+- `agent/` exists: package scaffold, YAML config (`defaults.yaml` +
+  `topics/*.yaml`), the `Candidate`/`Drop`/`TopicConfig` dataclasses
+  (`sources/base.py`), and the config loader (`config.py`). Shipped in
+  commit `cd77594` — Task 1 of the plan above. Verified this session:
+  `load_settings`/`load_topics` load and merge topic overrides correctly.
 
 ### How to resume in a new session
 
-1. Read this file and `docs/agent-plan.md`.
-2. Confirm the next task (starts at **TASK-001**, see `docs/agent-plan.md`)
-   with the user before writing any code.
+1. Read this file and `docs/superpowers/plans/2026-08-12-research-agent.md`
+   (the canonical task list — `docs/agent-plan.md` is background/design
+   context, not what to execute against).
+2. Confirm the next task (**Task 2 — Hacker News connector + recency
+   window**) with the user before writing any code.
 3. See `CLAUDE.md` for this repo's actual conventions (no branch/PR flow —
    direct commits to `master`).

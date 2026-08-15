@@ -19,7 +19,7 @@ changed.
 
 ## Research Agent
 
-**Status: in progress — Task 4 of 6 done.**
+**Status: in progress — Task 5 of 6 done.**
 
 - Narrative plan (public, on the site): `researcher/agent.html`
 - Technical plan (background/design, not the task list): `docs/agent-plan.md`
@@ -49,13 +49,28 @@ changed.
   `max_age_days` server-side via Algolia's `numericFilters`, so
   `date_guard` sees nothing left to catch by the time it runs) and the
   file was restored to its committed form.
+- `agent/summarize.py` (batched-per-topic DeepSeek ranking, validated
+  against the expected id set, one retry then per-candidate fallback)
+  shipped in commit `dd28832` — Task 5. Also updates
+  `agent/defaults.yaml`'s `llm.model`: `deepseek-chat` was discontinued
+  2026-07-24, so it's now `deepseek-v4-flash` (the non-thinking mode
+  `deepseek-chat` used to point to). Verified this session: the
+  synthetic response-validator checks all pass with no network, and a
+  live batched call against 5 real `ai-agents` candidates returned
+  well-formed scores (1–10) and one-sentence summaries for all 5 —
+  first paid call in the build. `DEEPSEEK_API_KEY` is set in
+  `agent/.env` (gitignored, not committed).
 
 ### How to resume in a new session
 
 1. Read this file and `docs/superpowers/plans/2026-08-12-research-agent.md`
    (the canonical task list — `docs/agent-plan.md` is background/design
    context, not what to execute against).
-2. Confirm the next task (**Task 5 — DeepSeek ranking**) with the
-   user before writing any code.
+2. Confirm the next task (**Task 6 — Digest, delivery, real run, doc
+   sync**) with the user before writing any code. It needs SMTP
+   credentials (`SMTP_HOST`/`SMTP_PORT`/`SMTP_USER`/`SMTP_PASSWORD`) in
+   `agent/.env` in addition to the `DEEPSEEK_API_KEY` already there, and
+   its final verification step sends a real email — v1 ships at the end
+   of this task.
 3. See `CLAUDE.md` for this repo's actual conventions (no branch/PR flow —
    direct commits to `master`).

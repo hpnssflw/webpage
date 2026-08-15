@@ -18,6 +18,7 @@
   .drop-detail { display:none; margin-top:6px; padding:8px; background:#0f0f0f; border:1px solid #2a2a2a; font-size:12px; }
   .drop-detail.open { display:block; }
   .drop-item { padding:2px 0; }
+  table#log-table td, table#log-table th { padding:2px 8px; text-align:left; border-bottom:1px solid #2a2a2a; }
 </style>
 </head>
 <body>
@@ -26,6 +27,20 @@
     <label>Run: <select id="run-select"></select></label>
   </div>
   <div id="funnel-root"></div>
+  <div style="margin-top:24px;">
+    <button id="tab-funnel">Funnel</button>
+    <button id="tab-log">Event Log</button>
+    <button id="tab-history">History</button>
+  </div>
+  <div id="log-root" style="display:none;">
+    <div>
+      <label>Stage: <select id="filter-stage"></select></label>
+      <label>Topic: <select id="filter-topic"></select></label>
+      <label>Source: <select id="filter-source"></select></label>
+    </div>
+    <table id="log-table" style="width:100%; font-size:12px; margin-top:8px; border-collapse:collapse;"></table>
+  </div>
+  <div id="history-root" style="display:none;"></div>
 
   <script>
   const state = { events: [] };
@@ -140,6 +155,81 @@
       .map((line) => JSON.parse(line));
     renderFunnel(state.events);
   }
+
+  function uniqueValues(events, key) {
+    return [...new Set(events.map((e) => e[key]).filter(Boolean))].sort();
+  }
+
+  function populateFilter(selectId, values) {
+    const select = document.getElementById(selectId);
+    select.innerHTML = '<option value="">All</option>';
+    for (const v of values) {
+      const opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v;
+      select.appendChild(opt);
+    }
+  }
+
+  function renderEventLog() {
+    populateFilter("filter-stage", uniqueValues(state.events, "stage"));
+    populateFilter("filter-topic", uniqueValues(state.events, "topic"));
+    populateFilter("filter-source", uniqueValues(state.events, "source"));
+    renderLogTable();
+  }
+
+  function renderLogTable() {
+    const stage = document.getElementById("filter-stage").value;
+    const topic = document.getElementById("filter-topic").value;
+    const source = document.getElementById("filter-source").value;
+    const rows = state.events.filter(
+      (e) =>
+        (!stage || e.stage === stage) &&
+        (!topic || e.topic === topic) &&
+        (!source || e.source === source)
+    );
+    const table = document.getElementById("log-table");
+    table.innerHTML =
+      "<tr><th>ts</th><th>stage</th><th>event</th><th>topic</th><th>title/reason</th></tr>" +
+      rows
+        .map(
+          (e) =>
+            `<tr><td>${e.ts}</td><td>${e.stage}</td><td>${e.event}</td><td>${e.topic || ""}</td><td>${e.title || ""}${e.reason ? " — " + e.reason : ""}</td></tr>`
+        )
+        .join("");
+  }
+
+  async function renderHistory() {
+    const res = await fetch("/runs");
+    const runs = await res.json();
+    const root = document.getElementById("history-root");
+    root.innerHTML =
+      "<table><tr><th>run</th><th>events</th><th>topics (new/kept)</th></tr>" +
+      runs
+        .map((run) => {
+          const topicSummary = Object.entries(run.funnel.topics)
+            .map(([slug, t]) => `${slug}: ${run.funnel.is_real_run ? t.kept : t.new}`)
+            .join(", ");
+          return `<tr><td>${run.run_id}</td><td>${run.event_count}</td><td>${topicSummary}</td></tr>`;
+        })
+        .join("") +
+      "</table>";
+  }
+
+  function showTab(name) {
+    document.getElementById("funnel-root").style.display = name === "funnel" ? "" : "none";
+    document.getElementById("log-root").style.display = name === "log" ? "" : "none";
+    document.getElementById("history-root").style.display = name === "history" ? "" : "none";
+    if (name === "log") renderEventLog();
+    if (name === "history") renderHistory();
+  }
+
+  document.getElementById("tab-funnel").onclick = () => showTab("funnel");
+  document.getElementById("tab-log").onclick = () => showTab("log");
+  document.getElementById("tab-history").onclick = () => showTab("history");
+  document.getElementById("filter-stage").onchange = renderLogTable;
+  document.getElementById("filter-topic").onchange = renderLogTable;
+  document.getElementById("filter-source").onchange = renderLogTable;
 
   loadRuns();
   </script>

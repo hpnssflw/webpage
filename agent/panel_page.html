@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Research Agent — Run Panel</title>
+<style>
+  :root { color-scheme: dark; }
+  body { background:#141414; color:#e6e6e6; font-family: ui-monospace, "JetBrains Mono", monospace; margin:0; padding:24px; }
+  h1 { font-size:16px; text-transform:uppercase; letter-spacing:.08em; color:#7CFC00; margin:0 0 16px; }
+</style>
+</head>
+<body>
+  <h1>Run Panel</h1>
+  <p id="loaded-at"></p>
+  <script>
+    document.getElementById("loaded-at").textContent = "Loaded " + new Date().toISOString();
+  </script>
+</body>
+</html>

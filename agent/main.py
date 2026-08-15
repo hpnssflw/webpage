@@ -168,6 +168,12 @@ def _print_funnel(topic_name: str, counts: Counter[str]) -> None:
 
 
 def main() -> None:
+    if len(sys.argv) > 1 and sys.argv[1] == "panel":
+        from agent.panel import run_panel
+
+        run_panel()
+        return
+
     parser = argparse.ArgumentParser(prog="python -m agent")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--topic", default=None)

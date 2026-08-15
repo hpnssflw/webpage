@@ -74,10 +74,56 @@ changed.
   `hypnosisflow@gmail.com` — that's the last thing standing between here
   and "v1 shipped."
 
+### Agent status widget + public dashboard
+
+**Status: in progress — Task 2 of 7 done.**
+
+- Spec: `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md`
+  — explicitly supersedes the Windows-Task-Scheduler scheduling decision
+  and weekly-cadence-unchanged note in the research-agent spec, and the
+  build-time-snapshot public-replay plan in the run-panel spec.
+- Plan: `docs/superpowers/plans/2026-08-15-agent-status-widget.md`.
+- This repo now has a GitHub remote for the first time:
+  `https://github.com/hpnssflw/webpage.git`, local branch renamed
+  `master` → `main` to match. The repo is public (required so the site's
+  client-side `fetch()` can read `status.json` with no auth token). An
+  orphan `agent-data` branch (single commit, `README.md` only) is pushed
+  and ready for the GitHub Actions workflow (Task 4) to write to.
+  `DEEPSEEK_API_KEY` is set as a repo secret — Task 1, no code changes.
+- `agent/pending.py` (pending-email queue), plus rewiring
+  `agent/dedupe.py` (`mark_sent` → `mark_sent_url`, called only on actual
+  delivery), `agent/digest.py`/`agent/summarize.py` (dropped "weekly"
+  wording), `agent/config.py`/`agent/defaults.yaml`
+  (`email_cadence_hours: 24`), and `agent/main.py`'s `run_real` — shipped
+  in commit `ec64725`, Task 2. This decouples collection/ranking (moving
+  to every 4h in Task 4) from email delivery (staying on a 24h rollup),
+  and fixes a real bug the spec review caught: without
+  `pending.filter_already_pending`, an item sitting in the queue would
+  get re-collected and re-sent to DeepSeek for ranking on every
+  subsequent cycle until the email gate fires. Verified this session:
+  synthetic checks for `is_email_due` (empty/1h/25h against a 24h
+  cadence) and `filter_already_pending` (a re-collected duplicate
+  correctly dropped) all pass with no network; a live
+  `python -m agent --topic ai-agents` run correctly hit the
+  SMTP-not-configured graceful-failure path (caught, logged, no
+  traceback) rather than crashing, leaving 8 kept items in
+  `agent/pending.json` with `last_email_at: null`, ready to send once
+  SMTP credentials exist. Task review: spec compliant, no
+  Critical/Important findings, approved.
+- Note: there is unrelated concurrent work on `main` from a different
+  session implementing the local run panel
+  (`docs/superpowers/specs/2026-08-12-run-panel-design.md`) —
+  `agent/panel.py`, `agent/funnel.py`, `agent/panel_page.html`, and a
+  small `main()` addition. No file/line overlap with this plan's tasks so
+  far; flagging so a future session isn't surprised by commits it didn't
+  make.
+
 ### How to resume in a new session
 
-1. Read this file and `docs/superpowers/plans/2026-08-12-research-agent.md`
-   (the canonical task list — `docs/agent-plan.md` is background/design
+**Research agent v1 (original 6-task plan):**
+
+1. Read `docs/superpowers/plans/2026-08-12-research-agent.md` (the
+   canonical task list — `docs/agent-plan.md` is background/design
    context, not what to execute against).
 2. Add SMTP credentials to `agent/.env` and run
    `python -m agent --topic ai-agents` to finish Task 6's deferred live
@@ -86,5 +132,21 @@ changed.
    this plan; TASK-007 onward in `docs/agent-plan.md` (Reddit, RSS,
    releases, web search, attention rescue, scheduling, keyword
    suggestion) is out of scope here and would need its own plan.
-3. See `CLAUDE.md` for this repo's actual conventions (no branch/PR flow —
-   direct commits to `master`).
+
+**Agent status widget (new 7-task plan, in progress):**
+
+1. Read `docs/superpowers/plans/2026-08-15-agent-status-widget.md` and
+   this file's section above.
+2. Confirm the next task (**Task 3 — `status_export.py`**) with the user
+   before writing any code.
+3. This plan is being executed via
+   `superpowers:subagent-driven-development`; its ledger is at
+   `.superpowers/sdd/2026-08-15-agent-status-widget/progress.md`
+   (git-ignored) if a session needs to recover mid-plan.
+
+**General:** see `CLAUDE.md` for this repo's actual conventions. Note the
+GitHub remote and `main` branch (above) are new as of the widget plan —
+`CLAUDE.md`'s "no GitHub remote configured... direct commits to `master`"
+line describes the state before that plan; commits still go directly to
+`main` with no PR flow, just under a new branch name and with a remote
+now attached.

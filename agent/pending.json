@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "Agentic LLM for edge devices with tool calling and structured extraction.",
+      "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://cactuscompute.com/needle"
+    },
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "Faster coding agent optimized for development tasks.",
+      "title": "Launch HN: Bullet (YC S26) \u2013 A Faster Coding Agent",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://www.codewithbullet.com"
+    },
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "DeepSeek V4 Flash benchmark result on Terminal-Bench for agent tasks.",
+      "title": "DeepSeek V4 Flash 0731: 82.7% on Terminal-Bench 2.1 with a public harness",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://antigma.ai/eval"
+    },
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "Read-only debugging agents for production code.",
+      "title": "Launch HN: HyperProbe (YC S26) \u2013 Agents that do read-only debugging in prod",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://www.hyperprobe.co"
+    },
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "Mistral patent on code-implemented tool calls for agents.",
+      "title": "Mistral Patent for \u201cCode implemented tool calls\u201d",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://patentsgazette.uspto.gov/week26/OG/html/1547-5/US12670045-20260630.html"
+    },
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "Token-efficient MCP CLI client for agent interactions.",
+      "title": "Show HN: Mcptoon \u2013 Token-efficient MCP CLI client",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/activeing123/mcptoon"
+    },
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "Ultra-fast Rust MCP server with no dependencies.",
+      "title": "Show HN: MCP-stama \u2013 An ultra-fast Rust MCP server with no dependencies",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/StamManif/mcp-stama"
+    },
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "Agent memory using Google's OKF and SQLite FTS5.",
+      "title": "Show HN: MCP Memory \u2013 Fast Agent Memory Using Google's OKF and SQLite FTS5",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/fellowgeek/mcp-memory"
+    },
+    {
+      "pending_since": "2026-08-15T16:10:52.886374+00:00",
+      "score": 7,
+      "source": "hn",
+      "summary": "Discusses adding glacier data to a climate dashboard, relevant to BI dashboard content and visualization.",
+      "title": "Glaciers on the Climate Dashboard",
+      "topic": "data-viz",
+      "topic_name": "Data Viz",
+      "url": "https://climate.metoffice.cloud/glaciers.html"
+    }
+  ],
+  "last_email_at": null
+}

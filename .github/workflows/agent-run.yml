@@ -1,0 +1,63 @@
+name: Research agent run
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out agent code
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: code
+
+      - name: Check out agent data
+        uses: actions/checkout@v4
+        with:
+          ref: agent-data
+          path: data
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r code/agent/requirements.txt
+
+      - name: Move prior state into the code checkout
+        run: |
+          mkdir -p code/agent
+          [ -f data/agent/state.json ] && cp data/agent/state.json code/agent/state.json || true
+          [ -f data/agent/pending.json ] && cp data/agent/pending.json code/agent/pending.json || true
+          [ -f data/agent/status.json ] && cp data/agent/status.json code/agent/status.json || true
+
+      - name: Run the agent
+        working-directory: code
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: python -m agent
+
+      - name: Copy updated state back into the data checkout
+        run: |
+          mkdir -p data/agent
+          cp code/agent/state.json data/agent/state.json
+          cp code/agent/pending.json data/agent/pending.json
+          cp code/agent/status.json data/agent/status.json
+
+      - name: Commit and push agent-data
+        working-directory: data
+        run: |
+          git config user.name "agent-bot"
+          git config user.email "agent-bot@users.noreply.github.com"
+          git add agent/state.json agent/pending.json agent/status.json
+          git diff --cached --quiet || git commit -m "Update agent status $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

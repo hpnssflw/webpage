@@ -76,7 +76,7 @@ changed.
 
 ### Agent status widget + public dashboard
 
-**Status: in progress — Task 2 of 7 done.**
+**Status: in progress — Task 3 of 7 done.**
 
 - Spec: `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md`
   — explicitly supersedes the Windows-Task-Scheduler scheduling decision
@@ -110,13 +110,34 @@ changed.
   `agent/pending.json` with `last_email_at: null`, ready to send once
   SMTP credentials exist. Task review: spec compliant, no
   Critical/Important findings, approved.
+- `agent/status_export.py` (`build_status`, pure — never accepts
+  `TopicConfig`, only a `dict[str, str]` of slug→name, so source config
+  structurally cannot leak into the public output) shipped in commit
+  `905b5e9`, Task 3, wired into `run_real`'s tail to write
+  `agent/status.json` after every run (added to `.gitignore` on `main`,
+  same as `state.json`/`pending.json` — it's only ever tracked on the
+  future `agent-data` branch). Verified this session: a synthetic JSONL
+  fixture produces correct funnel counts, `streak` increments on a
+  `"run"/"complete"` event and resets to 0 without one, and (added in a
+  fix round after task review) a seeded 24-entry `run_history` truncates
+  correctly, dropping the oldest and keeping the new entry — all with no
+  network; a live run produced a real `status.json` with the expected
+  keys and `streak: 1`. Task review: spec compliant; one Important
+  plan-mandated finding (the brief's own test script didn't cover the
+  24-entry cap) fixed in a follow-up round; three Minor items deferred
+  (worth noting for Task 4: a genuinely crashed run never reaches
+  `build_status` at all, so `streak` only ever resets via the code path,
+  not via an actual production failure — a crashed run just leaves the
+  public widget's last-known state stale rather than flipping it red;
+  the stale-dot logic in Task 5/6/7 is what actually catches that case).
 - Note: there is unrelated concurrent work on `main` from a different
   session implementing the local run panel
   (`docs/superpowers/specs/2026-08-12-run-panel-design.md`) —
-  `agent/panel.py`, `agent/funnel.py`, `agent/panel_page.html`, and a
-  small `main()` addition. No file/line overlap with this plan's tasks so
-  far; flagging so a future session isn't surprised by commits it didn't
-  make.
+  `agent/panel.py`, `agent/funnel.py`, `agent/panel_page.html`, and edits
+  to `agent/main.py` (a `panel` subcommand, and — as of this writing, seen
+  mid-edit — refactoring `run_dry` into `run_dry_pipeline` for a live-
+  trigger feature). No conflict with this plan's tasks so far; flagging
+  so a future session isn't surprised by commits it didn't make.
 
 ### How to resume in a new session
 
@@ -137,8 +158,11 @@ changed.
 
 1. Read `docs/superpowers/plans/2026-08-15-agent-status-widget.md` and
    this file's section above.
-2. Confirm the next task (**Task 3 — `status_export.py`**) with the user
-   before writing any code.
+2. Confirm the next task (**Task 4 — GitHub Actions workflow**) with the
+   user before writing any code. Note: `hpnssflw`'s `gh` token is missing
+   the `workflow` scope, which `gh workflow run`/pushing
+   `.github/workflows/*` may need — check `gh auth status` and re-run
+   `gh auth refresh -h github.com -s workflow` if it fails.
 3. This plan is being executed via
    `superpowers:subagent-driven-development`; its ledger is at
    `.superpowers/sdd/2026-08-15-agent-status-widget/progress.md`

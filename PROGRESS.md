@@ -76,7 +76,11 @@ changed.
 
 ### Agent status widget + public dashboard
 
-**Status: Task 7 of 7 code-complete — awaiting the final whole-plan review.**
+**Status: shipped.** All 7 tasks complete, final whole-plan review clean
+(2 fix rounds), pushed to `main`. The homepage widget and
+`researcher/agent.html` dashboard are both live and rendering real data
+from the GitHub Actions workflow, which runs every 4 hours against real
+infrastructure.
 
 - Spec: `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md`
   — explicitly supersedes the Windows-Task-Scheduler scheduling decision
@@ -192,10 +196,32 @@ changed.
   `docs/agent-plan.md`'s "Daily vs weekly"/"Resurfacing" Open Questions
   bullets are still stale — this plan's own Task 7 brief never specified
   that edit (a plan omission, not an implementer error).
-- **All 7 tasks are now code-complete.** Next: the final whole-branch
-  review (`superpowers:requesting-code-review`'s code-reviewer, most
-  capable model), which will pick up the deferred docs/agent-plan.md gap
-  along with anything else that only shows up at the whole-branch level.
+- **Final whole-plan review complete — plan shipped.** No Critical
+  findings; all three core guarantees (redaction-by-construction,
+  mark-on-send-only delivery, CSS selectors matching real DOM output)
+  verified end-to-end. Cross-task issues no single task review could see:
+  the site's "nothing published, nothing public" claim was flatly false
+  (`agent/pending.json`, containing full curated titles/summaries/scores,
+  is pushed to the public `agent-data` branch every run, same as
+  `status.json`) — reworded in `researcher/agent.html` and
+  `docs/agent-plan.md` to be honest about it (2 fix rounds — round 1's
+  rewording still under-claimed exposure by only mentioning
+  `status.json`, not `pending.json`); the spec's redaction rationale was
+  half-defeated by Task 1's public flip (source config is public via
+  `agent/topics/*.yaml` regardless) — noted honestly in the spec; a real
+  case-system bug in `assets/agent-widget.js` (`.toLowerCase()`/
+  `.toUpperCase()` mutating topic name strings instead of using CSS
+  `text-transform`, violating the site's own documented convention) —
+  fixed; `CLAUDE.md` was stale on the GitHub remote/branch-name and the
+  unqualified "no JS" rule — updated; `docs/agent-plan.md`'s stale Open
+  Questions bullets and `agent/deliver.py`'s "weekly" docstring — synced;
+  `pending_email_count` was written to `status.json` but never displayed
+  (silent queue growth with SMTP still unconfigured) — now shown on the
+  dashboard. Deferred as lower-value/lower-risk: workflow
+  `timeout-minutes`/`concurrency` hardening, a low-probability same-minute
+  `run_id` JSONL-collision edge case, CSS token-discipline nits, and
+  escaping uniformity for non-string JSON fields (not exploitable) — see
+  the SDD ledger for the full list if picking any of these up later.
 - Note: there is unrelated concurrent work on `main` from a different
   session implementing the local run panel
   (`docs/superpowers/specs/2026-08-12-run-panel-design.md`) —
@@ -220,24 +246,14 @@ changed.
    releases, web search, attention rescue, scheduling, keyword
    suggestion) is out of scope here and would need its own plan.
 
-**Agent status widget (new 7-task plan, in progress):**
+**Agent status widget (7-task plan): shipped.** Nothing to resume — see
+this file's section above for what shipped and what's deferred. The SDD
+ledger at `.superpowers/sdd/2026-08-15-agent-status-widget/progress.md`
+(git-ignored) has the full task-by-task history if ever needed, and can
+be deleted once nobody expects to reference it.
 
-1. Read `docs/superpowers/plans/2026-08-15-agent-status-widget.md` and
-   this file's section above.
-2. All 7 tasks are code-complete. Confirm with the user before running
-   the final whole-branch review (`superpowers:requesting-code-review`),
-   which should pick up the one known deferred gap: syncing
-   `docs/agent-plan.md`'s remaining stale "Daily vs weekly"/"Resurfacing"
-   Open Questions bullets to match `researcher/agent.html`'s already-
-   updated ones.
-3. This plan is being executed via
-   `superpowers:subagent-driven-development`; its ledger is at
-   `.superpowers/sdd/2026-08-15-agent-status-widget/progress.md`
-   (git-ignored) if a session needs to recover mid-plan.
-
-**General:** see `CLAUDE.md` for this repo's actual conventions. Note the
-GitHub remote and `main` branch (above) are new as of the widget plan —
-`CLAUDE.md`'s "no GitHub remote configured... direct commits to `master`"
-line describes the state before that plan; commits still go directly to
-`main` with no PR flow, just under a new branch name and with a remote
-now attached.
+**General:** see `CLAUDE.md` for this repo's actual conventions —
+`CLAUDE.md` itself was updated as part of the widget plan's final review
+to reflect the GitHub remote and `main` branch (commits still go directly
+to `main`, no PR flow, just under a new branch name and with a remote
+now attached).

@@ -19,7 +19,7 @@ changed.
 
 ## Research Agent
 
-**Status: in progress — Task 5 of 6 done.**
+**Status: Task 6 of 6 code-complete — one verification step deferred.**
 
 - Narrative plan (public, on the site): `researcher/agent.html`
 - Technical plan (background/design, not the task list): `docs/agent-plan.md`
@@ -60,17 +60,31 @@ changed.
   well-formed scores (1–10) and one-sentence summaries for all 5 —
   first paid call in the build. `DEEPSEEK_API_KEY` is set in
   `agent/.env` (gitignored, not committed).
+- `agent/digest.py` (subject/body assembly), `agent/deliver.py` (SMTP
+  send), and `agent/main.py`'s `run_real` shipped in commit `c65c8cb` —
+  Task 6, code side. `docs/agent-plan.md` and `researcher/agent.html`
+  synced to the shipped design in commit `5d3605d` (site re-served
+  locally and curled to confirm the new copy landed). Verified this
+  session: digest assembly (subject line, body content) passes with no
+  network. **Deferred:** the plan's Step 5 — one real run
+  (`python -m agent --topic ai-agents`) that actually sends mail — is
+  not yet done. `SMTP_HOST`/`SMTP_PORT`/`SMTP_USER`/`SMTP_PASSWORD`
+  aren't in `agent/.env` yet; a TODO in `agent/deliver.py` marks this.
+  Once those credentials are added, run that command and check
+  `hypnosisflow@gmail.com` — that's the last thing standing between here
+  and "v1 shipped."
 
 ### How to resume in a new session
 
 1. Read this file and `docs/superpowers/plans/2026-08-12-research-agent.md`
    (the canonical task list — `docs/agent-plan.md` is background/design
    context, not what to execute against).
-2. Confirm the next task (**Task 6 — Digest, delivery, real run, doc
-   sync**) with the user before writing any code. It needs SMTP
-   credentials (`SMTP_HOST`/`SMTP_PORT`/`SMTP_USER`/`SMTP_PASSWORD`) in
-   `agent/.env` in addition to the `DEEPSEEK_API_KEY` already there, and
-   its final verification step sends a real email — v1 ships at the end
-   of this task.
+2. Add SMTP credentials to `agent/.env` and run
+   `python -m agent --topic ai-agents` to finish Task 6's deferred live
+   verification (Step 5) — confirm with the user first, since it sends a
+   real email. Once that passes, v1 has shipped and there's no Task 7 in
+   this plan; TASK-007 onward in `docs/agent-plan.md` (Reddit, RSS,
+   releases, web search, attention rescue, scheduling, keyword
+   suggestion) is out of scope here and would need its own plan.
 3. See `CLAUDE.md` for this repo's actual conventions (no branch/PR flow —
    direct commits to `master`).

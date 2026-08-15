@@ -253,10 +253,12 @@ a:focus-visible {
   color: var(--muted);
 }
 
-/* The only accent the monochrome palette allows: the lead-in drops to
-   muted, the thesis stays at full strength and turns italic. Contrast of
-   value and slope, not of hue. Weight stays light — italic already carries
-   the emphasis, and bolding it as well would fight the thin setting. */
+/* One of two deliberate breaks from the otherwise monochrome palette: the
+   lead-in drops to muted, the thesis stays at full strength and turns
+   italic. Contrast of value and slope, not of hue. Weight stays light —
+   italic already carries the emphasis, and bolding it as well would fight
+   the thin setting. The other break is the agent status widget's
+   lime/red accents, further down this file. */
 .accent {
   color: var(--text-strong);
   font-style: italic;
@@ -636,4 +638,96 @@ footer a {
     animation-delay: 0s !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* --- Agent status widget ----------------------------------------
+   Terminal aesthetic layered on top of the site's monochrome system —
+   the second deliberate palette break, see the .accent comment above.
+   Lime = online/kept, red = stale/dropped. .agent-widget is the
+   homepage-sized preview; .agent-dashboard (researcher/agent.html) is
+   the full view. Both are populated by assets/agent-widget.js. */
+
+:root {
+  --agent-bg: #141414;
+  --agent-border: #2a2a2a;
+  --agent-lime: #7cfc00;
+  --agent-red: #ff4d4d;
+}
+
+/* The mount points (#agent-widget on the homepage, #agent-dashboard on
+   researcher/agent.html) carry only an id in the markup — assets/agent-
+   widget.js replaces their innerHTML entirely, so the styled "card" lives
+   on .agent-widget-link (homepage: the mount's whole content is one
+   <a>) and directly on #agent-dashboard (not a link, so no wrapper
+   needed). Do not select `.agent-widget` / `.agent-dashboard` as classes
+   — neither element has one. */
+
+#agent-widget {
+  margin-top: 28px;
+}
+
+.agent-widget-link {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  line-height: 1.7;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--agent-bg);
+  border: 1px solid var(--agent-border);
+  border-radius: 4px;
+  padding: 14px 16px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.agent-widget-link:hover,
+.agent-widget-link:focus-visible {
+  text-decoration: none;
+  border-color: #4d4d4d;
+  transform: translateX(2px);
+}
+
+.agent-dot-online {
+  color: var(--agent-lime);
+}
+
+.agent-dot-stale {
+  color: var(--agent-red);
+}
+
+.agent-muted {
+  color: var(--muted);
+}
+
+.agent-arrow {
+  color: var(--muted);
+}
+
+.agent-spark {
+  color: var(--agent-lime);
+  letter-spacing: 1px;
+}
+
+.agent-spark-zero {
+  color: var(--agent-red);
+}
+
+.agent-count {
+  color: var(--agent-lime);
+}
+
+.agent-unavailable {
+  color: var(--muted);
+  margin: 0;
+}
+
+.agent-tagline {
+  display: block;
+  color: var(--muted);
+  font-style: italic;
+}
+
+#agent-dashboard p.agent-tagline {
+  margin: 4px 0 10px;
+  max-width: 42em;
 }

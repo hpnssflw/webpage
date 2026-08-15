@@ -21,6 +21,17 @@ each.
 - Commit in small, focused commits. Stage only the files relevant to the
   change — this repo has a habitually-uncommitted local
   `.claude/settings.local.json`; never stage it.
+- **Agent work: commit automatically per task, no extra confirmation
+  needed.** When executing a task from
+  `docs/superpowers/plans/2026-08-12-research-agent.md`, after its
+  verification steps pass, make two commits without asking first: (1) the
+  task's own commit, staging only the files that task's plan section
+  lists, using the commit message the plan gives; (2) a small follow-up
+  commit updating `PROGRESS.md`'s status line and "How to resume" section
+  to reflect the task just shipped and name the next task, message
+  `"Reconcile status docs with Task N shipping"`. This does not relax the
+  rule below it — confirm the *next* task with the user before writing any
+  of its code; only the commits for the task just finished are automatic.
 - The site has no build step and no automated test suite. Verify site
   changes by serving locally and curling the result:
   ```

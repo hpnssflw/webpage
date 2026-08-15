@@ -76,7 +76,7 @@ changed.
 
 ### Agent status widget + public dashboard
 
-**Status: in progress — Task 6 of 7 done. The homepage widget is live and rendering real data.**
+**Status: Task 7 of 7 code-complete — awaiting the final whole-plan review.**
 
 - Spec: `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md`
   — explicitly supersedes the Windows-Task-Scheduler scheduling decision
@@ -178,6 +178,24 @@ changed.
   figures weren't fabricated; approved, two minors deferred (both in the
   plan's own text, not implementation: a self-contradictory CSS comment,
   and an intentionally-unstyled `.agent-topics` span).
+- `researcher/agent.html` gains a dashboard-first `#agent-dashboard`
+  mount (status header + sparkline, per-topic funnel bars, live-style
+  ticker, all sourced from the same `assets/agent-widget.js`/`status.json`
+  as the homepage widget), plus its CSS, plus narrative sync in both
+  `researcher/agent.html` and `docs/agent-plan.md` (weekly → 4h
+  collection/daily email rollup, Windows Task Scheduler → GitHub
+  Actions) — shipped in commit `8563878`, Task 7, **the final task in
+  this plan**. Verified this session against real production
+  `status.json` (funnel counts, ticker rows, streak all rendered
+  correctly). Task review: spec compliant, approved. One confirmed gap
+  deferred to the final whole-plan review rather than fixed ad hoc:
+  `docs/agent-plan.md`'s "Daily vs weekly"/"Resurfacing" Open Questions
+  bullets are still stale — this plan's own Task 7 brief never specified
+  that edit (a plan omission, not an implementer error).
+- **All 7 tasks are now code-complete.** Next: the final whole-branch
+  review (`superpowers:requesting-code-review`'s code-reviewer, most
+  capable model), which will pick up the deferred docs/agent-plan.md gap
+  along with anything else that only shows up at the whole-branch level.
 - Note: there is unrelated concurrent work on `main` from a different
   session implementing the local run panel
   (`docs/superpowers/specs/2026-08-12-run-panel-design.md`) —
@@ -206,9 +224,12 @@ changed.
 
 1. Read `docs/superpowers/plans/2026-08-15-agent-status-widget.md` and
    this file's section above.
-2. Confirm the next task (**Task 7 — dashboard section on
-   researcher/agent.html + narrative sync**, the final task) with the
-   user before writing any code.
+2. All 7 tasks are code-complete. Confirm with the user before running
+   the final whole-branch review (`superpowers:requesting-code-review`),
+   which should pick up the one known deferred gap: syncing
+   `docs/agent-plan.md`'s remaining stale "Daily vs weekly"/"Resurfacing"
+   Open Questions bullets to match `researcher/agent.html`'s already-
+   updated ones.
 3. This plan is being executed via
    `superpowers:subagent-driven-development`; its ledger is at
    `.superpowers/sdd/2026-08-15-agent-status-widget/progress.md`

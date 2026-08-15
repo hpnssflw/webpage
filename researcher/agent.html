@@ -34,20 +34,27 @@
         </p>
 
         <h2 id="sources"><span class="num">02</span>Sources</h2>
-        <p>Four kinds of source, each with a different signal-to-noise ratio:</p>
+        <p>Five kinds of source, each with a different signal-to-noise ratio:</p>
         <ul>
-          <li>Web search — broad net, catches whatever isn't already covered below.</li>
           <li>Hacker News — via the public Algolia search API, filtered to each topic's keywords.</li>
-          <li>A handful of subreddits per topic — chosen once, revisited later if the signal is bad.</li>
           <li>Blog and RSS feeds — a curated list maintained by hand, the highest-signal source once it exists.</li>
+          <li>Repo releases — a version bump on a handful of watched repos per topic is unambiguous news in a way a blog post isn't.</li>
+          <li>A handful of subreddits per topic — chosen once, revisited later if the signal is bad.</li>
+          <li>Web search — broad net via a search API with a freshness filter, catches whatever isn't already covered above.</li>
         </ul>
+        <p>
+          Every source has to return a publish date for anything it surfaces —
+          undated items get dropped rather than risk something stale reading
+          as current.
+        </p>
 
         <h2 id="pipeline"><span class="num">03</span>Pipeline</h2>
-        <p>Five stages, each one a small, replaceable piece:</p>
+        <p>Six stages, each one a small, replaceable piece:</p>
         <ul>
-          <li>Collect — each source connector runs independently and returns a flat list of candidate links.</li>
+          <li>Collect — each source connector runs independently and returns a flat list of candidate links, each with a publish date.</li>
+          <li>Recency window — anything published outside the topic's freshness window gets dropped, unless it's since gained enough traction to earn a second look.</li>
           <li>Dedupe — every link's URL gets hashed against a store of what's already been sent; only new links continue.</li>
-          <li>Summarize &amp; rank — an LLM reads each candidate against the three topic descriptions and returns a one-line summary plus a relevance score; anything below the threshold gets dropped.</li>
+          <li>Rank — one call per topic reads that topic's whole surviving batch at once and ranks it, rather than scoring each item in isolation, so "relevant this week" means the same thing every week; a one-line summary and score come back per item, and anything below the threshold or past the per-topic cap gets dropped.</li>
           <li>Assemble — surviving items get grouped by topic into a digest, ordered by relevance within each group.</li>
           <li>Deliver — the digest goes out by email on a fixed schedule.</li>
         </ul>
@@ -55,10 +62,10 @@
         <h2 id="stack"><span class="num">04</span>Proposed stack</h2>
         <ul>
           <li>A single Python script, run on a schedule rather than a long-lived service — nothing here needs to be always-on.</li>
-          <li><code>feedparser</code> for RSS/blog sources, the Hacker News Algolia API and Reddit's public JSON endpoints for the aggregators, a web search API (or Claude's built-in web search) for the broad net.</li>
-          <li>A flat JSON file (or SQLite if it outgrows that) holding seen-URL hashes — the whole point of dedupe is state that survives between runs.</li>
-          <li>Claude for summarization and relevance scoring — the same model already writing LAB posts, reused for a much smaller job.</li>
-          <li>A scheduled GitHub Action or plain cron for the trigger; SMTP or a transactional email API (Resend) for delivery.</li>
+          <li><code>feedparser</code> for RSS/blog sources, the Hacker News Algolia API, Reddit's public JSON endpoints, and the GitHub releases API for the aggregators, a search API with a freshness filter for the broad net.</li>
+          <li>A flat JSON file (or SQLite if it outgrows that) holding seen-URL hashes and score history — the whole point of dedupe is state that survives between runs.</li>
+          <li>DeepSeek for summarization and relevance scoring — cheap enough at this volume that ranking quality is the thing worth tuning, not price.</li>
+          <li>Windows Task Scheduler for the trigger; SMTP for delivery.</li>
         </ul>
 
         <h2 id="cadence"><span class="num">05</span>Cadence &amp; format</h2>
@@ -74,12 +81,15 @@
         <ul>
           <li>Daily vs weekly — start weekly, watch whether Friday's digest already feels stale by Wednesday.</li>
           <li>Resurfacing — a link dismissed once shouldn't come back next week just because dedupe only tracks URLs verbatim.</li>
-          <li>Where it runs — a scheduled GitHub Action costs nothing and needs no server, but secrets (search API key, email credentials) have to live somewhere.</li>
           <li>Budget — search and LLM calls both cost money per run; weekly cadence keeps this small, but the number should get watched once it's real.</li>
         </ul>
 
         <h2 id="status">Status</h2>
-        <p>In progress — the config layer and candidate scaffolding are built; the first live source (Hacker News) is next. This page is where the plan lives and changes as it gets built.</p>
+        <p>
+          Building — the pipeline runs end to end on Hacker News alone: collect,
+          filter for recency, dedupe, rank with DeepSeek, assemble, and deliver
+          by email. Reddit, RSS, release watching, and web search are next.
+        </p>
       </div>
 
       <a href="./" class="back">← RESEARCHER</a>

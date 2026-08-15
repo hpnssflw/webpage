@@ -8,7 +8,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from agent import config, dedupe, date_guard, deliver, digest, events, summarize
+from agent import config, dedupe, date_guard, deliver, digest, events, pending, summarize
 from agent.sources import hn
 from agent.sources.base import Drop
 
@@ -16,6 +16,7 @@ AGENT_DIR = Path(__file__).parent
 DEFAULTS_PATH = AGENT_DIR / "defaults.yaml"
 TOPICS_DIR = AGENT_DIR / "topics"
 STATE_PATH = AGENT_DIR / "state.json"
+PENDING_PATH = AGENT_DIR / "pending.json"
 
 CONNECTORS = {
     "hacker_news": hn.collect,
@@ -83,7 +84,7 @@ def run_real(topic_filter: str | None) -> None:
             sys.exit(1)
 
     state = dedupe.load_state(STATE_PATH)
-    ranked_by_topic: dict[str, list[summarize.RankedItem]] = {}
+    queue = pending.load_pending(PENDING_PATH)
 
     for topic in topics:
         all_candidates = []
@@ -103,6 +104,10 @@ def run_real(topic_filter: str | None) -> None:
             writer.emit_drop("date_guard", topic.slug, drop)
 
         kept, drops = dedupe.filter_seen(kept, state)
+        for drop in drops:
+            writer.emit_drop("dedupe", topic.slug, drop)
+
+        kept, drops = pending.filter_already_pending(kept, queue)
         for drop in drops:
             writer.emit_drop("dedupe", topic.slug, drop)
 
@@ -138,23 +143,43 @@ def run_real(topic_filter: str | None) -> None:
                 ),
             )
 
-        ranked_by_topic[topic.name] = keep
+        for item in keep:
+            writer.emit(
+                "rank",
+                "kept",
+                topic=topic.slug,
+                source=item.candidate.source,
+                url=item.candidate.url,
+                title=item.candidate.title,
+                score=item.score,
+            )
 
-    subject, body = digest.build(ranked_by_topic)
-    total_items = sum(len(items) for items in ranked_by_topic.values())
+        pending.add_kept(queue, topic.name, keep, now)
 
-    if total_items:
-        deliver.send(subject, body, settings)
-        for items in ranked_by_topic.values():
-            for item in items:
-                dedupe.mark_sent(state, item.candidate)
-        writer.emit("deliver", "sent", detail={"items": total_items, "topics": len(ranked_by_topic)})
-        print(f"Sent {total_items} items across {len(ranked_by_topic)} topics.")
+    emailed = False
+    if pending.is_email_due(queue, now, settings.delivery.email_cadence_hours):
+        grouped = pending.group_by_topic(queue)
+        subject, body = digest.build(grouped)
+        try:
+            deliver.send(subject, body, settings)
+        except Exception as exc:  # noqa: BLE001 — delivery must never crash a scheduled run; retried once due again next time
+            writer.emit("deliver", "failed", detail={"error": str(exc), "items": len(queue.items)})
+            print(f"Email delivery failed, will retry next run: {exc}")
+        else:
+            for item in queue.items:
+                dedupe.mark_sent_url(state, item.url)
+            total_items = len(queue.items)
+            writer.emit("deliver", "sent", detail={"items": total_items, "topics": len(grouped)})
+            queue.items = []
+            queue.last_email_at = now.isoformat()
+            emailed = True
+            print(f"Sent {total_items} items across {len(grouped)} topics.")
     else:
-        writer.emit("deliver", "skipped", detail={"reason": "nothing_to_send"})
-        print("Nothing to send.")
+        print(f"Nothing emailed this run. Pending queue: {len(queue.items)} item(s).")
 
     dedupe.save_state(STATE_PATH, state)
+    pending.save_pending(PENDING_PATH, queue)
+    writer.emit("run", "complete", detail={"emailed": emailed, "pending_total": len(queue.items)})
     writer.close()
     print(f"Run recorded: {writer.path}")
 

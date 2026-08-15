@@ -21,6 +21,7 @@ class LLMConfig:
 class DeliveryConfig:
     to: str
     from_: str
+    email_cadence_hours: int
 
 
 @dataclass(frozen=True)
@@ -51,7 +52,11 @@ def load_settings(defaults_path: Path) -> Settings:
     delivery_raw = raw["delivery"]
     return Settings(
         llm=LLMConfig(base_url=llm_raw["base_url"], model=llm_raw["model"]),
-        delivery=DeliveryConfig(to=delivery_raw["to"], from_=delivery_raw["from"]),
+        delivery=DeliveryConfig(
+            to=delivery_raw["to"],
+            from_=delivery_raw["from"],
+            email_cadence_hours=delivery_raw["email_cadence_hours"],
+        ),
     )
 
 

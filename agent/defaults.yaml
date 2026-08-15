@@ -15,3 +15,4 @@ llm:
 delivery:
   to: hypnosisflow@gmail.com
   from: agent@localhost
+  email_cadence_hours: 24 # digest rollup cadence; collection/ranking run every 4h regardless

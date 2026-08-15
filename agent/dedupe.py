@@ -51,12 +51,14 @@ def record_seen(state: dict[str, StateEntry], candidate: Candidate, now: datetim
         entry.last_score = candidate.score
 
 
-def mark_sent(state: dict[str, StateEntry], candidate: Candidate) -> None:
-    """Called once a candidate has actually been delivered. Requires
-    record_seen to have already run for this candidate in the same run —
-    a KeyError here means the pipeline sent something it never recorded,
-    which is a bug worth surfacing loudly rather than papering over."""
-    state[url_hash(candidate.url)].times_sent += 1
+def mark_sent_url(state: dict[str, StateEntry], url: str) -> None:
+    """Called once an item has actually been delivered. Requires
+    record_seen to have already run for this URL in some prior run — a
+    KeyError here means the pipeline sent something it never recorded,
+    which is a bug worth surfacing loudly rather than papering over.
+    Takes a bare URL (not a Candidate) because the pending queue stores
+    items as flat PendingItem records, not Candidates."""
+    state[url_hash(url)].times_sent += 1
 
 
 def filter_seen(

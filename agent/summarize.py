@@ -16,7 +16,7 @@ from agent.sources.base import Candidate, TopicConfig
 # response mode to accept the request — this phrasing satisfies that
 # requirement incidentally, since it's also what we want the model to do.
 RANK_SYSTEM_PROMPT = (
-    "You rank candidate links for a weekly research digest against one "
+    "You rank candidate links for a research digest against one "
     "topic. For each candidate, judge relevance to the topic on a 1-10 "
     "scale and write a one-sentence summary. Respond with JSON only: an "
     'object of the shape {"rankings": [{"id": 1, "summary": "...", '

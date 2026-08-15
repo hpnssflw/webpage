@@ -89,6 +89,26 @@
       "topic": "data-viz",
       "topic_name": "Data Viz",
       "url": "https://climate.metoffice.cloud/glaciers.html"
+    },
+    {
+      "pending_since": "2026-08-15T16:12:09.624483+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "An open protocol for job data designed to be consumed by AI agents.",
+      "title": "Show HN: OJCP \u2013 an open protocol for agent-consumable job data",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://ojcp.dev/"
+    },
+    {
+      "pending_since": "2026-08-15T16:12:09.624483+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "AI agents for materials discovery in the semiconductor industry.",
+      "title": "Launch HN: Discovered Materials (YC P26) \u2013 AI agents to discover new materials",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://discoveredmaterials.com/research/"
     }
   ],
   "last_email_at": null

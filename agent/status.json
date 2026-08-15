@@ -5,14 +5,14 @@
     "ai-agents": {
       "collected": 33,
       "in_window": 33,
-      "kept": 8,
-      "new": 33
+      "kept": 2,
+      "new": 25
     },
     "data-viz": {
       "collected": 2,
       "in_window": 2,
-      "kept": 1,
-      "new": 2
+      "kept": 0,
+      "new": 1
     },
     "full-stack": {
       "collected": 2,
@@ -22,120 +22,113 @@
     }
   },
   "last_email_at": null,
-  "pending_email_count": 9,
+  "pending_email_count": 11,
   "recent_events": [
     {
       "reason": "below_relevance",
       "title": "Show HN: Eigendrum - Draw any shape and hear what it sounds like as a drum",
       "topic": "full-stack",
-      "ts": "2026-08-15T16:11:18.327669+00:00",
+      "ts": "2026-08-15T16:12:38.351330+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
       "topic": "full-stack",
-      "ts": "2026-08-15T16:11:15.885296+00:00",
+      "ts": "2026-08-15T16:12:36.249955+00:00",
       "verdict": "drop"
-    },
-    {
-      "score": 7,
-      "source": "hn",
-      "title": "Glaciers on the Climate Dashboard",
-      "topic": "data-viz",
-      "ts": "2026-08-15T16:11:14.906992+00:00",
-      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-15T16:11:14.906920+00:00",
+      "ts": "2026-08-15T16:12:35.233043+00:00",
       "verdict": "drop"
     },
     {
-      "score": 8,
-      "source": "hn",
-      "title": "Show HN: MCP Memory \u2013 Fast Agent Memory Using Google's OKF and SQLite FTS5",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853808+00:00",
-      "verdict": "kept"
-    },
-    {
-      "score": 8,
-      "source": "hn",
-      "title": "Show HN: MCP-stama \u2013 An ultra-fast Rust MCP server with no dependencies",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853799+00:00",
-      "verdict": "kept"
-    },
-    {
-      "score": 8,
-      "source": "hn",
-      "title": "Show HN: Mcptoon \u2013 Token-efficient MCP CLI client",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853791+00:00",
-      "verdict": "kept"
-    },
-    {
-      "score": 8,
-      "source": "hn",
-      "title": "Mistral Patent for \u201cCode implemented tool calls\u201d",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853782+00:00",
-      "verdict": "kept"
-    },
-    {
-      "score": 8,
-      "source": "hn",
-      "title": "Launch HN: HyperProbe (YC S26) \u2013 Agents that do read-only debugging in prod",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853774+00:00",
-      "verdict": "kept"
-    },
-    {
-      "score": 9,
-      "source": "hn",
-      "title": "DeepSeek V4 Flash 0731: 82.7% on Terminal-Bench 2.1 with a public harness",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853765+00:00",
-      "verdict": "kept"
-    },
-    {
-      "score": 9,
-      "source": "hn",
-      "title": "Launch HN: Bullet (YC S26) \u2013 A Faster Coding Agent",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853756+00:00",
-      "verdict": "kept"
-    },
-    {
-      "score": 9,
-      "source": "hn",
-      "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853745+00:00",
-      "verdict": "kept"
-    },
-    {
-      "reason": "over_max_items",
-      "title": "Lean Eval for Alignment on Faithfulness",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853732+00:00",
+      "reason": "seen",
+      "title": "Glaciers on the Climate Dashboard",
+      "topic": "data-viz",
+      "ts": "2026-08-15T16:12:33.241462+00:00",
       "verdict": "drop"
     },
     {
-      "reason": "over_max_items",
-      "title": "Show HN: OJCP \u2013 an open protocol for agent-consumable job data",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853721+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "over_max_items",
+      "score": 6,
+      "source": "hn",
       "title": "Launch HN: Discovered Materials (YC P26) \u2013 AI agents to discover new materials",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:11:10.853710+00:00",
+      "ts": "2026-08-15T16:12:31.626940+00:00",
+      "verdict": "kept"
+    },
+    {
+      "score": 9,
+      "source": "hn",
+      "title": "Show HN: OJCP \u2013 an open protocol for agent-consumable job data",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626926+00:00",
+      "verdict": "kept"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Nashville uses eminent domain to block data center near zoo",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626910+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "I won't read LLM authored fiction",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626896+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "How Golden Is Silence, Actually?",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626880+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Taxi drivers rarely die of Alzheimer's",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626866+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Silent Shark \u2013 tactical map-based WWII submarine sim",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626853+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Dutch Train Map Simulator",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626839+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "World Train Map \u2013 1247 train routes around the world",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626820+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "An all-sky map of half a million supermassive black holes",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626805+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Open-source interactive map for the Aug 12 total solar eclipse",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T16:12:31.626791+00:00",
       "verdict": "drop"
     }
   ],
@@ -143,19 +136,23 @@
     {
       "kept": 9,
       "ts": "2026-08-15T16:10:52.886374+00:00"
+    },
+    {
+      "kept": 2,
+      "ts": "2026-08-15T16:12:09.624483+00:00"
     }
   ],
-  "streak": 1,
+  "streak": 2,
   "topics": [
     {
       "collected": 33,
-      "kept": 8,
+      "kept": 2,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
     {
       "collected": 2,
-      "kept": 1,
+      "kept": 0,
       "name": "Data Viz",
       "slug": "data-viz"
     },
@@ -166,5 +163,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-15T16:10:52.886374+00:00"
+  "updated_at": "2026-08-15T16:12:09.624483+00:00"
 }

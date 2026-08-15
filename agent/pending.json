@@ -109,6 +109,26 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://discoveredmaterials.com/research/"
+    },
+    {
+      "pending_since": "2026-08-15T20:09:09.351673+00:00",
+      "score": 7,
+      "source": "hn",
+      "summary": "A voice-driven murder mystery game where users interview AI suspects, demonstrating a practical application of voice AI agents.",
+      "title": "Show HN: Voice driven murder mystery, Interview AI suspects with your voice",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://www.whodunnitai.com/"
+    },
+    {
+      "pending_since": "2026-08-15T20:09:09.351673+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "An evaluation method for alignment on faithfulness, relevant for ensuring AI agents follow instructions accurately.",
+      "title": "Lean Eval for Alignment on Faithfulness",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://www.millenniumresearch.ai/leanscreen.html#catch"
     }
   ],
   "last_email_at": null

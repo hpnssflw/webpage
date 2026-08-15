@@ -6,7 +6,7 @@
       "collected": 33,
       "in_window": 33,
       "kept": 2,
-      "new": 25
+      "new": 24
     },
     "data-viz": {
       "collected": 2,
@@ -22,113 +22,113 @@
     }
   },
   "last_email_at": null,
-  "pending_email_count": 11,
+  "pending_email_count": 13,
   "recent_events": [
     {
       "reason": "below_relevance",
       "title": "Show HN: Eigendrum - Draw any shape and hear what it sounds like as a drum",
       "topic": "full-stack",
-      "ts": "2026-08-15T16:12:38.351330+00:00",
+      "ts": "2026-08-15T20:09:39.570502+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
       "topic": "full-stack",
-      "ts": "2026-08-15T16:12:36.249955+00:00",
+      "ts": "2026-08-15T20:09:35.676000+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-15T16:12:35.233043+00:00",
+      "ts": "2026-08-15T20:09:34.728474+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Glaciers on the Climate Dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-15T16:12:33.241462+00:00",
+      "ts": "2026-08-15T20:09:32.174828+00:00",
       "verdict": "drop"
     },
     {
       "score": 6,
       "source": "hn",
-      "title": "Launch HN: Discovered Materials (YC P26) \u2013 AI agents to discover new materials",
+      "title": "Lean Eval for Alignment on Faithfulness",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626940+00:00",
+      "ts": "2026-08-15T20:09:31.021088+00:00",
       "verdict": "kept"
     },
     {
-      "score": 9,
+      "score": 7,
       "source": "hn",
-      "title": "Show HN: OJCP \u2013 an open protocol for agent-consumable job data",
+      "title": "Show HN: Voice driven murder mystery, Interview AI suspects with your voice",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626926+00:00",
+      "ts": "2026-08-15T20:09:31.021077+00:00",
       "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "Nashville uses eminent domain to block data center near zoo",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626910+00:00",
+      "ts": "2026-08-15T20:09:31.021065+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
-      "title": "I won't read LLM authored fiction",
+      "title": "Show HN: A website for exploring historical photographs of my city",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626896+00:00",
+      "ts": "2026-08-15T20:09:31.021056+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "How Golden Is Silence, Actually?",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626880+00:00",
+      "ts": "2026-08-15T20:09:31.021044+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Taxi drivers rarely die of Alzheimer's",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626866+00:00",
+      "ts": "2026-08-15T20:09:31.021034+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Choose Boring Technology (2015)",
+      "topic": "ai-agents",
+      "ts": "2026-08-15T20:09:31.021024+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Silent Shark \u2013 tactical map-based WWII submarine sim",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626853+00:00",
+      "ts": "2026-08-15T20:09:31.021013+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Dutch Train Map Simulator",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626839+00:00",
+      "ts": "2026-08-15T20:09:31.021000+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "World Train Map \u2013 1247 train routes around the world",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626820+00:00",
+      "ts": "2026-08-15T20:09:31.020986+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "An all-sky map of half a million supermassive black holes",
       "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626805+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Open-source interactive map for the Aug 12 total solar eclipse",
-      "topic": "ai-agents",
-      "ts": "2026-08-15T16:12:31.626791+00:00",
+      "ts": "2026-08-15T20:09:31.020964+00:00",
       "verdict": "drop"
     }
   ],
@@ -140,9 +140,13 @@
     {
       "kept": 2,
       "ts": "2026-08-15T16:12:09.624483+00:00"
+    },
+    {
+      "kept": 2,
+      "ts": "2026-08-15T20:09:09.351673+00:00"
     }
   ],
-  "streak": 2,
+  "streak": 3,
   "topics": [
     {
       "collected": 33,
@@ -163,5 +167,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-15T16:12:09.624483+00:00"
+  "updated_at": "2026-08-15T20:09:09.351673+00:00"
 }

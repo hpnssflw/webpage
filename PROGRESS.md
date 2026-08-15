@@ -76,7 +76,7 @@ changed.
 
 ### Agent status widget + public dashboard
 
-**Status: in progress — Task 4 of 7 done. Live GitHub Actions run confirmed working.**
+**Status: in progress — Task 5 of 7 done. Nothing visible on the site yet — Tasks 6-7 are the markup/CSS.**
 
 - Spec: `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md`
   — explicitly supersedes the Windows-Task-Scheduler scheduling decision
@@ -149,6 +149,22 @@ changed.
   not via an actual production failure — a crashed run just leaves the
   public widget's last-known state stale rather than flipping it red;
   the stale-dot logic in Task 5/6/7 is what actually catches that case).
+- `assets/agent-widget.js` (shared vanilla-JS fetch/render script — fetch
+  on load only, no polling; renders into `#agent-widget` and/or
+  `#agent-dashboard`, whichever exists; `STATUS_URL` points at
+  `raw.githubusercontent.com/hpnssflw/webpage/agent-data/agent/status.json`)
+  shipped in commit `226406f`, Task 5. All status.json-derived string
+  content (title, topic, reason, topic name) is HTML-escaped before
+  interpolation. Verified this session via jsdom driving the actually-
+  served page (no real browser tool available in this environment) —
+  confirmed dot-class toggling on fresh vs. stale `updated_at`, sparkline
+  rendering, countdown math, and per-topic counts; literal color
+  rendering is correctly deferred to Task 6, since the CSS classes don't
+  exist yet. Task review: spec compliant, approved, three minors
+  deferred (notably: the dashboard's countdown call is currently a
+  harmless no-op — the dashboard mockup never included a countdown
+  element by design, so there's no `[data-countdown]` target for it to
+  find).
 - Note: there is unrelated concurrent work on `main` from a different
   session implementing the local run panel
   (`docs/superpowers/specs/2026-08-12-run-panel-design.md`) —
@@ -177,9 +193,8 @@ changed.
 
 1. Read `docs/superpowers/plans/2026-08-15-agent-status-widget.md` and
    this file's section above.
-2. Confirm the next task (**Task 5 — `assets/agent-widget.js`**) with the
-   user before writing any code. The exact `STATUS_URL` value it needs is
-   confirmed: `https://raw.githubusercontent.com/hpnssflw/webpage/agent-data/agent/status.json`.
+2. Confirm the next task (**Task 6 — homepage widget markup/CSS**) with
+   the user before writing any code.
 3. This plan is being executed via
    `superpowers:subagent-driven-development`; its ledger is at
    `.superpowers/sdd/2026-08-15-agent-status-widget/progress.md`

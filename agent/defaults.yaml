@@ -8,7 +8,9 @@ attention:
 
 llm:
   base_url: https://api.deepseek.com
-  model: deepseek-chat
+  # deepseek-chat was discontinued 2026-07-24; deepseek-v4-flash is its
+  # replacement (the non-thinking mode deepseek-chat used to point to).
+  model: deepseek-v4-flash
 
 delivery:
   to: hypnosisflow@gmail.com

@@ -3,12 +3,13 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from agent import config, dedupe, date_guard, deliver, digest, events, pending, summarize
+from agent import config, dedupe, date_guard, deliver, digest, events, pending, status_export, summarize
 from agent.sources import hn
 from agent.sources.base import Drop
 
@@ -17,6 +18,7 @@ DEFAULTS_PATH = AGENT_DIR / "defaults.yaml"
 TOPICS_DIR = AGENT_DIR / "topics"
 STATE_PATH = AGENT_DIR / "state.json"
 PENDING_PATH = AGENT_DIR / "pending.json"
+STATUS_PATH = AGENT_DIR / "status.json"
 
 CONNECTORS = {
     "hacker_news": hn.collect,
@@ -181,7 +183,18 @@ def run_real(topic_filter: str | None) -> None:
     pending.save_pending(PENDING_PATH, queue)
     writer.emit("run", "complete", detail={"emailed": emailed, "pending_total": len(queue.items)})
     writer.close()
+
+    all_topics = config.load_topics(TOPICS_DIR, DEFAULTS_PATH)
+    topic_names = {t.slug: t.name for t in all_topics}
+    previous_status = json.loads(STATUS_PATH.read_text(encoding="utf-8")) if STATUS_PATH.exists() else None
+    run_events = events.read_events(writer.path)
+    status = status_export.build_status(
+        run_events, topic_names, queue, settings.delivery.email_cadence_hours, 4, previous_status, now
+    )
+    STATUS_PATH.write_text(json.dumps(status, indent=2, sort_keys=True), encoding="utf-8")
+
     print(f"Run recorded: {writer.path}")
+    print(f"Status written: {STATUS_PATH}")
 
 
 def _print_funnel(topic_name: str, counts: Counter[str]) -> None:

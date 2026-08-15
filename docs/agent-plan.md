@@ -11,11 +11,11 @@ word-for-word.
 A background agent that reads so Artem doesn't have to read everything
 himself. It checks every 4 hours; a short, curated list of what actually
 moved in three topics rolls up into an email once a day — links and a
-one-line summary each. The curated digest itself stays private, sent
-only by email — but the live status above is public: what the agent
-found, kept, and dropped on each run, with titles and relevance scores,
-is visible to anyone. Raw material for his own LAB writing, not a LAB
-post itself.
+one-line summary each. Nothing is emailed until it's ready, but nothing
+here is private either — the agent's full working state (what it found,
+ranked, and is holding for the next digest) is public the moment it's
+written, not just the summary status the widget shows. Raw material
+for his own LAB writing, not a LAB post itself.
 
 ## Topics (fixed set, matches the site's RESEARCHER section)
 

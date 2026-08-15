@@ -76,7 +76,7 @@ changed.
 
 ### Agent status widget + public dashboard
 
-**Status: in progress — Task 5 of 7 done. Nothing visible on the site yet — Tasks 6-7 are the markup/CSS.**
+**Status: in progress — Task 6 of 7 done. The homepage widget is live and rendering real data.**
 
 - Spec: `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md`
   — explicitly supersedes the Windows-Task-Scheduler scheduling decision
@@ -165,6 +165,19 @@ changed.
   harmless no-op — the dashboard mockup never included a countdown
   element by design, so there's no `[data-countdown]` target for it to
   find).
+- Homepage widget markup (`#agent-widget` mount under the RESEARCHER
+  topics list, `assets/agent-widget.js` script tag) and its CSS (card
+  chrome on `.agent-widget-link`, not a bare `.agent-widget` class —
+  there is no such class in the DOM, only the `#agent-widget` id; the
+  `.accent` comment updated to acknowledge this as the second deliberate
+  monochrome-palette break) shipped in commit `02797dc`, Task 6.
+  **Confirmed rendering real production data** — verified this session
+  against the actual live `agent-data` `status.json` (streak 2, sparkline
+  `█▃`, real per-topic counts), not just the fallback state. Task review
+  independently re-fetched the same live JSON and confirmed the reported
+  figures weren't fabricated; approved, two minors deferred (both in the
+  plan's own text, not implementation: a self-contradictory CSS comment,
+  and an intentionally-unstyled `.agent-topics` span).
 - Note: there is unrelated concurrent work on `main` from a different
   session implementing the local run panel
   (`docs/superpowers/specs/2026-08-12-run-panel-design.md`) —
@@ -193,8 +206,9 @@ changed.
 
 1. Read `docs/superpowers/plans/2026-08-15-agent-status-widget.md` and
    this file's section above.
-2. Confirm the next task (**Task 6 — homepage widget markup/CSS**) with
-   the user before writing any code.
+2. Confirm the next task (**Task 7 — dashboard section on
+   researcher/agent.html + narrative sync**, the final task) with the
+   user before writing any code.
 3. This plan is being executed via
    `superpowers:subagent-driven-development`; its ledger is at
    `.superpowers/sdd/2026-08-15-agent-status-widget/progress.md`

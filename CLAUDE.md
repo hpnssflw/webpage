@@ -14,9 +14,12 @@ each.
 
 ## Conventions actually used in this repo
 
-- **No GitHub remote is configured.** Work happens directly on `master` —
-  no feature branches, no PRs, no `gh` commands — unless the user
-  explicitly asks for that workflow. Do not invoke a generic
+- **A GitHub remote is configured** (`hpnssflw/webpage`), set up for the
+  agent's GitHub Actions workflow. Work still happens directly on `main`
+  (renamed from `master`) — no feature branches, no PRs — unless the user
+  explicitly asks for that workflow. `gh` commands are now a normal part
+  of managing the agent's GitHub Actions workflow, secrets, and repo
+  settings; they are not something to avoid. Do not invoke a generic
   branch-per-task → PR → merge flow by default; it doesn't apply here.
 - Commit in small, focused commits. Stage only the files relevant to the
   change — this repo has a habitually-uncommitted local
@@ -48,6 +51,10 @@ each.
 ## Do not
 
 - Don't add a build step, framework, or JS to the static site without
-  being asked — it's deliberately plain HTML/CSS.
+  being asked — it's deliberately plain HTML/CSS. (`assets/agent-widget.js`
+  is a sanctioned, one-time exception per
+  `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md` — it
+  doesn't license adding more JS elsewhere, and it isn't a mistake to
+  "fix" by removing.)
 - Don't start implementing the agent without confirming the task with the
   user first, even if `docs/agent-plan.md` makes the next step obvious.

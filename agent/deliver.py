@@ -1,4 +1,4 @@
-"""SMTP delivery for the weekly digest."""
+"""SMTP delivery for the research digest."""
 
 # TODO: not yet verified against a real inbox — SMTP_HOST/PORT/USER/PASSWORD
 # aren't in agent/.env yet. Run `python -m agent --topic ai-agents` (Task 6

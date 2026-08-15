@@ -716,6 +716,10 @@ footer a {
   color: var(--agent-lime);
 }
 
+.agent-topics {
+  text-transform: lowercase;
+}
+
 .agent-unavailable {
   color: var(--muted);
   margin: 0;
@@ -760,6 +764,7 @@ footer a {
 .agent-funnel-label {
   color: var(--text-strong);
   min-width: 8em;
+  text-transform: uppercase;
 }
 
 .agent-funnel-counts {

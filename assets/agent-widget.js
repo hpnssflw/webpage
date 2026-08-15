@@ -70,7 +70,7 @@
     var topicsLine = status.topics
       .map(function (t) {
         return (
-          escapeHtml(t.name.toLowerCase()) +
+          escapeHtml(t.name) +
           ' <span class="agent-count">' + t.kept + "/" + t.collected + "</span>"
         );
       })
@@ -99,7 +99,7 @@
         var f = status.funnel[t.slug];
         return (
           '<div class="agent-funnel-row">' +
-          '<span class="agent-funnel-label">' + escapeHtml(t.name.toUpperCase()) + '</span>' +
+          '<span class="agent-funnel-label">' + escapeHtml(t.name) + '</span>' +
           '<span class="agent-funnel-counts">collected ' + f.collected +
           ' → in-window ' + f.in_window +
           ' → new ' + f.new +
@@ -132,6 +132,7 @@
       '<span class="' + dotClass + '">●</span> AGENT ' + label.toUpperCase() +
       ' <span class="agent-muted">runs every ' + status.cadence_hours + 'h · streak ' + status.streak + '</span>' +
       '</div>' +
+      '<div><span class="agent-muted">' + status.pending_email_count + ' queued for next digest</span></div>' +
       '<p class="agent-tagline">Building production AI pipelines: schema-validated LLM calls, automatic fallback, full audit trail of every decision the ranker makes.</p>' +
       '<div class="agent-spark">' + sparkline(status.run_history) + ' <span class="agent-muted">last ' + status.run_history.length + ' runs</span></div>' +
       '<hr class="agent-divider">' +

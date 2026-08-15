@@ -90,6 +90,16 @@ sources` or `.keywords`. This is enforced by construction — the exporter
 function's input types don't include `TopicConfig` at all, only `Candidate`,
 `Drop`, and plain counts — so there is no field to accidentally leak.
 
+Worth noting: Task 1 of this plan made the repo itself public, which means
+`agent/topics/*.yaml` — the actual keywords, subreddits, feed URLs, and
+search queries this section was originally written to keep off of
+`status.json` — is now readable by anyone via the repo directly, regardless
+of what the exporter does. The narrow `dict[str, str]` signature no longer
+protects confidentiality that doesn't exist anymore; what it still buys is
+schema stability for the public aggregate and a structural guard against
+someone later widening `build_status()`'s inputs and accidentally pulling
+more than counts and titles into `status.json`.
+
 ## Email delivery decoupling
 
 Collection/ranking now runs 4x more often than delivery should. `run_real`

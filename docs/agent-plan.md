@@ -11,8 +11,11 @@ word-for-word.
 A background agent that reads so Artem doesn't have to read everything
 himself. It checks every 4 hours; a short, curated list of what actually
 moved in three topics rolls up into an email once a day — links and a
-one-line summary each. Nothing published, nothing public. Raw material
-for his own LAB writing, not a LAB post itself.
+one-line summary each. The curated digest itself stays private, sent
+only by email — but the live status above is public: what the agent
+found, kept, and dropped on each run, with titles and relevance scores,
+is visible to anyone. Raw material for his own LAB writing, not a LAB
+post itself.
 
 ## Topics (fixed set, matches the site's RESEARCHER section)
 
@@ -88,8 +91,8 @@ scheduling, and self-refreshing keywords remain.
 
 ## Open questions
 
-- Daily vs weekly — start weekly, watch whether Friday's digest already feels stale by Wednesday.
-- Resurfacing — a link dismissed once shouldn't come back next week just because dedupe only tracks URLs verbatim.
+- Whether once-a-day is the right email rollup — watch whether the inbox feels stale or noisy and adjust from there.
+- Resurfacing — a link dismissed once shouldn't come back just because dedupe only tracks URLs verbatim.
 - Where it runs — resolved: GitHub Actions (`.github/workflows/agent-run.yml`), secrets in repo settings; `agent/.env` still used for local `--dry-run`/manual runs.
 - Budget — search and LLM calls cost money per run, and collection now runs 6x/day instead of weekly; watch GitHub Actions minutes and DeepSeek spend once this has run for a while.
 

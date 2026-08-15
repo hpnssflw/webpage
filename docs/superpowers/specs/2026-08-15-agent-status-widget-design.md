@@ -8,6 +8,16 @@ on `researcher/agent.html`, both reading from data the agent itself produces
 every run. The point is proof — anyone looking at the site can see the agent
 is real and currently running, not just described.
 
+**Skill showcased: production LLM pipeline engineering, not just "called an
+API."** The specific things worth a visitor noticing — and what the
+dashboard should make legible, not just decorative — are: batched ranking
+calls validated against an expected schema before use, a retry-then-
+per-candidate-fallback path when validation fails twice, a cost-aware model
+choice (DeepSeek, chosen for what ranking quality costs at this volume), and
+a full audit trail where every kept-or-dropped decision traces to an event.
+The dashboard's funnel and ticker exist to make that last point visible,
+not just to look busy.
+
 ## Supersedes
 
 This spec knowingly revises decisions made in two earlier, already-shipped
@@ -35,6 +45,15 @@ specs. Both changes are deliberate, not oversights:
   never contains topic `keywords`, `sources`, subreddit lists, feed URLs, or
   search queries; it contains only candidate titles/URLs/scores, which are
   already public HN content, and counts.
+- **`2026-08-15-report-storage-and-dashboard-design.md`** — a parallel
+  session's spec for local-only storage (SQLite) and a local-only
+  dashboard, written before that session saw this one. Superseded outright
+  by this spec for scheduling and dashboard visibility. Two things from it
+  were merged forward rather than discarded: the pending-queue re-ranking
+  fix in § Email delivery decoupling below, and a note that
+  `agent/store.py`'s SQLite design is the reference to reach for if the
+  local run panel later wants queryable history beyond `status.json`'s
+  capped rolling windows.
 - The run panel itself (`python -m agent panel`, local-only, SSE-driven) is
   unaffected and not built by this spec. It remains the right tool for the
   edit-YAML-and-re-run tuning loop; this spec's widget is a separate,
@@ -82,6 +101,20 @@ changes:
    `dedupe.mark_sent` is **not** called at this point — an item isn't a
    duplicate until it's actually been emailed, and `filter_seen`'s
    `times_sent > 0` check depends on that staying true.
+
+   **Dedup against the pending queue itself, before ranking.** Without
+   this, an item sitting in `pending.json` waiting for the 24h email
+   gate is not caught by `filter_seen` (its `times_sent` is still 0), so
+   HN keeps re-surfacing it, and it gets re-sent to DeepSeek for ranking
+   on every subsequent 4h cycle until the gate finally fires — up to 6×
+   redundant paid ranking calls for the same item over 24 hours. Fix:
+   after `filter_seen`, drop any candidate whose URL hash is already
+   present in `pending.json` *before* the ranking call, using the same
+   `reason="seen"` drop event `filter_seen` already emits (`detail`
+   distinguishes `{"times_sent": N}` from `{"pending_since": "..."}` so
+   the two cases stay visible in the event stream without extending the
+   closed drop-reason set). Ranking only ever runs once per item, at
+   the moment it first crosses the relevance threshold.
 2. After updating `pending.json`, `run_real` checks whether email is due:
    `last_email_at` (stored in `pending.json` alongside the queue) is more
    than `email_cadence_hours` (default 24, in `defaults.yaml`) in the past,
@@ -152,12 +185,16 @@ Content (validated against mockups — "everything that fits" density):
 
 ```
 ● agent online   runs every 4h · streak 11
+schema-validated LLM ranking · full audit trail
 ▂▃▅▁▄▆█▅▃▇▉▄▃▅▆▁▃▅▇█   last 24 runs
 ─────────────────────────
 ai agents   5/32   data viz  0/18   full-stack  2/24
 next check  00:42:11         view dashboard →
 ```
 
+- The tagline (`schema-validated LLM ranking · full audit trail`) is a
+  static string, not derived from `status.json` — it names the skill this
+  widget is meant to demonstrate (§ Purpose), not a live metric.
 - Dot color: lime (`#7CFC00`) when `updated_at` is within `2 × cadence_hours`
   of now; red (`#ff4d4d`) otherwise, label changes to "stale".
 - Sparkline: one glyph per `run_history` entry, height ∝ `kept`, red when
@@ -181,6 +218,9 @@ plan content (unchanged) follows below it.
 
 ```
 ● AGENT ONLINE                runs every 4h · streak 11
+Building production AI pipelines: schema-validated LLM
+calls, automatic fallback, full audit trail of every
+decision the ranker makes.
 ▂▃▅▁▄▆█▅▃▇▉▄▃▅▆▁▃▅▇█           last 24 runs
 ─────────────────────────────────────
 AI AGENTS   ████████░░░░ 9/32   kept 5
@@ -195,6 +235,11 @@ FULL-STACK  ██████░░░░░░ 6/24   kept 2
 [existing "a research agent" narrative content, unchanged]
 ```
 
+- The description line under the status header is static copy naming the
+  skill this project demonstrates (§ Purpose) — not derived from
+  `status.json`. The funnel and ticker below it are the evidence for that
+  claim: every row is traceable to an actual event the agent emitted, not
+  set dressing.
 - Status header + sparkline: same data and stale logic as the homepage
   widget, just larger.
 - Per-topic funnel: bars per topic showing `funnel[slug]`'s four stages

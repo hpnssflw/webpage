@@ -1,5 +1,26 @@
 # Report storage and dashboard — replacing email delivery for now
 
+> **Superseded by `2026-08-15-agent-status-widget-design.md`.** That spec
+> (a parallel session, committed to master while this one was in
+> progress) moves scheduling to GitHub Actions and makes the dashboard
+> public, on the live site, rather than the local-only design below. This
+> document is kept for its analysis, not as a build target. Two things
+> from here were merged forward into the accepted spec rather than lost:
+>
+> - The pending-queue re-ranking bug this document's review surfaced (an
+>   item waiting for the 24h email rollup gets re-collected and
+>   re-ranked by DeepSeek every 4h cycle, since `mark_sent` is
+>   deliberately deferred) — patched in the accepted spec's § Email
+>   delivery decoupling.
+> - The case for durable, queryable per-item history: the accepted
+>   spec's `status.json` only keeps a capped rolling window
+>   (`run_history`: 24 entries, `recent_events`: ~15). Full history is
+>   still recoverable from `agent-data`'s git log, just not
+>   conveniently queryable. If the local run panel (out of scope in both
+>   specs) later wants real querying — filter by topic, date range,
+>   score — the `agent/store.py` / SQLite design below is the reference
+>   for that, whenever that panel work happens.
+
 ## Purpose
 
 `run_real`'s final stage was designed to email a digest via SMTP

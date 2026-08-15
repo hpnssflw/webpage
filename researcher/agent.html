@@ -22,15 +22,17 @@
         compete with writing time.
       </p>
 
+      <div id="agent-dashboard"></div>
+
       <div class="body">
         <h2 id="goal"><span class="num">01</span>Goal</h2>
         <p>
           The agent's only job is to read so I don't have to read
-          everything myself. Once a week it hands me a short, curated
-          list of what actually moved in data viz, full-stack
-          architecture, and AI engineering — links and a sentence each,
-          nothing published, nothing public. Raw material for LAB posts,
-          not a LAB post itself.
+          everything myself. It checks every few hours; a curated digest
+          of what actually moved in data viz, full-stack architecture,
+          and AI engineering — links and a sentence each — rolls up once
+          a day. Nothing published, nothing public. Raw material for LAB
+          posts, not a LAB post itself.
         </p>
 
         <h2 id="sources"><span class="num">02</span>Sources</h2>
@@ -65,36 +67,41 @@
           <li><code>feedparser</code> for RSS/blog sources, the Hacker News Algolia API, Reddit's public JSON endpoints, and the GitHub releases API for the aggregators, a search API with a freshness filter for the broad net.</li>
           <li>A flat JSON file (or SQLite if it outgrows that) holding seen-URL hashes and score history — the whole point of dedupe is state that survives between runs.</li>
           <li>DeepSeek for summarization and relevance scoring — cheap enough at this volume that ranking quality is the thing worth tuning, not price.</li>
-          <li>Windows Task Scheduler for the trigger; SMTP for delivery.</li>
+          <li>GitHub Actions on a schedule for the trigger; SMTP for delivery, decoupled onto its own coarser cadence so collection can run more often than the inbox needs to hear from it.</li>
         </ul>
 
         <h2 id="cadence"><span class="num">05</span>Cadence &amp; format</h2>
         <p>
-          Weekly to start — daily would just move the same reading load
-          into more, smaller interruptions. Each digest groups items
-          under the three topic headers, five to ten per group, one line
-          of summary and a link each. Cadence is the first knob to turn
-          if the volume feels wrong in either direction.
+          Collection and ranking run every four hours — frequent enough
+          that the live status above reflects what's actually happening
+          right now. The email digest stays coarser, rolling up
+          everything new once a day, so the inbox doesn't get six emails
+          for one afternoon's reading. Each digest groups items under the
+          three topic headers, one line of summary and a link each.
         </p>
 
         <h2 id="open-questions">What's still open</h2>
         <ul>
-          <li>Daily vs weekly — start weekly, watch whether Friday's digest already feels stale by Wednesday.</li>
-          <li>Resurfacing — a link dismissed once shouldn't come back next week just because dedupe only tracks URLs verbatim.</li>
-          <li>Budget — search and LLM calls both cost money per run; weekly cadence keeps this small, but the number should get watched once it's real.</li>
+          <li>Whether once-a-day is the right email rollup — watch whether the inbox feels stale or noisy and adjust from there.</li>
+          <li>Resurfacing — a link dismissed once shouldn't come back just because dedupe only tracks URLs verbatim.</li>
+          <li>Budget — search and LLM calls cost money per run, and collection now runs six times a day instead of once a week; worth watching GitHub Actions minutes and DeepSeek spend as this settles in.</li>
         </ul>
 
         <h2 id="status">Status</h2>
         <p>
-          Building — the pipeline runs end to end on Hacker News alone: collect,
-          filter for recency, dedupe, rank with DeepSeek, assemble, and deliver
-          by email. Reddit, RSS, release watching, and web search are next.
+          Running — the pipeline runs end to end on Hacker News alone, on a
+          schedule: collect, filter for recency, dedupe, rank with DeepSeek,
+          hold in a pending queue, and deliver by email once a day. The live
+          status above reflects the actual current state of that schedule.
+          Reddit, RSS, release watching, and web search are next.
         </p>
       </div>
 
       <a href="./" class="back">← RESEARCHER</a>
     </div>
   </article>
+
+  <script src="../assets/agent-widget.js" defer></script>
 
   <footer>
     <div class="wrap">

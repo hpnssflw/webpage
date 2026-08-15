@@ -731,3 +731,57 @@ footer a {
   margin: 4px 0 10px;
   max-width: 42em;
 }
+
+#agent-dashboard {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.7;
+  background: var(--agent-bg);
+  border: 1px solid var(--agent-border);
+  border-radius: 4px;
+  padding: 14px 16px;
+  margin: 0 0 48px;
+}
+
+.agent-divider {
+  border: none;
+  border-top: 1px solid var(--agent-border);
+  margin: 12px 0;
+}
+
+.agent-funnel-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.agent-funnel-label {
+  color: var(--text-strong);
+  min-width: 8em;
+}
+
+.agent-funnel-counts {
+  color: var(--muted);
+}
+
+.agent-ticker-row {
+  margin-bottom: 4px;
+}
+
+.agent-kept {
+  color: var(--agent-lime);
+}
+
+.agent-drop {
+  color: var(--agent-red);
+}
+
+.agent-ticker-topic {
+  color: var(--text);
+}
+
+.agent-ticker-title {
+  color: var(--text-strong);
+}

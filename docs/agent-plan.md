@@ -9,10 +9,10 @@ word-for-word.
 ## Goal
 
 A background agent that reads so Artem doesn't have to read everything
-himself. Once a week it produces a short, curated list of what actually
-moved in three topics — links and a one-line summary each. Nothing
-published, nothing public. Raw material for his own LAB writing, not a
-LAB post itself.
+himself. It checks every 4 hours; a short, curated list of what actually
+moved in three topics rolls up into an email once a day — links and a
+one-line summary each. Nothing published, nothing public. Raw material
+for his own LAB writing, not a LAB post itself.
 
 ## Topics (fixed set, matches the site's RESEARCHER section)
 
@@ -53,12 +53,14 @@ inspectable after the fact — see the run panel plan,
 - `feedparser` for RSS/blog sources; the Hacker News Algolia API, Reddit's public JSON endpoints, and the GitHub releases API for the other aggregators; a dedicated search API (Brave) for the broad net, chosen because it returns a publish date per result.
 - A flat JSON file (or SQLite if it outgrows that) holding seen-URL hashes and score history.
 - DeepSeek for summarization and relevance scoring, via the OpenAI-compatible `openai` SDK — cheap enough at this volume that ranking quality, not price, is the thing to tune.
-- Windows Task Scheduler for the trigger (this repo has no GitHub remote); SMTP for delivery.
+- GitHub Actions on a schedule for the trigger (`0 */4 * * *`); SMTP for delivery on its own, coarser cadence — see `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md`.
 
 ## Cadence & format
 
-Weekly to start. Each digest groups items under the three topic headers,
-five to ten per group, one line of summary and a link each.
+Collection and ranking run every 4 hours; email delivery rolls up
+everything new once a day (`email_cadence_hours` in `defaults.yaml`).
+Each digest groups items under the three topic headers, one line of
+summary and a link each.
 
 ## Proposed module layout
 
@@ -88,8 +90,8 @@ scheduling, and self-refreshing keywords remain.
 
 - Daily vs weekly — start weekly, watch whether Friday's digest already feels stale by Wednesday.
 - Resurfacing — a link dismissed once shouldn't come back next week just because dedupe only tracks URLs verbatim.
-- Where it runs — resolved: Windows Task Scheduler (this repo has no GitHub remote), secrets in `agent/.env`.
-- Budget — search and LLM calls both cost money per run; weekly cadence keeps this small, but watch it once it's real.
+- Where it runs — resolved: GitHub Actions (`.github/workflows/agent-run.yml`), secrets in repo settings; `agent/.env` still used for local `--dry-run`/manual runs.
+- Budget — search and LLM calls cost money per run, and collection now runs 6x/day instead of weekly; watch GitHub Actions minutes and DeepSeek spend once this has run for a while.
 
 ## Status
 

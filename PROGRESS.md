@@ -19,7 +19,7 @@ changed.
 
 ## Research Agent
 
-**Status: in progress — Task 2 of 6 done.**
+**Status: in progress — Task 3 of 6 done.**
 
 - Narrative plan (public, on the site): `researcher/agent.html`
 - Technical plan (background/design, not the task list): `docs/agent-plan.md`
@@ -34,13 +34,17 @@ changed.
   Algolia connector) shipped in commit `c4ab1ec` — Task 2. Verified this
   session: synthetic date-guard check passes, and a live Algolia query for
   the `ai-agents` topic returned 32 timezone-aware candidates, 0 drops.
+- `agent/dedupe.py` (URL-hash seen-state store, `times_sent`-based
+  filtering) shipped in commit `8cc137d` — Task 3. Verified this session:
+  a sent item is dropped as `seen` on a later pass, an unsent item is
+  kept, and state round-trips through save/load correctly.
 
 ### How to resume in a new session
 
 1. Read this file and `docs/superpowers/plans/2026-08-12-research-agent.md`
    (the canonical task list — `docs/agent-plan.md` is background/design
    context, not what to execute against).
-2. Confirm the next task (**Task 3 — Dedupe state**) with the user before
-   writing any code.
+2. Confirm the next task (**Task 4 — Event stream + dry run**) with the
+   user before writing any code.
 3. See `CLAUDE.md` for this repo's actual conventions (no branch/PR flow —
    direct commits to `master`).

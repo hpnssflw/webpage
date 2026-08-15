@@ -32,14 +32,14 @@ YAML, no third-party actions beyond `actions/checkout` and
 - **Stale threshold:** widget dot flips lime→red when `now - updated_at >
   2 × cadence_hours`. (Spec § Homepage widget.)
 - **`agent-data` is an orphan branch** with no shared history with
-  `master`; `master` is never touched by automated commits. (Spec §
+  `main`; `main` is never touched by automated commits. (Spec §
   Scheduling & data architecture.)
 - **Redaction by construction:** `status_export.build_status` never
   receives a `TopicConfig` — only a `dict[str, str]` of slug→display-name.
   No function in this plan may widen that signature to accept topic
   `sources`/`keywords`. (Spec § Redaction.)
 - **`agent/pending.json` and `agent/status.json` must be added to
-  `.gitignore`** on `master`, alongside the existing `agent/state.json`
+  `.gitignore`** on `main`, alongside the existing `agent/state.json`
   entry, before either file is created locally. (Same rule that already
   governs `state.json`.)
 - **No test framework.** Every task's verification is a manual command run
@@ -54,33 +54,31 @@ YAML, no third-party actions beyond `actions/checkout` and
 
 ---
 
-## Task 1: GitHub remote + orphan `agent-data` branch
+## Task 1: Make the remote public + orphan `agent-data` branch
 
 **Files:**
 - None created or modified in this repo's tracked files — this task is
   entirely `git`/`gh` operations against GitHub.
 
 **Interfaces:**
-- Consumes: nothing.
-- Produces: a GitHub remote named `origin` on `master`, and an orphan
-  branch `agent-data` pushed to that remote, containing a single
-  `README.md`. Later tasks (4, 5) derive the repo slug via
-  `git remote get-url origin` — no task hardcodes it.
+- Consumes: the `origin` remote (`https://github.com/hpnssflw/webpage.git`,
+  already added) and local branch `main` (already renamed from `master`).
+- Produces: `hpnssflw/webpage` flipped from private to public, `main`
+  pushed, and an orphan branch `agent-data` pushed to the same remote,
+  containing a single `README.md`. Later tasks (4, 5) derive the repo
+  slug via `git remote get-url origin` — no task hardcodes it.
 
-This is the one task in this plan that creates something public and
-irreversible-in-spirit (a new public GitHub repository). Confirm with the
-user before running any step that pushes.
+**Already done, confirmed with the user, do not redo:** `origin` is set to
+`https://github.com/hpnssflw/webpage.git`; the local branch is already
+`main` (renamed from `master`); the repo is currently **private** and
+needs to become **public** — required because `raw.githubusercontent.com`
+only serves unauthenticated requests for public repos, and the whole
+point of `status.json` is that the site's client-side `fetch()` can read
+it with no token. The user explicitly chose "make webpage itself public"
+over the alternative of a separate dedicated public repo — do not revisit
+that decision.
 
-- [ ] **Step 1: Confirm repo name and visibility with the user**
-
-Ask: what should the repository be called (default suggestion: `polozov`,
-matching this folder's name), and confirm it will be **public** — required
-because `raw.githubusercontent.com` only serves unauthenticated requests
-for public repos, and the whole point of `status.json` is that the site's
-client-side `fetch()` can read it with no token. Do not proceed to Step 2
-without an explicit yes.
-
-- [ ] **Step 2: Confirm `gh` is authenticated as the intended account**
+- [ ] **Step 1: Confirm `gh` is authenticated as `hpnssflw`**
 
 Run:
 
@@ -88,21 +86,32 @@ Run:
 gh auth status
 ```
 
-Expected: logged in to `github.com`. If the active account isn't the one
-the user wants to own this repo, stop and ask them to run
-`! gh auth switch` (or `! gh auth login`) themselves before continuing —
-this tool cannot drive an interactive login prompt.
+The first push attempt (before this task started) failed with
+"Repository not found" while `gh` was authenticated as a different
+account (`toomuchisnotenough`) — this repo is private, so that account
+couldn't see it. If the active account still isn't `hpnssflw`, stop and
+ask the user to run `! gh auth switch` (or `! gh auth login`) themselves
+before continuing — this tool cannot drive an interactive login prompt.
 
-- [ ] **Step 3: Create the repository and push `master`**
+- [ ] **Step 2: Make the repository public**
 
-Run (replace `<repo-name>` with the name confirmed in Step 1):
+Confirm with the user immediately before running this — flipping a
+private repo public is the one truly irreversible-in-spirit step in this
+task (anyone can see the full history from this point on, including
+commits made before this task).
 
 ```powershell
-gh repo create <repo-name> --public --source=. --remote=origin --push
+gh repo edit hpnssflw/webpage --visibility public --accept-visibility-change-consequences
 ```
 
-Expected: output showing the new repo's URL, and `git remote -v` now lists
-`origin` pointing at it.
+- [ ] **Step 3: Push `main`**
+
+```powershell
+git push -u origin main
+```
+
+Expected: push succeeds (it previously failed only because the repo
+wasn't reachable/public yet under the active account).
 
 - [ ] **Step 4: Create the `agent-data` orphan branch without checking it out locally**
 
@@ -121,7 +130,7 @@ Remove-Item "$env:TEMP\agent-data-readme.md"
 ```
 
 Expected: no errors; `git branch -a` locally shows `agent-data` alongside
-`master` (as a local ref pointing at the commit just made — this is fine,
+`main` (as a local ref pointing at the commit just made — this is fine,
 it is never checked out).
 
 - [ ] **Step 5: Verify both branches exist on the remote**
@@ -132,12 +141,12 @@ Run:
 git ls-remote origin
 ```
 
-Expected: two refs listed, `refs/heads/master` and `refs/heads/agent-data`.
+Expected: two refs listed, `refs/heads/main` and `refs/heads/agent-data`.
 
 - [ ] **Step 6: Add repo secrets for the workflow (Task 4 will use these)**
 
-Confirm with the user before running — this reads values out of
-`agent/.env`, which contains real API keys.
+Already confirmed with the user — proceed without asking again. This
+reads a real API key out of `agent/.env`.
 
 ```powershell
 gh secret set DEEPSEEK_API_KEY --body (Select-String -Path agent/.env -Pattern '^DEEPSEEK_API_KEY=' | ForEach-Object { $_.Line.Split('=', 2)[1] })
@@ -1036,7 +1045,7 @@ jobs:
       - name: Check out agent code
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main
           path: code
 
       - name: Check out agent data
@@ -1134,14 +1143,14 @@ git show origin/agent-data:agent/status.json
 
 Expected: valid JSON matching the schema from Task 3's verification step.
 
-**Note:** this step pushes the workflow file to `master` (a normal,
+**Note:** this step pushes the workflow file to `main` (a normal,
 non-bot commit — allowed) before triggering it, since GitHub Actions can
 only run workflows that already exist on the target ref.
 
 - [ ] **Step 4: Commit**
 
 (Already committed and pushed as part of Step 3, since the workflow had
-to exist on `master` before it could be dispatched. No separate commit
+to exist on `main` before it could be dispatched. No separate commit
 step here — if Step 3's push hasn't happened yet for any reason, run:)
 
 ```powershell

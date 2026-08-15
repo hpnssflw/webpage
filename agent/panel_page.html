@@ -97,8 +97,10 @@
       el.addEventListener("click", () => {
         const { topic, stage, reason } = el.dataset;
         const detail = el.closest(".funnel-topic").querySelector(".drop-detail");
-        if (detail.classList.contains("open")) {
+        const key = `${stage}:${reason}`;
+        if (detail.dataset.openKey === key) {
           detail.classList.remove("open");
+          detail.dataset.openKey = "";
           return;
         }
         const items = dropItemsFor(state.events, topic, stage, reason);
@@ -106,6 +108,7 @@
           .map((i) => `<div class="drop-item">${i.title} — ${JSON.stringify(i.detail)}</div>`)
           .join("");
         detail.classList.add("open");
+        detail.dataset.openKey = key;
       });
     });
   }

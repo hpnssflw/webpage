@@ -7,13 +7,138 @@
   :root { color-scheme: dark; }
   body { background:#141414; color:#e6e6e6; font-family: ui-monospace, "JetBrains Mono", monospace; margin:0; padding:24px; }
   h1 { font-size:16px; text-transform:uppercase; letter-spacing:.08em; color:#7CFC00; margin:0 0 16px; }
+  select, button { font-family:inherit; background:#202020; color:#e6e6e6; border:1px solid #333; padding:4px 8px; }
+  .funnel-topic { margin-bottom:20px; }
+  .funnel-topic h2 { font-size:13px; margin:0 0 6px; color:#e6e6e6; text-transform:uppercase; }
+  .funnel-row { display:flex; gap:16px; font-size:13px; flex-wrap:wrap; }
+  .funnel-stage { display:flex; flex-direction:column; align-items:center; min-width:48px; }
+  .funnel-stage .n { font-size:15px; }
+  .funnel-stage .label { color:#888; font-size:11px; }
+  .funnel-drop { color:#ff4d4d; cursor:pointer; text-decoration:underline dotted; }
+  .drop-detail { display:none; margin-top:6px; padding:8px; background:#0f0f0f; border:1px solid #2a2a2a; font-size:12px; }
+  .drop-detail.open { display:block; }
+  .drop-item { padding:2px 0; }
 </style>
 </head>
 <body>
   <h1>Run Panel</h1>
-  <p id="loaded-at"></p>
+  <div>
+    <label>Run: <select id="run-select"></select></label>
+  </div>
+  <div id="funnel-root"></div>
+
   <script>
-    document.getElementById("loaded-at").textContent = "Loaded " + new Date().toISOString();
+  const state = { events: [] };
+
+  const FUNNEL_STAGES = [
+    ["collected", "collected", null, null],
+    ["dated", "dated", "collect", "undated"],
+    ["in_window", "in-window", "date_guard", "outside_window"],
+    ["new", "new", "dedupe", "seen"],
+  ];
+  const REAL_RUN_STAGES = [
+    ["scored", "scored", "rank", "below_relevance"],
+    ["kept", "kept", "rank", "over_max_items"],
+  ];
+
+  function computeFunnel(events) {
+    const isRealRun = events.some((e) => e.stage === "deliver");
+    const topics = {};
+    function entry(slug) {
+      if (!topics[slug]) {
+        topics[slug] = { collected: 0, dated: 0, in_window: 0, new: 0, scored: 0, kept: 0, drops: {} };
+      }
+      return topics[slug];
+    }
+    for (const e of events) {
+      if (!e.topic) continue;
+      const t = entry(e.topic);
+      if (e.event === "candidate" && e.stage === "collect") {
+        t.collected += 1;
+        t.dated += 1;
+      } else if (e.event === "drop") {
+        t.drops[e.reason] = (t.drops[e.reason] || 0) + 1;
+        if (e.stage === "collect") t.collected += 1;
+      }
+    }
+    for (const t of Object.values(topics)) {
+      t.in_window = t.dated - (t.drops.outside_window || 0);
+      t.new = t.in_window - (t.drops.seen || 0);
+      t.scored = t.new - (t.drops.below_relevance || 0);
+      t.kept = t.scored - (t.drops.over_max_items || 0);
+    }
+    return { isRealRun, topics };
+  }
+
+  function dropItemsFor(events, topic, stage, reason) {
+    return events.filter((e) => e.event === "drop" && e.topic === topic && e.stage === stage && e.reason === reason);
+  }
+
+  function renderFunnel(events) {
+    const { isRealRun, topics } = computeFunnel(events);
+    const root = document.getElementById("funnel-root");
+    root.innerHTML = "";
+    const stages = isRealRun ? FUNNEL_STAGES.concat(REAL_RUN_STAGES) : FUNNEL_STAGES;
+    for (const [slug, t] of Object.entries(topics)) {
+      const section = document.createElement("div");
+      section.className = "funnel-topic";
+      let row = `<h2>${slug}</h2><div class="funnel-row">`;
+      for (const [key, label, dropStage, dropReason] of stages) {
+        row += `<div class="funnel-stage"><span class="n">${t[key]}</span><span class="label">${label}</span></div>`;
+        if (dropStage && dropReason && t.drops[dropReason]) {
+          row += `<div class="funnel-stage"><span class="n funnel-drop" data-topic="${slug}" data-stage="${dropStage}" data-reason="${dropReason}">↓${t.drops[dropReason]}</span><span class="label">${dropReason}</span></div>`;
+        }
+      }
+      row += `</div><div class="drop-detail"></div>`;
+      section.innerHTML = row;
+      root.appendChild(section);
+    }
+    root.querySelectorAll(".funnel-drop").forEach((el) => {
+      el.addEventListener("click", () => {
+        const { topic, stage, reason } = el.dataset;
+        const detail = el.closest(".funnel-topic").querySelector(".drop-detail");
+        if (detail.classList.contains("open")) {
+          detail.classList.remove("open");
+          return;
+        }
+        const items = dropItemsFor(state.events, topic, stage, reason);
+        detail.innerHTML = items
+          .map((i) => `<div class="drop-item">${i.title} — ${JSON.stringify(i.detail)}</div>`)
+          .join("");
+        detail.classList.add("open");
+      });
+    });
+  }
+
+  async function loadRuns() {
+    const res = await fetch("/runs");
+    const runs = await res.json();
+    const select = document.getElementById("run-select");
+    select.innerHTML = "";
+    for (const run of runs) {
+      const opt = document.createElement("option");
+      opt.value = run.run_id;
+      opt.textContent = `${run.run_id} (${run.event_count} events)`;
+      select.appendChild(opt);
+    }
+    select.onchange = () => loadRun(select.value);
+    if (runs.length > 0) {
+      await loadRun(runs[0].run_id);
+    }
+  }
+
+  async function loadRun(runId) {
+    const res = await fetch(`/runs/${runId}`);
+    const text = await res.text();
+    state.events = text
+      .trim()
+      .split("\n")
+      .filter(Boolean)
+      .map((line) => JSON.parse(line));
+    renderFunnel(state.events);
+  }
+
+  loadRuns();
   </script>
 </body>
 </html>

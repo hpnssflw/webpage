@@ -76,7 +76,7 @@ changed.
 
 ### Agent status widget + public dashboard
 
-**Status: in progress — Task 3 of 7 done.**
+**Status: in progress — Task 4 of 7 done. Live GitHub Actions run confirmed working.**
 
 - Spec: `docs/superpowers/specs/2026-08-15-agent-status-widget-design.md`
   — explicitly supersedes the Windows-Task-Scheduler scheduling decision
@@ -90,6 +90,25 @@ changed.
   orphan `agent-data` branch (single commit, `README.md` only) is pushed
   and ready for the GitHub Actions workflow (Task 4) to write to.
   `DEEPSEEK_API_KEY` is set as a repo secret — Task 1, no code changes.
+- `.github/workflows/agent-run.yml` (cron `0 */4 * * *` + `workflow_dispatch`,
+  two isolated checkouts — `main` read-only into `code/`, `agent-data`
+  writable into `data/` — commits/pushes exactly `state.json`,
+  `pending.json`, `status.json`) shipped in commit `4c27185`, Task 4. The
+  first live run failed with a 403 — the default `GITHUB_TOKEN` is
+  read-only unless the workflow requests write access — fixed with a
+  scoped `permissions: contents: write` block, commit `c41b696` (an
+  overly broad repo-wide permission change was tried first, then
+  correctly reverted in favor of this narrower fix). **Both trigger paths
+  are now confirmed working against real GitHub infrastructure**: the
+  cron schedule fired on its own during testing and pushed successfully,
+  and a manual `workflow_dispatch` run right after it pushed again on top
+  — `agent-data` now has real commits with a well-formed `status.json`
+  (`streak: 2`, real HN titles and DeepSeek relevance scores in
+  `recent_events`). Task review independently re-verified the runtime
+  token grant (`Contents: write` / `Metadata: read` — confirmed minimal,
+  not broader) and reproduced all live-CI claims firsthand; approved, two
+  minors deferred (a cp/test terseness nit matching the brief verbatim,
+  and the still-open SMTP-not-configured gap from Task 1).
 - `agent/pending.py` (pending-email queue), plus rewiring
   `agent/dedupe.py` (`mark_sent` → `mark_sent_url`, called only on actual
   delivery), `agent/digest.py`/`agent/summarize.py` (dropped "weekly"
@@ -158,11 +177,9 @@ changed.
 
 1. Read `docs/superpowers/plans/2026-08-15-agent-status-widget.md` and
    this file's section above.
-2. Confirm the next task (**Task 4 — GitHub Actions workflow**) with the
-   user before writing any code. Note: `hpnssflw`'s `gh` token is missing
-   the `workflow` scope, which `gh workflow run`/pushing
-   `.github/workflows/*` may need — check `gh auth status` and re-run
-   `gh auth refresh -h github.com -s workflow` if it fails.
+2. Confirm the next task (**Task 5 — `assets/agent-widget.js`**) with the
+   user before writing any code. The exact `STATUS_URL` value it needs is
+   confirmed: `https://raw.githubusercontent.com/hpnssflw/webpage/agent-data/agent/status.json`.
 3. This plan is being executed via
    `superpowers:subagent-driven-development`; its ledger is at
    `.superpowers/sdd/2026-08-15-agent-status-widget/progress.md`

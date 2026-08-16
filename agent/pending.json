@@ -139,6 +139,16 @@
       "topic": "data-viz",
       "topic_name": "Data Viz",
       "url": "https://hashagent.pages.dev/"
+    },
+    {
+      "pending_since": "2026-08-16T20:09:09.302411+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "llama.cpp enables efficient local LLM inference, a key component for building and running AI agents.",
+      "title": "llama.cpp",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://llama.app"
     }
   ],
   "last_email_at": null

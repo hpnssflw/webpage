@@ -129,6 +129,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://www.millenniumresearch.ai/leanscreen.html#catch"
+    },
+    {
+      "pending_since": "2026-08-16T00:35:22.159242+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "HashAgent leverages WebGPU for local AI agent execution, which relates to browser graphics and render-engine performance, though it is not directly about data visualization.",
+      "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
+      "topic": "data-viz",
+      "topic_name": "Data Viz",
+      "url": "https://hashagent.pages.dev/"
     }
   ],
   "last_email_at": null

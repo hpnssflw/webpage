@@ -159,6 +159,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://mcfunley.com/choose-boring-technology"
+    },
+    {
+      "pending_since": "2026-08-17T16:13:53.346237+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "Techniques for faster LLM inference on Apple Silicon macOS VMs, directly relevant to running AI agents efficiently.",
+      "title": "Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md"
     }
   ],
   "last_email_at": null

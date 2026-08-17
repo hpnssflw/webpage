@@ -26,7 +26,12 @@
   },
   "1f85fc748c83fa15": {
     "first_seen": "2026-08-15T16:10:52.886374+00:00",
-    "last_score": 116,
+    "last_score": 117,
+    "times_sent": 0
+  },
+  "2c10e65d7afb9c08": {
+    "first_seen": "2026-08-17T16:13:53.346237+00:00",
+    "last_score": 31,
     "times_sent": 0
   },
   "31e90d9de12dad7c": {
@@ -51,7 +56,7 @@
   },
   "3cc1abc6d208a2c8": {
     "first_seen": "2026-08-17T08:29:47.924582+00:00",
-    "last_score": 48,
+    "last_score": 55,
     "times_sent": 0
   },
   "3e838b549b1537db": {
@@ -61,12 +66,12 @@
   },
   "3f4d4cc953d1e0c7": {
     "first_seen": "2026-08-15T16:10:52.886374+00:00",
-    "last_score": 245,
+    "last_score": 246,
     "times_sent": 0
   },
   "432aa6d44c5543d8": {
     "first_seen": "2026-08-16T00:35:22.159242+00:00",
-    "last_score": 22,
+    "last_score": 23,
     "times_sent": 0
   },
   "46e55eb646467645": {
@@ -96,7 +101,7 @@
   },
   "6312cc4142cecc96": {
     "first_seen": "2026-08-17T08:29:47.924582+00:00",
-    "last_score": 47,
+    "last_score": 48,
     "times_sent": 0
   },
   "69d1a861b67c373a": {
@@ -146,17 +151,22 @@
   },
   "9fbe894fbe555785": {
     "first_seen": "2026-08-15T16:10:52.886374+00:00",
-    "last_score": 109,
+    "last_score": 110,
     "times_sent": 0
   },
   "ab8ae868ff007297": {
     "first_seen": "2026-08-15T16:10:52.886374+00:00",
-    "last_score": 77,
+    "last_score": 78,
+    "times_sent": 0
+  },
+  "ac6a2b69d405a0cb": {
+    "first_seen": "2026-08-17T16:13:53.346237+00:00",
+    "last_score": 306,
     "times_sent": 0
   },
   "ad4ca21a13bb0a4c": {
     "first_seen": "2026-08-16T20:09:09.302411+00:00",
-    "last_score": 551,
+    "last_score": 595,
     "times_sent": 0
   },
   "b1edfb2c44196ecd": {
@@ -191,7 +201,7 @@
   },
   "e189a8fe47f803c3": {
     "first_seen": "2026-08-15T16:10:52.886374+00:00",
-    "last_score": 67,
+    "last_score": 68,
     "times_sent": 0
   },
   "f30b1d810ecc5455": {
@@ -201,7 +211,7 @@
   },
   "f7e973b8e33d7327": {
     "first_seen": "2026-08-15T16:10:52.886374+00:00",
-    "last_score": 68,
+    "last_score": 69,
     "times_sent": 0
   },
   "f9c2faed5b010c6e": {

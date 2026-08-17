@@ -149,6 +149,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://llama.app"
+    },
+    {
+      "pending_since": "2026-08-17T08:29:47.924582+00:00",
+      "score": 7,
+      "source": "hn",
+      "summary": "Classic essay advocating for boring technology; a relevant engineering principle for building production systems, including agent platforms.",
+      "title": "Choose Boring Technology (2015)",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://mcfunley.com/choose-boring-technology"
     }
   ],
   "last_email_at": null

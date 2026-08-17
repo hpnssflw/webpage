@@ -169,6 +169,36 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md"
+    },
+    {
+      "pending_since": "2026-08-17T20:13:28.074608+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "Platform for optimizing voice AI model combinations, relevant to agent pipelines.",
+      "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://speko.ai/"
+    },
+    {
+      "pending_since": "2026-08-17T20:13:28.074608+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "Content-addressed ordered map data structure for scalable systems, useful for agent state.",
+      "title": "Prolly: A content-addressed ordered map built on prolly trees",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/crabbuild/prolly"
+    },
+    {
+      "pending_since": "2026-08-17T20:13:28.074608+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "Reference for PyTorch, relevant to AI engineering but not agents specifically.",
+      "title": "The whole of PyTorch on one page",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://tensor.khalilli.ai/blog/part-0-the-map/"
     }
   ],
   "last_email_at": null

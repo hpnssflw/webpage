@@ -209,6 +209,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://github.com/pitiflautico/neobrowser"
+    },
+    {
+      "pending_since": "2026-08-18T20:10:44.487670+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "Machine0 provides persistent cloud VMs from the CLI, directly supporting long-horizon agent compute infrastructure.",
+      "title": "Launch HN: machine0 (YC S26) \u2013 Persistent CPU and GPU VMs from the CLI",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://machine0.io"
     }
   ],
   "last_email_at": null

@@ -199,6 +199,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://tensor.khalilli.ai/blog/part-0-the-map/"
+    },
+    {
+      "pending_since": "2026-08-18T16:17:57.844421+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "An MCP server that drives real Chrome with logged-in sessions, directly enabling AI agents to interact with the web.",
+      "title": "NeoBrowser: An MCP server that drives real Chrome with your logged-in sessions",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/pitiflautico/neobrowser"
     }
   ],
   "last_email_at": null

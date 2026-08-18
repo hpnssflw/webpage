@@ -86,7 +86,7 @@
   },
   "44ee27346692a2dc": {
     "first_seen": "2026-08-18T04:23:39.176062+00:00",
-    "last_score": 24,
+    "last_score": 25,
     "times_sent": 0
   },
   "46e55eb646467645": {
@@ -106,7 +106,7 @@
   },
   "5011c8f47292fe5f": {
     "first_seen": "2026-08-17T20:13:28.074608+00:00",
-    "last_score": 101,
+    "last_score": 110,
     "times_sent": 0
   },
   "566235ea8e87199a": {
@@ -186,7 +186,7 @@
   },
   "ad4ca21a13bb0a4c": {
     "first_seen": "2026-08-16T20:09:09.302411+00:00",
-    "last_score": 627,
+    "last_score": 631,
     "times_sent": 0
   },
   "b1edfb2c44196ecd": {
@@ -236,7 +236,7 @@
   },
   "f9c2faed5b010c6e": {
     "first_seen": "2026-08-15T16:10:52.886374+00:00",
-    "last_score": 429,
+    "last_score": 431,
     "times_sent": 0
   }
 }

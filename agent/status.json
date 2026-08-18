@@ -3,10 +3,10 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 32,
-      "in_window": 32,
+      "collected": 27,
+      "in_window": 27,
       "kept": 0,
-      "new": 17
+      "new": 13
     },
     "data-viz": {
       "collected": 6,
@@ -28,105 +28,105 @@
       "reason": "below_relevance",
       "title": "Show HN: Eigendrum - Draw any shape and hear what it sounds like as a drum",
       "topic": "full-stack",
-      "ts": "2026-08-18T08:21:50.449178+00:00",
+      "ts": "2026-08-18T12:21:27.568388+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
       "topic": "full-stack",
-      "ts": "2026-08-18T08:21:48.123998+00:00",
+      "ts": "2026-08-18T12:21:23.950834+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-18T08:21:47.192284+00:00",
+      "ts": "2026-08-18T12:21:22.862972+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-18T08:21:47.192263+00:00",
+      "ts": "2026-08-18T12:21:22.862956+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-18T08:21:47.192171+00:00",
+      "ts": "2026-08-18T12:21:22.862893+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-18T08:21:41.143432+00:00",
+      "ts": "2026-08-18T12:21:17.816926+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-18T08:21:41.143420+00:00",
+      "ts": "2026-08-18T12:21:17.816917+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Glaciers on the Climate Dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-18T08:21:41.143405+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Introducing Toast 1",
-      "topic": "ai-agents",
-      "ts": "2026-08-18T08:21:39.840215+00:00",
+      "ts": "2026-08-18T12:21:17.816905+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: A website for exploring historical photographs of my city",
       "topic": "ai-agents",
-      "ts": "2026-08-18T08:21:39.840203+00:00",
+      "ts": "2026-08-18T12:21:16.330444+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Taxi drivers rarely die of Alzheimer's",
       "topic": "ai-agents",
-      "ts": "2026-08-18T08:21:39.840190+00:00",
+      "ts": "2026-08-18T12:21:16.330433+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Archie G. Norcross' Maine Forest Fire Maps (1918\u201322)",
       "topic": "ai-agents",
-      "ts": "2026-08-18T08:21:39.840177+00:00",
+      "ts": "2026-08-18T12:21:16.330422+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Dutch Train Map Simulator",
       "topic": "ai-agents",
-      "ts": "2026-08-18T08:21:39.840163+00:00",
+      "ts": "2026-08-18T12:21:16.330412+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Silent Shark \u2013 tactical map-based WWII submarine sim",
       "topic": "ai-agents",
-      "ts": "2026-08-18T08:21:39.840138+00:00",
+      "ts": "2026-08-18T12:21:16.330402+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "World Train Map \u2013 1247 train routes around the world",
       "topic": "ai-agents",
-      "ts": "2026-08-18T08:21:39.840125+00:00",
+      "ts": "2026-08-18T12:21:16.330392+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Open-source interactive map for the Aug 12 total solar eclipse",
+      "topic": "ai-agents",
+      "ts": "2026-08-18T12:21:16.330381+00:00",
       "verdict": "drop"
     }
   ],
@@ -202,12 +202,16 @@
     {
       "kept": 0,
       "ts": "2026-08-18T08:21:27.327922+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-18T12:21:04.159585+00:00"
     }
   ],
-  "streak": 18,
+  "streak": 19,
   "topics": [
     {
-      "collected": 32,
+      "collected": 27,
       "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
@@ -225,5 +229,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-18T08:21:27.327922+00:00"
+  "updated_at": "2026-08-18T12:21:04.159585+00:00"
 }

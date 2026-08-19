@@ -219,6 +219,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://machine0.io"
+    },
+    {
+      "pending_since": "2026-08-19T20:13:51.023742+00:00",
+      "score": 10,
+      "source": "hn",
+      "summary": "An open-source sandboxed agent harness for teams, directly relevant to production agent infrastructure.",
+      "title": "Launch HN: OneCLI (YC S26) \u2013 OSS sandboxed agent harness for teams",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/onecli/onecli"
     }
   ],
   "last_email_at": null

@@ -229,6 +229,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://github.com/onecli/onecli"
+    },
+    {
+      "pending_since": "2026-08-20T08:23:22.413830+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "A tool for tracking costs and usage across coding agents, which is directly relevant to running agents efficiently in production.",
+      "title": "Show HN: Frugal Tokens \u2013 explore costs and usage across coding agents",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://demo.frugaltokens.com/"
     }
   ],
   "last_email_at": null

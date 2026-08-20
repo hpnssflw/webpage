@@ -3,10 +3,10 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 32,
-      "in_window": 32,
-      "kept": 1,
-      "new": 17
+      "collected": 28,
+      "in_window": 28,
+      "kept": 0,
+      "new": 12
     },
     "data-viz": {
       "collected": 6,
@@ -28,114 +28,109 @@
       "reason": "below_relevance",
       "title": "Show HN: Eigendrum - Draw any shape and hear what it sounds like as a drum",
       "topic": "full-stack",
-      "ts": "2026-08-20T08:23:43.429645+00:00",
+      "ts": "2026-08-20T12:22:59.905471+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
       "topic": "full-stack",
-      "ts": "2026-08-20T08:23:39.798596+00:00",
+      "ts": "2026-08-20T12:22:57.505146+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-20T08:23:38.874766+00:00",
+      "ts": "2026-08-20T12:22:56.411227+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-20T08:23:38.874735+00:00",
+      "ts": "2026-08-20T12:22:56.411206+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-20T08:23:38.874673+00:00",
+      "ts": "2026-08-20T12:22:56.411135+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-20T08:23:34.828877+00:00",
+      "ts": "2026-08-20T12:22:52.155088+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-20T08:23:34.828863+00:00",
+      "ts": "2026-08-20T12:22:52.155075+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Glaciers on the Climate Dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-20T08:23:34.828846+00:00",
+      "ts": "2026-08-20T12:22:52.155059+00:00",
       "verdict": "drop"
-    },
-    {
-      "score": 8,
-      "source": "hn",
-      "title": "Show HN: Frugal Tokens \u2013 explore costs and usage across coding agents",
-      "topic": "ai-agents",
-      "ts": "2026-08-20T08:23:33.764232+00:00",
-      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: A website for exploring historical photographs of my city",
       "topic": "ai-agents",
-      "ts": "2026-08-20T08:23:33.764218+00:00",
+      "ts": "2026-08-20T12:22:50.988901+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Archie G. Norcross' Maine Forest Fire Maps (1918\u201322)",
       "topic": "ai-agents",
-      "ts": "2026-08-20T08:23:33.764205+00:00",
+      "ts": "2026-08-20T12:22:50.988888+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Mycorrhizal Infrastructure Map",
       "topic": "ai-agents",
-      "ts": "2026-08-20T08:23:33.764191+00:00",
+      "ts": "2026-08-20T12:22:50.988875+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Pressed Penny Machine Map",
       "topic": "ai-agents",
-      "ts": "2026-08-20T08:23:33.764170+00:00",
+      "ts": "2026-08-20T12:22:50.988862+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Dutch Train Map Simulator",
       "topic": "ai-agents",
-      "ts": "2026-08-20T08:23:33.764157+00:00",
+      "ts": "2026-08-20T12:22:50.988849+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Silent Shark \u2013 tactical map-based WWII submarine sim",
       "topic": "ai-agents",
-      "ts": "2026-08-20T08:23:33.764144+00:00",
+      "ts": "2026-08-20T12:22:50.988836+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "World Train Map \u2013 1247 train routes around the world",
+      "topic": "ai-agents",
+      "ts": "2026-08-20T12:22:50.988822+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-16T12:15:31.483745+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-16T16:11:02.961873+00:00"
@@ -227,13 +222,17 @@
     {
       "kept": 1,
       "ts": "2026-08-20T08:23:22.413830+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-20T12:22:41.292513+00:00"
     }
   ],
-  "streak": 30,
+  "streak": 31,
   "topics": [
     {
-      "collected": 32,
-      "kept": 1,
+      "collected": 28,
+      "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
@@ -250,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-20T08:23:22.413830+00:00"
+  "updated_at": "2026-08-20T12:22:41.292513+00:00"
 }

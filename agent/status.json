@@ -3,10 +3,10 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 29,
-      "in_window": 29,
+      "collected": 28,
+      "in_window": 28,
       "kept": 0,
-      "new": 14
+      "new": 15
     },
     "data-viz": {
       "collected": 9,
@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-21T16:18:59.459333+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
-      "topic": "data-viz",
-      "ts": "2026-08-21T16:18:59.459308+00:00",
+      "ts": "2026-08-21T20:12:53.910141+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-21T16:18:59.459292+00:00",
+      "ts": "2026-08-21T20:12:53.910126+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
+      "topic": "data-viz",
+      "ts": "2026-08-21T20:12:53.910109+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-21T16:18:59.459270+00:00",
+      "ts": "2026-08-21T20:12:53.910088+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-21T16:18:59.459208+00:00",
+      "ts": "2026-08-21T20:12:53.910015+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-21T16:18:51.494802+00:00",
+      "ts": "2026-08-21T20:12:48.388466+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-21T16:18:51.494790+00:00",
+      "ts": "2026-08-21T20:12:48.388454+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-21T16:18:51.494778+00:00",
+      "ts": "2026-08-21T20:12:48.388440+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Glaciers on the Climate Dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-21T16:18:51.494761+00:00",
+      "ts": "2026-08-21T20:12:48.388416+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Introducing Toast 1",
       "topic": "ai-agents",
-      "ts": "2026-08-21T16:18:50.231564+00:00",
+      "ts": "2026-08-21T20:12:47.086679+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: A website for exploring historical photographs of my city",
       "topic": "ai-agents",
-      "ts": "2026-08-21T16:18:50.231551+00:00",
+      "ts": "2026-08-21T20:12:47.086665+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Archie G. Norcross' Maine Forest Fire Maps (1918\u201322)",
       "topic": "ai-agents",
-      "ts": "2026-08-21T16:18:50.231538+00:00",
+      "ts": "2026-08-21T20:12:47.086651+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Mycorrhizal Infrastructure Map",
       "topic": "ai-agents",
-      "ts": "2026-08-21T16:18:50.231525+00:00",
+      "ts": "2026-08-21T20:12:47.086637+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Scientists release biggest 2D map of the universe",
+      "topic": "ai-agents",
+      "ts": "2026-08-21T20:12:47.086616+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Pressed Penny Machine Map",
       "topic": "ai-agents",
-      "ts": "2026-08-21T16:18:50.231512+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Dutch Train Map Simulator",
-      "topic": "ai-agents",
-      "ts": "2026-08-21T16:18:50.231498+00:00",
+      "ts": "2026-08-21T20:12:47.086602+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 3,
-      "ts": "2026-08-17T20:13:28.074608+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-18T00:33:14.442095+00:00"
@@ -226,12 +222,16 @@
     {
       "kept": 0,
       "ts": "2026-08-21T16:18:36.977310+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-21T20:12:34.878234+00:00"
     }
   ],
-  "streak": 38,
+  "streak": 39,
   "topics": [
     {
-      "collected": 29,
+      "collected": 28,
       "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-21T16:18:36.977310+00:00"
+  "updated_at": "2026-08-21T20:12:34.878234+00:00"
 }

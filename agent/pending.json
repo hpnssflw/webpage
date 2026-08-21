@@ -239,6 +239,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://demo.frugaltokens.com/"
+    },
+    {
+      "pending_since": "2026-08-21T00:36:05.316668+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "Vendo allows users to create dashboards and workflows inside software, directly relevant to dashboard creation and data viz.",
+      "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
+      "topic": "data-viz",
+      "topic_name": "Data Viz",
+      "url": "https://github.com/runvendo/vendo"
     }
   ],
   "last_email_at": null

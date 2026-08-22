@@ -1,7 +1,7 @@
 {
   "07b1b8e0159752e8": {
     "first_seen": "2026-08-20T16:20:33.961835+00:00",
-    "last_score": 75,
+    "last_score": 76,
     "times_sent": 0
   },
   "08315995f7290e31": {
@@ -106,7 +106,7 @@
   },
   "46b6a8516986c3e1": {
     "first_seen": "2026-08-21T20:12:34.878234+00:00",
-    "last_score": 137,
+    "last_score": 164,
     "times_sent": 0
   },
   "46e55eb646467645": {
@@ -201,7 +201,7 @@
   },
   "98873e3ab9cd5c6b": {
     "first_seen": "2026-08-18T16:17:57.844421+00:00",
-    "last_score": 424,
+    "last_score": 425,
     "times_sent": 0
   },
   "9c620bb245888fd8": {
@@ -217,6 +217,11 @@
   "a3b38ebedd4454c1": {
     "first_seen": "2026-08-20T00:33:12.176224+00:00",
     "last_score": 71,
+    "times_sent": 0
+  },
+  "a43da710f31ccf4d": {
+    "first_seen": "2026-08-22T04:20:41.300450+00:00",
+    "last_score": 52,
     "times_sent": 0
   },
   "ab8ae868ff007297": {
@@ -271,7 +276,7 @@
   },
   "deee4cc2fe70d847": {
     "first_seen": "2026-08-20T16:20:33.961835+00:00",
-    "last_score": 80,
+    "last_score": 81,
     "times_sent": 0
   },
   "e0af200dbb17737f": {

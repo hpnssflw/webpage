@@ -249,6 +249,16 @@
       "topic": "data-viz",
       "topic_name": "Data Viz",
       "url": "https://github.com/runvendo/vendo"
+    },
+    {
+      "pending_since": "2026-08-22T04:20:41.300450+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "OzBrain is a shared brain for knowledge between agents and teams, exemplifying agent-first chat interfaces.",
+      "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://ozbrain.com"
     }
   ],
   "last_email_at": null

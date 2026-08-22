@@ -259,6 +259,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://ozbrain.com"
+    },
+    {
+      "pending_since": "2026-08-22T16:10:36.164469+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "An update on the Model Context Protocol roadmap, directly relevant to standards and infrastructure for building AI agents.",
+      "title": "The New MCP Roadmap",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/"
     }
   ],
   "last_email_at": null

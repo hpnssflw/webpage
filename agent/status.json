@@ -3,10 +3,10 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 28,
-      "in_window": 28,
+      "collected": 24,
+      "in_window": 24,
       "kept": 0,
-      "new": 15
+      "new": 12
     },
     "data-viz": {
       "collected": 10,
@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-22T08:15:53.759131+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Open-source Stripe Connect alternative",
-      "topic": "data-viz",
-      "ts": "2026-08-22T08:15:53.759110+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
-      "topic": "data-viz",
-      "ts": "2026-08-22T08:15:53.759098+00:00",
+      "ts": "2026-08-22T12:15:52.454393+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-22T08:15:53.759081+00:00",
+      "ts": "2026-08-22T12:15:52.454379+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Open-source Stripe Connect alternative",
+      "topic": "data-viz",
+      "ts": "2026-08-22T12:15:52.454363+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
+      "topic": "data-viz",
+      "ts": "2026-08-22T12:15:52.454341+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-22T08:15:53.759007+00:00",
+      "ts": "2026-08-22T12:15:52.454274+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-22T08:15:47.110042+00:00",
+      "ts": "2026-08-22T12:15:43.808609+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-22T08:15:47.110035+00:00",
+      "ts": "2026-08-22T12:15:43.808596+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-22T08:15:47.110026+00:00",
+      "ts": "2026-08-22T12:15:43.808574+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-22T08:15:47.110017+00:00",
+      "ts": "2026-08-22T12:15:43.808561+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Glaciers on the Climate Dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-22T08:15:47.110001+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Introducing Toast 1",
-      "topic": "ai-agents",
-      "ts": "2026-08-22T08:15:45.435771+00:00",
+      "ts": "2026-08-22T12:15:43.808544+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: A website for exploring historical photographs of my city",
       "topic": "ai-agents",
-      "ts": "2026-08-22T08:15:45.435761+00:00",
+      "ts": "2026-08-22T12:15:42.412109+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Archie G. Norcross' Maine Forest Fire Maps (1918\u201322)",
       "topic": "ai-agents",
-      "ts": "2026-08-22T08:15:45.435751+00:00",
+      "ts": "2026-08-22T12:15:42.412095+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Mycorrhizal Infrastructure Map",
       "topic": "ai-agents",
-      "ts": "2026-08-22T08:15:45.435741+00:00",
+      "ts": "2026-08-22T12:15:42.412081+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Pressed Penny Machine Map",
       "topic": "ai-agents",
-      "ts": "2026-08-22T08:15:45.435732+00:00",
+      "ts": "2026-08-22T12:15:42.412058+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Silent Shark \u2013 tactical map-based WWII submarine sim",
+      "topic": "ai-agents",
+      "ts": "2026-08-22T12:15:42.412043+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-18T12:21:04.159585+00:00"
-    },
     {
       "kept": 1,
       "ts": "2026-08-18T16:17:57.844421+00:00"
@@ -226,12 +222,16 @@
     {
       "kept": 0,
       "ts": "2026-08-22T08:15:34.454903+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-22T12:15:34.081847+00:00"
     }
   ],
-  "streak": 42,
+  "streak": 43,
   "topics": [
     {
-      "collected": 28,
+      "collected": 24,
       "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-22T08:15:34.454903+00:00"
+  "updated_at": "2026-08-22T12:15:34.081847+00:00"
 }

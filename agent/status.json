@@ -3,10 +3,10 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 29,
-      "in_window": 29,
-      "kept": 1,
-      "new": 16
+      "collected": 28,
+      "in_window": 28,
+      "kept": 0,
+      "new": 15
     },
     "data-viz": {
       "collected": 10,
@@ -28,114 +28,109 @@
       "reason": "below_relevance",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-22T04:21:05.748591+00:00",
+      "ts": "2026-08-22T08:15:53.759131+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-22T04:21:05.748576+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
-      "topic": "data-viz",
-      "ts": "2026-08-22T04:21:05.748558+00:00",
+      "ts": "2026-08-22T08:15:53.759110+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-22T04:21:05.748524+00:00",
+      "ts": "2026-08-22T08:15:53.759098+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
+      "topic": "data-viz",
+      "ts": "2026-08-22T08:15:53.759081+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-22T04:21:05.748454+00:00",
+      "ts": "2026-08-22T08:15:53.759007+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-22T04:20:57.465398+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "seen",
-      "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
-      "topic": "data-viz",
-      "ts": "2026-08-22T04:20:57.465386+00:00",
+      "ts": "2026-08-22T08:15:47.110042+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-22T04:20:57.465375+00:00",
+      "ts": "2026-08-22T08:15:47.110035+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "seen",
+      "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
+      "topic": "data-viz",
+      "ts": "2026-08-22T08:15:47.110026+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-22T04:20:57.465362+00:00",
+      "ts": "2026-08-22T08:15:47.110017+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Glaciers on the Climate Dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-22T04:20:57.465345+00:00",
+      "ts": "2026-08-22T08:15:47.110001+00:00",
       "verdict": "drop"
-    },
-    {
-      "score": 9,
-      "source": "hn",
-      "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
-      "topic": "ai-agents",
-      "ts": "2026-08-22T04:20:56.138097+00:00",
-      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "Introducing Toast 1",
       "topic": "ai-agents",
-      "ts": "2026-08-22T04:20:56.138081+00:00",
+      "ts": "2026-08-22T08:15:45.435771+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: A website for exploring historical photographs of my city",
       "topic": "ai-agents",
-      "ts": "2026-08-22T04:20:56.138068+00:00",
+      "ts": "2026-08-22T08:15:45.435761+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Archie G. Norcross' Maine Forest Fire Maps (1918\u201322)",
       "topic": "ai-agents",
-      "ts": "2026-08-22T04:20:56.138054+00:00",
+      "ts": "2026-08-22T08:15:45.435751+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Mycorrhizal Infrastructure Map",
       "topic": "ai-agents",
-      "ts": "2026-08-22T04:20:56.138041+00:00",
+      "ts": "2026-08-22T08:15:45.435741+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Pressed Penny Machine Map",
+      "topic": "ai-agents",
+      "ts": "2026-08-22T08:15:45.435732+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-18T08:21:27.327922+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-18T12:21:04.159585+00:00"
@@ -227,13 +222,17 @@
     {
       "kept": 1,
       "ts": "2026-08-22T04:20:41.300450+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-22T08:15:34.454903+00:00"
     }
   ],
-  "streak": 41,
+  "streak": 42,
   "topics": [
     {
-      "collected": 29,
-      "kept": 1,
+      "collected": 28,
+      "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
@@ -250,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-22T04:20:41.300450+00:00"
+  "updated_at": "2026-08-22T08:15:34.454903+00:00"
 }

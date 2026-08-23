@@ -3,15 +3,15 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 24,
-      "in_window": 24,
+      "collected": 23,
+      "in_window": 23,
       "kept": 0,
       "new": 13
     },
     "data-viz": {
       "collected": 9,
       "in_window": 9,
-      "kept": 0,
+      "kept": 1,
       "new": 5
     },
     "full-stack": {
@@ -22,119 +22,116 @@
     }
   },
   "last_email_at": null,
-  "pending_email_count": 27,
+  "pending_email_count": 28,
   "recent_events": [
     {
-      "reason": "below_relevance",
+      "score": 6,
+      "source": "hn",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:56.345421+00:00",
-      "verdict": "drop"
+      "ts": "2026-08-23T20:09:53.909302+00:00",
+      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:56.345408+00:00",
+      "ts": "2026-08-23T20:09:53.909285+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:56.345393+00:00",
+      "ts": "2026-08-23T20:09:53.909268+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:56.345374+00:00",
+      "ts": "2026-08-23T20:09:53.909245+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:56.345301+00:00",
+      "ts": "2026-08-23T20:09:53.909184+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:52.198096+00:00",
+      "ts": "2026-08-23T20:09:42.618823+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:52.198074+00:00",
+      "ts": "2026-08-23T20:09:42.618811+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:52.198059+00:00",
+      "ts": "2026-08-23T20:09:42.618797+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-23T16:11:52.198041+00:00",
+      "ts": "2026-08-23T20:09:42.618780+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Count Binface receives over a quarter of votes in Clacton by-election",
       "topic": "ai-agents",
-      "ts": "2026-08-23T16:11:51.134217+00:00",
+      "ts": "2026-08-23T20:09:41.390391+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "The Two Factions of C++ (2024)",
+      "topic": "ai-agents",
+      "ts": "2026-08-23T20:09:41.390344+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Os8088.com: IBM XT OS now has a Browser, CP/M 2.2 with Z80 core and MS Word 1.1a",
       "topic": "ai-agents",
-      "ts": "2026-08-23T16:11:51.134204+00:00",
+      "ts": "2026-08-23T20:09:41.390330+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Make your logo extra bright on HDR screens",
+      "topic": "ai-agents",
+      "ts": "2026-08-23T20:09:41.390317+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
       "topic": "ai-agents",
-      "ts": "2026-08-23T16:11:51.134190+00:00",
+      "ts": "2026-08-23T20:09:41.390303+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Mycorrhizal Infrastructure Map",
       "topic": "ai-agents",
-      "ts": "2026-08-23T16:11:51.134167+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Pressed Penny Machine Map",
-      "topic": "ai-agents",
-      "ts": "2026-08-23T16:11:51.134154+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Scientists release biggest 2D map of the universe",
-      "topic": "ai-agents",
-      "ts": "2026-08-23T16:11:51.134137+00:00",
+      "ts": "2026-08-23T20:09:41.390290+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 1,
-      "ts": "2026-08-19T20:13:51.023742+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-20T00:33:12.176224+00:00"
@@ -226,19 +223,23 @@
     {
       "kept": 0,
       "ts": "2026-08-23T16:11:41.117217+00:00"
+    },
+    {
+      "kept": 1,
+      "ts": "2026-08-23T20:09:30.265248+00:00"
     }
   ],
-  "streak": 50,
+  "streak": 51,
   "topics": [
     {
-      "collected": 24,
+      "collected": 23,
       "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
     {
       "collected": 9,
-      "kept": 0,
+      "kept": 1,
       "name": "Data Viz",
       "slug": "data-viz"
     },
@@ -249,5 +250,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-23T16:11:41.117217+00:00"
+  "updated_at": "2026-08-23T20:09:30.265248+00:00"
 }

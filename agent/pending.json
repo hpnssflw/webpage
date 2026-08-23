@@ -269,6 +269,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/"
+    },
+    {
+      "pending_since": "2026-08-23T20:09:30.265248+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "The title suggests a project related to Puppy, potentially a rendering engine, which could be relevant to browser graphics and render performance.",
+      "title": "Puppy PPE",
+      "topic": "data-viz",
+      "topic_name": "Data Viz",
+      "url": "http://amosdudley.com/weblog/Designing-PPE-for-Hilde"
     }
   ],
   "last_email_at": null

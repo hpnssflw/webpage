@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-22T20:10:29.458442+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
-      "topic": "data-viz",
-      "ts": "2026-08-22T20:10:29.458419+00:00",
+      "ts": "2026-08-23T00:36:19.912214+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-22T20:10:29.458376+00:00",
+      "ts": "2026-08-23T00:36:19.912198+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-22T20:10:29.458356+00:00",
+      "ts": "2026-08-23T00:36:19.912179+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
+      "topic": "data-viz",
+      "ts": "2026-08-23T00:36:19.912156+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-22T20:10:29.458283+00:00",
+      "ts": "2026-08-23T00:36:19.912082+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-22T20:10:23.219058+00:00",
+      "ts": "2026-08-23T00:36:14.257906+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-22T20:10:23.219036+00:00",
+      "ts": "2026-08-23T00:36:14.257884+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-22T20:10:23.219023+00:00",
+      "ts": "2026-08-23T00:36:14.257870+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-22T20:10:23.219008+00:00",
+      "ts": "2026-08-23T00:36:14.257850+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Os8088.com: IBM XT OS now has a Browser, CP/M 2.2 with Z80 core and MS Word 1.1a",
       "topic": "ai-agents",
-      "ts": "2026-08-22T20:10:21.955840+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Archie G. Norcross' Maine Forest Fire Maps (1918\u201322)",
-      "topic": "ai-agents",
-      "ts": "2026-08-22T20:10:21.955828+00:00",
+      "ts": "2026-08-23T00:36:12.292096+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Mycorrhizal Infrastructure Map",
       "topic": "ai-agents",
-      "ts": "2026-08-22T20:10:21.955815+00:00",
+      "ts": "2026-08-23T00:36:12.292085+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Pressed Penny Machine Map",
       "topic": "ai-agents",
-      "ts": "2026-08-22T20:10:21.955802+00:00",
+      "ts": "2026-08-23T00:36:12.292074+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "I requested a copy of my data from McDonald\u2019s loyalty program",
       "topic": "ai-agents",
-      "ts": "2026-08-22T20:10:21.955778+00:00",
+      "ts": "2026-08-23T00:36:12.292054+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Scientists release biggest 2D map of the universe",
       "topic": "ai-agents",
-      "ts": "2026-08-22T20:10:21.955760+00:00",
+      "ts": "2026-08-23T00:36:12.292042+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Fixing a bricked Framework laptop",
+      "topic": "ai-agents",
+      "ts": "2026-08-23T00:36:12.292029+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-19T00:33:30.843388+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-19T04:25:17.893893+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-08-22T20:10:11.952761+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-23T00:36:03.446111+00:00"
     }
   ],
-  "streak": 45,
+  "streak": 46,
   "topics": [
     {
       "collected": 24,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-22T20:10:11.952761+00:00"
+  "updated_at": "2026-08-23T00:36:03.446111+00:00"
 }

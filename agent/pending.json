@@ -279,6 +279,26 @@
       "topic": "data-viz",
       "topic_name": "Data Viz",
       "url": "http://amosdudley.com/weblog/Designing-PPE-for-Hilde"
+    },
+    {
+      "pending_since": "2026-08-24T20:17:06.243950+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "Demonstrates fast, drill-down BI dashboards directly from a single Parquet file, directly addressing data visualization and performance.",
+      "title": "Fast drilldown dashboards from a single Parquet file",
+      "topic": "data-viz",
+      "topic_name": "Data Viz",
+      "url": "https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/"
+    },
+    {
+      "pending_since": "2026-08-24T20:17:06.243950+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "Introduces a declarative way to use WebGPU with S-expressions, directly relevant to browser graphics and render-engine performance.",
+      "title": "Declarative WebGPU with S-Expressions",
+      "topic": "data-viz",
+      "topic_name": "Data Viz",
+      "url": "https://hugodaniel.com/posts/declarative-webgpu-with-s-expressions/"
     }
   ],
   "last_email_at": null

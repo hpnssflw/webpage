@@ -3,16 +3,16 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 22,
-      "in_window": 22,
+      "collected": 27,
+      "in_window": 27,
       "kept": 0,
-      "new": 13
+      "new": 19
     },
     "data-viz": {
-      "collected": 8,
-      "in_window": 8,
-      "kept": 0,
-      "new": 4
+      "collected": 10,
+      "in_window": 10,
+      "kept": 2,
+      "new": 6
     },
     "full-stack": {
       "collected": 0,
@@ -22,119 +22,117 @@
     }
   },
   "last_email_at": null,
-  "pending_email_count": 28,
+  "pending_email_count": 30,
   "recent_events": [
     {
-      "reason": "below_relevance",
-      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
+      "score": 8,
+      "source": "hn",
+      "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-24T16:22:27.134301+00:00",
-      "verdict": "drop"
+      "ts": "2026-08-24T20:17:28.050920+00:00",
+      "verdict": "kept"
+    },
+    {
+      "score": 9,
+      "source": "hn",
+      "title": "Fast drilldown dashboards from a single Parquet file",
+      "topic": "data-viz",
+      "ts": "2026-08-24T20:17:28.050906+00:00",
+      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-24T16:22:27.134286+00:00",
+      "ts": "2026-08-24T20:17:28.050878+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
+      "topic": "data-viz",
+      "ts": "2026-08-24T20:17:28.050862+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-24T16:22:27.134266+00:00",
+      "ts": "2026-08-24T20:17:28.050842+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-24T16:22:27.134193+00:00",
+      "ts": "2026-08-24T20:17:28.050771+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-24T16:22:22.418811+00:00",
+      "ts": "2026-08-24T20:17:20.920376+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-24T16:22:22.418799+00:00",
+      "ts": "2026-08-24T20:17:20.920365+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-24T16:22:22.418786+00:00",
+      "ts": "2026-08-24T20:17:20.920352+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-24T16:22:22.418770+00:00",
+      "ts": "2026-08-24T20:17:20.920337+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
-      "title": "Count Binface receives over a quarter of votes in Clacton by-election",
+      "title": "Firefox intent to ship: JPEG XL",
       "topic": "ai-agents",
-      "ts": "2026-08-24T16:22:21.354057+00:00",
+      "ts": "2026-08-24T20:17:19.721088+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
-      "title": "The Two Factions of C++ (2024)",
+      "title": "Oceans hit highest temperature on record",
       "topic": "ai-agents",
-      "ts": "2026-08-24T16:22:21.354045+00:00",
+      "ts": "2026-08-24T20:17:19.721051+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
-      "title": "Os8088.com: IBM XT OS now has a Browser, CP/M 2.2 with Z80 core and MS Word 1.1a",
+      "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
       "topic": "ai-agents",
-      "ts": "2026-08-24T16:22:21.354032+00:00",
+      "ts": "2026-08-24T20:17:19.721038+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
-      "title": "Show HN: Make your logo extra bright on HDR screens",
+      "title": "Amiga-Inspired AROS Goes Bare Metal on Raspberry Pi",
       "topic": "ai-agents",
-      "ts": "2026-08-24T16:22:21.354019+00:00",
+      "ts": "2026-08-24T20:17:19.721025+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
-      "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
+      "title": "Coconut oil jet fuel matches kerosene's efficiency in engine tests",
       "topic": "ai-agents",
-      "ts": "2026-08-24T16:22:21.354006+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Mycorrhizal Infrastructure Map",
-      "topic": "ai-agents",
-      "ts": "2026-08-24T16:22:21.353993+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Pressed Penny Machine Map",
-      "topic": "ai-agents",
-      "ts": "2026-08-24T16:22:21.353980+00:00",
+      "ts": "2026-08-24T20:17:19.721013+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-20T20:16:06.504887+00:00"
-    },
     {
       "kept": 1,
       "ts": "2026-08-21T00:36:05.316668+00:00"
@@ -226,19 +224,23 @@
     {
       "kept": 0,
       "ts": "2026-08-24T16:22:10.746675+00:00"
+    },
+    {
+      "kept": 2,
+      "ts": "2026-08-24T20:17:06.243950+00:00"
     }
   ],
-  "streak": 56,
+  "streak": 57,
   "topics": [
     {
-      "collected": 22,
+      "collected": 27,
       "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
     {
-      "collected": 8,
-      "kept": 0,
+      "collected": 10,
+      "kept": 2,
       "name": "Data Viz",
       "slug": "data-viz"
     },
@@ -249,5 +251,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-24T16:22:10.746675+00:00"
+  "updated_at": "2026-08-24T20:17:06.243950+00:00"
 }

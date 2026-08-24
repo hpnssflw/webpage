@@ -26,115 +26,111 @@
   "recent_events": [
     {
       "reason": "below_relevance",
+      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
+      "topic": "data-viz",
+      "ts": "2026-08-24T12:23:06.925555+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-24T08:34:55.488456+00:00",
+      "ts": "2026-08-24T12:23:06.925537+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-24T08:34:55.488449+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
-      "topic": "data-viz",
-      "ts": "2026-08-24T08:34:55.488422+00:00",
+      "ts": "2026-08-24T12:23:06.925504+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Mocktail \u2013 Free, open-source mock API server with a built-in dashboard",
       "topic": "data-viz",
-      "ts": "2026-08-24T08:34:55.488352+00:00",
+      "ts": "2026-08-24T12:23:06.925437+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-24T08:34:51.153884+00:00",
+      "ts": "2026-08-24T12:23:02.103205+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HashAgent \u2013 Share an AI agent as a URL, runs locally via WebGPU",
       "topic": "data-viz",
-      "ts": "2026-08-24T08:34:51.153878+00:00",
+      "ts": "2026-08-24T12:23:02.103194+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-24T08:34:51.153871+00:00",
+      "ts": "2026-08-24T12:23:02.103182+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-24T08:34:51.153865+00:00",
+      "ts": "2026-08-24T12:23:02.103169+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-24T08:34:51.153856+00:00",
+      "ts": "2026-08-24T12:23:02.103152+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Count Binface receives over a quarter of votes in Clacton by-election",
       "topic": "ai-agents",
-      "ts": "2026-08-24T08:34:49.703770+00:00",
+      "ts": "2026-08-24T12:23:00.737153+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Os8088.com: IBM XT OS now has a Browser, CP/M 2.2 with Z80 core and MS Word 1.1a",
       "topic": "ai-agents",
-      "ts": "2026-08-24T08:34:49.703763+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Make your logo extra bright on HDR screens",
-      "topic": "ai-agents",
-      "ts": "2026-08-24T08:34:49.703756+00:00",
+      "ts": "2026-08-24T12:23:00.737140+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
       "topic": "ai-agents",
-      "ts": "2026-08-24T08:34:49.703748+00:00",
+      "ts": "2026-08-24T12:23:00.737126+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Mycorrhizal Infrastructure Map",
       "topic": "ai-agents",
-      "ts": "2026-08-24T08:34:49.703741+00:00",
+      "ts": "2026-08-24T12:23:00.737113+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Pressed Penny Machine Map",
       "topic": "ai-agents",
-      "ts": "2026-08-24T08:34:49.703734+00:00",
+      "ts": "2026-08-24T12:23:00.737099+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Scientists release biggest 2D map of the universe",
+      "topic": "ai-agents",
+      "ts": "2026-08-24T12:23:00.737077+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-20T12:22:41.292513+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-20T16:20:33.961835+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-08-24T08:34:39.583563+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-24T12:22:49.968881+00:00"
     }
   ],
-  "streak": 54,
+  "streak": 55,
   "topics": [
     {
       "collected": 22,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-24T08:34:39.583563+00:00"
+  "updated_at": "2026-08-24T12:22:49.968881+00:00"
 }

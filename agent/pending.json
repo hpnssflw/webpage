@@ -299,6 +299,16 @@
       "topic": "data-viz",
       "topic_name": "Data Viz",
       "url": "https://hugodaniel.com/posts/declarative-webgpu-with-s-expressions/"
+    },
+    {
+      "pending_since": "2026-08-25T20:15:30.316445+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "OpenAI adjusts Codex usage limits for Plus users, directly about an AI agent product's operation.",
+      "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/"
     }
   ],
   "last_email_at": null

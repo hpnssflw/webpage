@@ -31,7 +31,7 @@
   },
   "149a75083aa9a72b": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 798,
+    "last_score": 805,
     "times_sent": 0
   },
   "161111cfaf73a216": {
@@ -111,7 +111,7 @@
   },
   "3f9be69046a627db": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 810,
+    "last_score": 833,
     "times_sent": 0
   },
   "432aa6d44c5543d8": {
@@ -126,7 +126,7 @@
   },
   "468a1a33d560a7a4": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 949,
+    "last_score": 972,
     "times_sent": 0
   },
   "46b6a8516986c3e1": {
@@ -174,6 +174,11 @@
     "last_score": 74,
     "times_sent": 0
   },
+  "5f89f4fb09d580bb": {
+    "first_seen": "2026-08-25T20:15:30.316445+00:00",
+    "last_score": 30,
+    "times_sent": 0
+  },
   "6312cc4142cecc96": {
     "first_seen": "2026-08-17T08:29:47.924582+00:00",
     "last_score": 50,
@@ -206,12 +211,12 @@
   },
   "7f204604484459cd": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 186,
+    "last_score": 187,
     "times_sent": 0
   },
   "7f90141c5d0f9071": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 163,
+    "last_score": 166,
     "times_sent": 0
   },
   "84ee959baf36131b": {
@@ -221,7 +226,7 @@
   },
   "8740355b5266e707": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 187,
+    "last_score": 188,
     "times_sent": 0
   },
   "8a4d5416ea3b9763": {
@@ -266,7 +271,7 @@
   },
   "98ad4cfda928bcd8": {
     "first_seen": "2026-08-25T16:23:11.542280+00:00",
-    "last_score": 97,
+    "last_score": 103,
     "times_sent": 0
   },
   "9c620bb245888fd8": {
@@ -336,7 +341,7 @@
   },
   "b5f2aa2c711d9e6d": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 73,
+    "last_score": 74,
     "times_sent": 0
   },
   "bfa1d67f4ade32b4": {
@@ -401,7 +406,7 @@
   },
   "f54dba0e73430a4c": {
     "first_seen": "2026-08-25T16:23:11.542280+00:00",
-    "last_score": 52,
+    "last_score": 53,
     "times_sent": 0
   },
   "f7e973b8e33d7327": {

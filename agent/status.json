@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:58.712597+00:00",
+      "ts": "2026-08-25T12:23:50.554762+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:58.712578+00:00",
+      "ts": "2026-08-25T12:23:50.554750+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:58.712506+00:00",
+      "ts": "2026-08-25T12:23:50.554679+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:55.531529+00:00",
+      "ts": "2026-08-25T12:23:46.364146+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:55.531513+00:00",
+      "ts": "2026-08-25T12:23:46.364125+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:55.531502+00:00",
+      "ts": "2026-08-25T12:23:46.364119+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:55.531490+00:00",
+      "ts": "2026-08-25T12:23:46.364113+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:55.531478+00:00",
+      "ts": "2026-08-25T12:23:46.364106+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-08-25T08:28:55.531461+00:00",
+      "ts": "2026-08-25T12:23:46.364096+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Firefox intent to ship: JPEG XL",
       "topic": "ai-agents",
-      "ts": "2026-08-25T08:28:54.331528+00:00",
+      "ts": "2026-08-25T12:23:44.996210+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Oceans hit highest temperature on record",
       "topic": "ai-agents",
-      "ts": "2026-08-25T08:28:54.331515+00:00",
+      "ts": "2026-08-25T12:23:44.996203+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
       "topic": "ai-agents",
-      "ts": "2026-08-25T08:28:54.331502+00:00",
+      "ts": "2026-08-25T12:23:44.996196+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "'AI refuser' quit her dream job, and hopes others follow",
+      "topic": "ai-agents",
+      "ts": "2026-08-25T12:23:44.996188+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Amiga-Inspired AROS Goes Bare Metal on Raspberry Pi",
       "topic": "ai-agents",
-      "ts": "2026-08-25T08:28:54.331490+00:00",
+      "ts": "2026-08-25T12:23:44.996181+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Coconut oil jet fuel matches kerosene's efficiency in engine tests",
       "topic": "ai-agents",
-      "ts": "2026-08-25T08:28:54.331477+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Make your logo extra bright on HDR screens",
-      "topic": "ai-agents",
-      "ts": "2026-08-25T08:28:54.331464+00:00",
+      "ts": "2026-08-25T12:23:44.996174+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-21T12:22:05.890478+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-21T16:18:36.977310+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-08-25T08:28:40.803230+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-25T12:23:32.372531+00:00"
     }
   ],
-  "streak": 60,
+  "streak": 61,
   "topics": [
     {
       "collected": 27,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-25T08:28:40.803230+00:00"
+  "updated_at": "2026-08-25T12:23:32.372531+00:00"
 }

@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:29:03.143056+00:00",
+      "ts": "2026-08-26T08:29:21.434684+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:29:03.143036+00:00",
+      "ts": "2026-08-26T08:29:21.434661+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:29:03.142966+00:00",
+      "ts": "2026-08-26T08:29:21.434590+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:28:57.914533+00:00",
+      "ts": "2026-08-26T08:29:16.581283+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:28:57.914518+00:00",
+      "ts": "2026-08-26T08:29:16.581264+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:28:57.914499+00:00",
+      "ts": "2026-08-26T08:29:16.581242+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:28:57.914489+00:00",
+      "ts": "2026-08-26T08:29:16.581229+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:28:57.914477+00:00",
+      "ts": "2026-08-26T08:29:16.581215+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-08-26T04:28:57.914459+00:00",
+      "ts": "2026-08-26T08:29:16.581195+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Os8088.com: IBM XT OS now has a Browser, CP/M 2.2 with Z80 core and MS Word 1.1a",
       "topic": "ai-agents",
-      "ts": "2026-08-26T04:28:56.756007+00:00",
+      "ts": "2026-08-26T08:29:15.332710+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
       "topic": "ai-agents",
-      "ts": "2026-08-26T04:28:56.755992+00:00",
+      "ts": "2026-08-26T08:29:15.332698+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Amiga-Inspired AROS Goes Bare Metal on Raspberry Pi",
       "topic": "ai-agents",
-      "ts": "2026-08-26T04:28:56.755977+00:00",
+      "ts": "2026-08-26T08:29:15.332684+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Coconut oil jet fuel matches kerosene's efficiency in engine tests",
       "topic": "ai-agents",
-      "ts": "2026-08-26T04:28:56.755941+00:00",
+      "ts": "2026-08-26T08:29:15.332672+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
       "topic": "ai-agents",
-      "ts": "2026-08-26T04:28:56.755929+00:00",
+      "ts": "2026-08-26T08:29:15.332660+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Make your logo extra bright on HDR screens",
       "topic": "ai-agents",
-      "ts": "2026-08-26T04:28:56.755917+00:00",
+      "ts": "2026-08-26T08:29:15.332649+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-22T08:15:34.454903+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-22T12:15:34.081847+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-08-26T04:28:44.730470+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-26T08:29:03.776524+00:00"
     }
   ],
-  "streak": 65,
+  "streak": 66,
   "topics": [
     {
       "collected": 29,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-26T04:28:44.730470+00:00"
+  "updated_at": "2026-08-26T08:29:03.776524+00:00"
 }

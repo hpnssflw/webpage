@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:59.925819+00:00",
+      "ts": "2026-08-26T04:29:03.143056+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:59.925793+00:00",
+      "ts": "2026-08-26T04:29:03.143036+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:59.925719+00:00",
+      "ts": "2026-08-26T04:29:03.142966+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:55.430421+00:00",
+      "ts": "2026-08-26T04:28:57.914533+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:55.430404+00:00",
+      "ts": "2026-08-26T04:28:57.914518+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:55.430383+00:00",
+      "ts": "2026-08-26T04:28:57.914499+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:55.430372+00:00",
+      "ts": "2026-08-26T04:28:57.914489+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:55.430359+00:00",
+      "ts": "2026-08-26T04:28:57.914477+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-08-26T00:35:55.430341+00:00",
+      "ts": "2026-08-26T04:28:57.914459+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Os8088.com: IBM XT OS now has a Browser, CP/M 2.2 with Z80 core and MS Word 1.1a",
       "topic": "ai-agents",
-      "ts": "2026-08-26T00:35:53.943238+00:00",
+      "ts": "2026-08-26T04:28:56.756007+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
+      "topic": "ai-agents",
+      "ts": "2026-08-26T04:28:56.755992+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Amiga-Inspired AROS Goes Bare Metal on Raspberry Pi",
       "topic": "ai-agents",
-      "ts": "2026-08-26T00:35:53.943224+00:00",
+      "ts": "2026-08-26T04:28:56.755977+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Coconut oil jet fuel matches kerosene's efficiency in engine tests",
       "topic": "ai-agents",
-      "ts": "2026-08-26T00:35:53.943206+00:00",
+      "ts": "2026-08-26T04:28:56.755941+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
       "topic": "ai-agents",
-      "ts": "2026-08-26T00:35:53.943189+00:00",
+      "ts": "2026-08-26T04:28:56.755929+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Make your logo extra bright on HDR screens",
       "topic": "ai-agents",
-      "ts": "2026-08-26T00:35:53.943149+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
-      "topic": "ai-agents",
-      "ts": "2026-08-26T00:35:53.943136+00:00",
+      "ts": "2026-08-26T04:28:56.755917+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 1,
-      "ts": "2026-08-22T04:20:41.300450+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-22T08:15:34.454903+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-08-26T00:35:31.824336+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-26T04:28:44.730470+00:00"
     }
   ],
-  "streak": 64,
+  "streak": 65,
   "topics": [
     {
       "collected": 29,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-26T00:35:31.824336+00:00"
+  "updated_at": "2026-08-26T04:28:44.730470+00:00"
 }

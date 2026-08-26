@@ -3,10 +3,10 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 29,
-      "in_window": 29,
-      "kept": 0,
-      "new": 19
+      "collected": 30,
+      "in_window": 30,
+      "kept": 1,
+      "new": 20
     },
     "data-viz": {
       "collected": 9,
@@ -22,119 +22,116 @@
     }
   },
   "last_email_at": null,
-  "pending_email_count": 31,
+  "pending_email_count": 32,
   "recent_events": [
     {
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:21.434684+00:00",
+      "ts": "2026-08-26T12:26:09.286027+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:21.434661+00:00",
+      "ts": "2026-08-26T12:26:09.286006+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:21.434590+00:00",
+      "ts": "2026-08-26T12:26:09.285945+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:16.581283+00:00",
+      "ts": "2026-08-26T12:26:04.423239+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:16.581264+00:00",
+      "ts": "2026-08-26T12:26:04.423223+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:16.581242+00:00",
+      "ts": "2026-08-26T12:26:04.423212+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:16.581229+00:00",
+      "ts": "2026-08-26T12:26:04.423199+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:16.581215+00:00",
+      "ts": "2026-08-26T12:26:04.423177+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-08-26T08:29:16.581195+00:00",
+      "ts": "2026-08-26T12:26:04.423158+00:00",
       "verdict": "drop"
+    },
+    {
+      "score": 6,
+      "source": "hn",
+      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "topic": "ai-agents",
+      "ts": "2026-08-26T12:26:03.161744+00:00",
+      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "Os8088.com: IBM XT OS now has a Browser, CP/M 2.2 with Z80 core and MS Word 1.1a",
       "topic": "ai-agents",
-      "ts": "2026-08-26T08:29:15.332710+00:00",
+      "ts": "2026-08-26T12:26:03.161730+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
       "topic": "ai-agents",
-      "ts": "2026-08-26T08:29:15.332698+00:00",
+      "ts": "2026-08-26T12:26:03.161716+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Amiga-Inspired AROS Goes Bare Metal on Raspberry Pi",
       "topic": "ai-agents",
-      "ts": "2026-08-26T08:29:15.332684+00:00",
+      "ts": "2026-08-26T12:26:03.161702+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Coconut oil jet fuel matches kerosene's efficiency in engine tests",
       "topic": "ai-agents",
-      "ts": "2026-08-26T08:29:15.332672+00:00",
+      "ts": "2026-08-26T12:26:03.161685+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
       "topic": "ai-agents",
-      "ts": "2026-08-26T08:29:15.332660+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Make your logo extra bright on HDR screens",
-      "topic": "ai-agents",
-      "ts": "2026-08-26T08:29:15.332649+00:00",
+      "ts": "2026-08-26T12:26:03.161672+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-22T12:15:34.081847+00:00"
-    },
     {
       "kept": 1,
       "ts": "2026-08-22T16:10:36.164469+00:00"
@@ -226,13 +223,17 @@
     {
       "kept": 0,
       "ts": "2026-08-26T08:29:03.776524+00:00"
+    },
+    {
+      "kept": 1,
+      "ts": "2026-08-26T12:25:48.416967+00:00"
     }
   ],
-  "streak": 66,
+  "streak": 67,
   "topics": [
     {
-      "collected": 29,
-      "kept": 0,
+      "collected": 30,
+      "kept": 1,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
@@ -249,5 +250,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-26T08:29:03.776524+00:00"
+  "updated_at": "2026-08-26T12:25:48.416967+00:00"
 }

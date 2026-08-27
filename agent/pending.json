@@ -319,6 +319,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245"
+    },
+    {
+      "pending_since": "2026-08-27T05:29:52.224279+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "An agent that builds theme parks, directly demonstrating agent-based creation and engineering.",
+      "title": "Show HN: Build your own theme park",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://www.magicpatterns.com/theme-park"
     }
   ],
   "last_email_at": null

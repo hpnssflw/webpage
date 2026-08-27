@@ -3,14 +3,14 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 28,
-      "in_window": 28,
-      "kept": 0,
-      "new": 18
+      "collected": 30,
+      "in_window": 30,
+      "kept": 1,
+      "new": 21
     },
     "data-viz": {
-      "collected": 8,
-      "in_window": 8,
+      "collected": 9,
+      "in_window": 9,
       "kept": 0,
       "new": 2
     },
@@ -22,119 +22,116 @@
     }
   },
   "last_email_at": null,
-  "pending_email_count": 32,
+  "pending_email_count": 33,
   "recent_events": [
     {
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-26T22:34:12.784742+00:00",
+      "ts": "2026-08-27T05:30:08.681050+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-26T22:34:12.784661+00:00",
+      "ts": "2026-08-27T05:30:08.680988+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Puppy PPE",
       "topic": "data-viz",
-      "ts": "2026-08-26T22:34:09.468241+00:00",
+      "ts": "2026-08-27T05:30:06.317837+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-26T22:34:09.468229+00:00",
+      "ts": "2026-08-27T05:30:06.317828+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "seen",
+      "title": "Show HN: Build your own theme park",
+      "topic": "data-viz",
+      "ts": "2026-08-27T05:30:06.317819+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-26T22:34:09.468218+00:00",
+      "ts": "2026-08-27T05:30:06.317810+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-26T22:34:09.468207+00:00",
+      "ts": "2026-08-27T05:30:06.317787+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Speko (YC S26) \u2013 OpenRouter for Voice AI",
       "topic": "data-viz",
-      "ts": "2026-08-26T22:34:09.468195+00:00",
+      "ts": "2026-08-27T05:30:06.317776+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-08-26T22:34:09.468178+00:00",
+      "ts": "2026-08-27T05:30:06.317759+00:00",
       "verdict": "drop"
+    },
+    {
+      "score": 8,
+      "source": "hn",
+      "title": "Show HN: Build your own theme park",
+      "topic": "ai-agents",
+      "ts": "2026-08-27T05:30:03.589165+00:00",
+      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "Memory Ordering in CPUs",
       "topic": "ai-agents",
-      "ts": "2026-08-26T22:34:08.154359+00:00",
+      "ts": "2026-08-27T05:30:03.589154+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
       "topic": "ai-agents",
-      "ts": "2026-08-26T22:34:08.154347+00:00",
+      "ts": "2026-08-27T05:30:03.589143+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Coconut oil jet fuel matches kerosene's efficiency in engine tests",
       "topic": "ai-agents",
-      "ts": "2026-08-26T22:34:08.154334+00:00",
+      "ts": "2026-08-27T05:30:03.589132+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
       "topic": "ai-agents",
-      "ts": "2026-08-26T22:34:08.154321+00:00",
+      "ts": "2026-08-27T05:30:03.589119+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Make your logo extra bright on HDR screens",
       "topic": "ai-agents",
-      "ts": "2026-08-26T22:34:08.154308+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
-      "topic": "ai-agents",
-      "ts": "2026-08-26T22:34:08.154295+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Apple Maps Ads Are Here, and There's No Way to Turn Them Off",
-      "topic": "ai-agents",
-      "ts": "2026-08-26T22:34:08.154282+00:00",
+      "ts": "2026-08-27T05:30:03.589109+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-23T00:36:03.446111+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-23T04:25:40.200651+00:00"
@@ -226,18 +223,22 @@
     {
       "kept": 0,
       "ts": "2026-08-26T22:33:53.575582+00:00"
+    },
+    {
+      "kept": 1,
+      "ts": "2026-08-27T05:29:52.224279+00:00"
     }
   ],
-  "streak": 69,
+  "streak": 70,
   "topics": [
     {
-      "collected": 28,
-      "kept": 0,
+      "collected": 30,
+      "kept": 1,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
     {
-      "collected": 8,
+      "collected": 9,
       "kept": 0,
       "name": "Data Viz",
       "slug": "data-viz"
@@ -249,5 +250,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-26T22:33:53.575582+00:00"
+  "updated_at": "2026-08-27T05:29:52.224279+00:00"
 }

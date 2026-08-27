@@ -31,7 +31,7 @@
   },
   "149a75083aa9a72b": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 813,
+    "last_score": 814,
     "times_sent": 0
   },
   "161111cfaf73a216": {
@@ -111,7 +111,7 @@
   },
   "3f9be69046a627db": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 850,
+    "last_score": 851,
     "times_sent": 0
   },
   "432aa6d44c5543d8": {
@@ -126,7 +126,7 @@
   },
   "468a1a33d560a7a4": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 995,
+    "last_score": 997,
     "times_sent": 0
   },
   "46b6a8516986c3e1": {
@@ -211,7 +211,7 @@
   },
   "7bbc444f47d5d090": {
     "first_seen": "2026-08-26T16:40:35.685457+00:00",
-    "last_score": 44,
+    "last_score": 48,
     "times_sent": 0
   },
   "7f204604484459cd": {
@@ -221,12 +221,12 @@
   },
   "7f39178d8121a4d6": {
     "first_seen": "2026-08-26T12:25:48.416967+00:00",
-    "last_score": 33,
+    "last_score": 34,
     "times_sent": 0
   },
   "7f90141c5d0f9071": {
     "first_seen": "2026-08-24T20:17:06.243950+00:00",
-    "last_score": 172,
+    "last_score": 173,
     "times_sent": 0
   },
   "84ee959baf36131b": {
@@ -241,7 +241,7 @@
   },
   "87d0a841ea1c75a2": {
     "first_seen": "2026-08-26T22:33:53.575582+00:00",
-    "last_score": 45,
+    "last_score": 53,
     "times_sent": 0
   },
   "8a4d5416ea3b9763": {
@@ -257,6 +257,11 @@
   "8d9a0a437f67da92": {
     "first_seen": "2026-08-15T16:10:52.886374+00:00",
     "last_score": 69,
+    "times_sent": 0
+  },
+  "8f877fdcae51712e": {
+    "first_seen": "2026-08-27T05:29:52.224279+00:00",
+    "last_score": 42,
     "times_sent": 0
   },
   "9465e018079ed67b": {
@@ -286,7 +291,7 @@
   },
   "98ad4cfda928bcd8": {
     "first_seen": "2026-08-25T16:23:11.542280+00:00",
-    "last_score": 117,
+    "last_score": 118,
     "times_sent": 0
   },
   "9c620bb245888fd8": {
@@ -407,6 +412,11 @@
   "e8aaa053331cdcfe": {
     "first_seen": "2026-08-23T08:16:27.138394+00:00",
     "last_score": 40,
+    "times_sent": 0
+  },
+  "e8dff0d31eab9c48": {
+    "first_seen": "2026-08-27T05:29:52.224279+00:00",
+    "last_score": 47,
     "times_sent": 0
   },
   "f30b1d810ecc5455": {

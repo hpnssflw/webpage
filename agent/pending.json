@@ -329,6 +329,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://www.magicpatterns.com/theme-park"
+    },
+    {
+      "pending_since": "2026-08-27T18:28:15.691615+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "Personal reflection on how coding agents impact programmer identity and work; directly relevant to AI agents.",
+      "title": "Coding Agents killed my identity. How do you feel?",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://news.ycombinator.com/item?id=49389408"
     }
   ],
   "last_email_at": null

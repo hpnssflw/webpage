@@ -339,6 +339,36 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://news.ycombinator.com/item?id=49389408"
+    },
+    {
+      "pending_since": "2026-08-28T03:53:55.150344+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "Free Colab notebooks for building RAG, agents, and evals without frameworks.",
+      "title": "AI Engineer Notebooks \u2013 free, framework-free RAG/agents/evals on Colab",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/calmrocks/ai-engineer-notebooks"
+    },
+    {
+      "pending_since": "2026-08-28T03:53:55.150344+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "Benchmark for evaluating AI agents on scientific research workflows, highly relevant.",
+      "title": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://www.terminal-bench-science.ai/announcement"
+    },
+    {
+      "pending_since": "2026-08-28T03:53:55.150344+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "Open-source model gateway for managing self-hosted, frontier, and open models, relevant to agent infrastructure.",
+      "title": "Show HN: We built open OpenRouter that turns usage into a better model",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/experientiallabs/experiential"
     }
   ],
   "last_email_at": null

@@ -369,6 +369,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://github.com/experientiallabs/experiential"
+    },
+    {
+      "pending_since": "2026-08-28T15:45:01.523799+00:00",
+      "score": 10,
+      "source": "hn",
+      "summary": "Opslane is an open-source agent that watches user sessions, finds bugs, and autonomously creates verified PRs, directly relevant to AI agents in production.",
+      "title": "Show HN: Watches user sessions, finds bugs that matter, and fixes them",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/opslane/opslane"
     }
   ],
   "last_email_at": null

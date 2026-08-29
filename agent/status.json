@@ -3,10 +3,10 @@
   "email_cadence_hours": 24,
   "funnel": {
     "ai-agents": {
-      "collected": 30,
-      "in_window": 30,
+      "collected": 31,
+      "in_window": 31,
       "kept": 0,
-      "new": 20
+      "new": 21
     },
     "data-viz": {
       "collected": 9,
@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Show HN: SubSmith \u2013 Turn your own videos into language-learning material",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:12.952728+00:00",
+      "ts": "2026-08-29T10:33:12.033339+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:12.952706+00:00",
+      "ts": "2026-08-29T10:33:12.033317+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:12.952635+00:00",
+      "ts": "2026-08-29T10:33:12.033231+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:09.836075+00:00",
+      "ts": "2026-08-29T10:33:07.898982+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Watches user sessions, finds bugs that matter, and fixes them",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:09.836063+00:00",
+      "ts": "2026-08-29T10:33:07.898972+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Build your own theme park",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:09.836050+00:00",
+      "ts": "2026-08-29T10:33:07.898961+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:09.836030+00:00",
+      "ts": "2026-08-29T10:33:07.898949+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:09.836017+00:00",
+      "ts": "2026-08-29T10:33:07.898936+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-08-29T00:13:09.836000+00:00",
+      "ts": "2026-08-29T10:33:07.898909+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Coconut oil jet fuel matches kerosene's efficiency in engine tests",
       "topic": "ai-agents",
-      "ts": "2026-08-29T00:13:08.424759+00:00",
+      "ts": "2026-08-29T10:33:06.675150+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
       "topic": "ai-agents",
-      "ts": "2026-08-29T00:13:08.424746+00:00",
+      "ts": "2026-08-29T10:33:06.675137+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Make your logo extra bright on HDR screens",
       "topic": "ai-agents",
-      "ts": "2026-08-29T00:13:08.424731+00:00",
+      "ts": "2026-08-29T10:33:06.675125+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
       "topic": "ai-agents",
-      "ts": "2026-08-29T00:13:08.424713+00:00",
+      "ts": "2026-08-29T10:33:06.675112+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Apple Maps Ads Are Here, and There's No Way to Turn Them Off",
       "topic": "ai-agents",
-      "ts": "2026-08-29T00:13:08.424700+00:00",
+      "ts": "2026-08-29T10:33:06.675095+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "NIP-05 maps Nostr public keys to human-readable internet identifiers",
       "topic": "ai-agents",
-      "ts": "2026-08-29T00:13:08.424686+00:00",
+      "ts": "2026-08-29T10:33:06.675081+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 1,
-      "ts": "2026-08-23T20:09:30.265248+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-24T00:35:09.807240+00:00"
@@ -226,12 +222,16 @@
     {
       "kept": 0,
       "ts": "2026-08-29T00:12:55.937577+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-29T10:32:49.633221+00:00"
     }
   ],
-  "streak": 74,
+  "streak": 75,
   "topics": [
     {
-      "collected": 30,
+      "collected": 31,
       "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-29T00:12:55.937577+00:00"
+  "updated_at": "2026-08-29T10:32:49.633221+00:00"
 }

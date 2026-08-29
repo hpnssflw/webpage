@@ -379,6 +379,26 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://github.com/opslane/opslane"
+    },
+    {
+      "pending_since": "2026-08-29T15:52:16.442313+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "Salem Robotics provides software for industrial inspection robots, giving them task-specific intelligence.",
+      "title": "Launch HN: Salem Robotics (YC S26) \u2013 Software for industrial inspection robots",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://news.ycombinator.com/item?id=49466715"
+    },
+    {
+      "pending_since": "2026-08-29T15:52:16.442313+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "WebGPU space explorer demonstrating browser graphics and render-engine performance, directly relevant.",
+      "title": "Show HN: Galaxium, an experimental WebGPU space explorer",
+      "topic": "data-viz",
+      "topic_name": "Data Viz",
+      "url": "https://galaxium.app"
     }
   ],
   "last_email_at": null

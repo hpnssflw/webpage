@@ -5,14 +5,14 @@
     "ai-agents": {
       "collected": 31,
       "in_window": 31,
-      "kept": 0,
+      "kept": 1,
       "new": 21
     },
     "data-viz": {
-      "collected": 9,
-      "in_window": 9,
-      "kept": 0,
-      "new": 3
+      "collected": 10,
+      "in_window": 10,
+      "kept": 1,
+      "new": 4
     },
     "full-stack": {
       "collected": 0,
@@ -22,119 +22,117 @@
     }
   },
   "last_email_at": null,
-  "pending_email_count": 38,
+  "pending_email_count": 40,
   "recent_events": [
+    {
+      "score": 8,
+      "source": "hn",
+      "title": "Show HN: Galaxium, an experimental WebGPU space explorer",
+      "topic": "data-viz",
+      "ts": "2026-08-29T15:52:44.712557+00:00",
+      "verdict": "kept"
+    },
     {
       "reason": "below_relevance",
       "title": "Show HN: SubSmith \u2013 Turn your own videos into language-learning material",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:12.033339+00:00",
+      "ts": "2026-08-29T15:52:44.712536+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Check if any of the $656M in unclaimed royalties at The MLC is yours",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:12.033317+00:00",
+      "ts": "2026-08-29T15:52:44.712514+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Show HN: Open-source Stripe Connect alternative",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:12.033231+00:00",
+      "ts": "2026-08-29T15:52:44.712446+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:07.898982+00:00",
+      "ts": "2026-08-29T15:52:42.376434+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Watches user sessions, finds bugs that matter, and fixes them",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:07.898972+00:00",
+      "ts": "2026-08-29T15:52:42.376423+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Build your own theme park",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:07.898961+00:00",
+      "ts": "2026-08-29T15:52:42.376412+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Launch HN: Vendo (YC S26) \u2013 Let users build features on top of your product",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:07.898949+00:00",
+      "ts": "2026-08-29T15:52:42.376399+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:07.898936+00:00",
+      "ts": "2026-08-29T15:52:42.376386+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-08-29T10:33:07.898909+00:00",
+      "ts": "2026-08-29T15:52:42.376366+00:00",
       "verdict": "drop"
     },
     {
-      "reason": "below_relevance",
-      "title": "Coconut oil jet fuel matches kerosene's efficiency in engine tests",
+      "score": 6,
+      "source": "hn",
+      "title": "Launch HN: Salem Robotics (YC S26) \u2013 Software for industrial inspection robots",
       "topic": "ai-agents",
-      "ts": "2026-08-29T10:33:06.675150+00:00",
-      "verdict": "drop"
+      "ts": "2026-08-29T15:52:40.853154+00:00",
+      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
       "topic": "ai-agents",
-      "ts": "2026-08-29T10:33:06.675137+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Show HN: Make your logo extra bright on HDR screens",
-      "topic": "ai-agents",
-      "ts": "2026-08-29T10:33:06.675125+00:00",
+      "ts": "2026-08-29T15:52:40.853140+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
       "topic": "ai-agents",
-      "ts": "2026-08-29T10:33:06.675112+00:00",
+      "ts": "2026-08-29T15:52:40.853126+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Apple Maps Ads Are Here, and There's No Way to Turn Them Off",
       "topic": "ai-agents",
-      "ts": "2026-08-29T10:33:06.675095+00:00",
+      "ts": "2026-08-29T15:52:40.853112+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "NIP-05 maps Nostr public keys to human-readable internet identifiers",
       "topic": "ai-agents",
-      "ts": "2026-08-29T10:33:06.675081+00:00",
+      "ts": "2026-08-29T15:52:40.853097+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-24T00:35:09.807240+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-24T04:33:49.191367+00:00"
@@ -226,19 +224,23 @@
     {
       "kept": 0,
       "ts": "2026-08-29T10:32:49.633221+00:00"
+    },
+    {
+      "kept": 2,
+      "ts": "2026-08-29T15:52:16.442313+00:00"
     }
   ],
-  "streak": 75,
+  "streak": 76,
   "topics": [
     {
       "collected": 31,
-      "kept": 0,
+      "kept": 1,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
     {
-      "collected": 9,
-      "kept": 0,
+      "collected": 10,
+      "kept": 1,
       "name": "Data Viz",
       "slug": "data-viz"
     },
@@ -249,5 +251,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-29T10:32:49.633221+00:00"
+  "updated_at": "2026-08-29T15:52:16.442313+00:00"
 }

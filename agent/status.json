@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Show HN: SubSmith \u2013 Turn your own videos into language-learning material",
       "topic": "data-viz",
-      "ts": "2026-08-30T15:38:25.179547+00:00",
+      "ts": "2026-08-30T18:54:50.308669+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-08-30T15:38:23.535681+00:00",
+      "ts": "2026-08-30T18:54:48.597579+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Galaxium, an experimental WebGPU space explorer",
       "topic": "data-viz",
-      "ts": "2026-08-30T15:38:23.535668+00:00",
+      "ts": "2026-08-30T18:54:48.597572+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Watches user sessions, finds bugs that matter, and fixes them",
       "topic": "data-viz",
-      "ts": "2026-08-30T15:38:23.535646+00:00",
+      "ts": "2026-08-30T18:54:48.597550+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Build your own theme park",
       "topic": "data-viz",
-      "ts": "2026-08-30T15:38:23.535608+00:00",
+      "ts": "2026-08-30T18:54:48.597542+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
       "topic": "data-viz",
-      "ts": "2026-08-30T15:38:23.535595+00:00",
+      "ts": "2026-08-30T18:54:48.597534+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-08-30T15:38:23.535576+00:00",
+      "ts": "2026-08-30T18:54:48.597522+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Lawmakers added $1 to car insurance policies. That money paid for Flock cameras",
       "topic": "ai-agents",
-      "ts": "2026-08-30T15:38:22.091657+00:00",
+      "ts": "2026-08-30T18:54:47.244047+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
       "topic": "ai-agents",
-      "ts": "2026-08-30T15:38:22.091636+00:00",
+      "ts": "2026-08-30T18:54:47.244038+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Show HN: Make your logo extra bright on HDR screens",
+      "topic": "ai-agents",
+      "ts": "2026-08-30T18:54:47.244030+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
       "topic": "ai-agents",
-      "ts": "2026-08-30T15:38:22.091597+00:00",
+      "ts": "2026-08-30T18:54:47.244021+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Apple Maps Ads Are Here, and There's No Way to Turn Them Off",
       "topic": "ai-agents",
-      "ts": "2026-08-30T15:38:22.091581+00:00",
+      "ts": "2026-08-30T18:54:47.244011+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google: Lake Ontario/Lake America name change in the U.S. will appear in Maps",
       "topic": "ai-agents",
-      "ts": "2026-08-30T15:38:22.091563+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "NIP-05 maps Nostr public keys to human-readable internet identifiers",
-      "topic": "ai-agents",
-      "ts": "2026-08-30T15:38:22.091549+00:00",
+      "ts": "2026-08-30T18:54:47.244002+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Former OC actor Ben McKenzie on crusade to take down 'stupid' cryptocurrency",
       "topic": "ai-agents",
-      "ts": "2026-08-30T15:38:22.091535+00:00",
+      "ts": "2026-08-30T18:54:47.243994+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
-      "title": "Interactive Warhammer 40k Galaxy Map",
+      "title": "JupyterGIS 0.16: a grammar of graphics for maps, and collaborative story maps",
       "topic": "ai-agents",
-      "ts": "2026-08-30T15:38:22.091521+00:00",
+      "ts": "2026-08-30T18:54:47.243985+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-25T00:34:19.760575+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-25T04:27:54.005483+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-08-30T15:38:09.980883+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-08-30T18:54:25.125253+00:00"
     }
   ],
-  "streak": 81,
+  "streak": 82,
   "topics": [
     {
       "collected": 30,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-08-30T15:38:09.980883+00:00"
+  "updated_at": "2026-08-30T18:54:25.125253+00:00"
 }

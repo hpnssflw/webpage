@@ -399,6 +399,16 @@
       "topic": "data-viz",
       "topic_name": "Data Viz",
       "url": "https://galaxium.app"
+    },
+    {
+      "pending_since": "2026-08-31T23:28:58.582859+00:00",
+      "score": 9,
+      "source": "hn",
+      "summary": "AI agent that knows everything about your company, built on Hermes.",
+      "title": "Launch HN: Almanac (YC S26) \u2013 AI that knows your company",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://usealmanac.com/"
     }
   ],
   "last_email_at": null

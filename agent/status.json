@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Show HN: SubSmith \u2013 Turn your own videos into language-learning material",
       "topic": "data-viz",
-      "ts": "2026-09-01T02:24:26.152306+00:00",
+      "ts": "2026-09-01T08:58:12.589234+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-09-01T02:24:23.150749+00:00",
+      "ts": "2026-09-01T08:58:09.695706+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Galaxium, an experimental WebGPU space explorer",
       "topic": "data-viz",
-      "ts": "2026-09-01T02:24:23.150738+00:00",
+      "ts": "2026-09-01T08:58:09.695694+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Watches user sessions, finds bugs that matter, and fixes them",
       "topic": "data-viz",
-      "ts": "2026-09-01T02:24:23.150726+00:00",
+      "ts": "2026-09-01T08:58:09.695681+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Build your own theme park",
       "topic": "data-viz",
-      "ts": "2026-09-01T02:24:23.150703+00:00",
+      "ts": "2026-09-01T08:58:09.695659+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-09-01T02:24:23.150686+00:00",
+      "ts": "2026-09-01T08:58:09.695641+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Showing 'Lake America' in U.S.",
       "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841526+00:00",
+      "ts": "2026-09-01T08:58:08.701785+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MapQuest app surges to No. 1 in Navigation after refusing to rename Lake Ontario",
       "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841512+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Google Maps Renames Lake Ontario to Lake America",
-      "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841494+00:00",
+      "ts": "2026-09-01T08:58:08.701772+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Now Shows 'Lake America' in US, Not 'Lake Ontario'",
       "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841481+00:00",
+      "ts": "2026-09-01T08:58:08.701758+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Reading Maps \u2013 Journeys from fiction drawn on the real world",
       "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841468+00:00",
+      "ts": "2026-09-01T08:58:08.701745+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Google Maps Renames Lake Ontario to Lake America",
+      "topic": "ai-agents",
+      "ts": "2026-09-01T08:58:08.701732+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Apple Maps Ads Are Here, and There's No Way to Turn Them Off",
       "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841454+00:00",
+      "ts": "2026-09-01T08:58:08.701717+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps changed to show Lake Ontario as Lake America",
       "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841437+00:00",
+      "ts": "2026-09-01T08:58:08.701699+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "NIP-05 maps Nostr public keys to human-readable internet identifiers",
       "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841424+00:00",
+      "ts": "2026-09-01T08:58:08.701687+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "I attended the State of the Map conference",
       "topic": "ai-agents",
-      "ts": "2026-09-01T02:24:21.841411+00:00",
+      "ts": "2026-09-01T08:58:08.701673+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-26T04:28:44.730470+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-26T08:29:03.776524+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-09-01T02:24:08.690856+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-09-01T08:57:57.028107+00:00"
     }
   ],
-  "streak": 88,
+  "streak": 89,
   "topics": [
     {
       "collected": 31,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-09-01T02:24:08.690856+00:00"
+  "updated_at": "2026-09-01T08:57:57.028107+00:00"
 }

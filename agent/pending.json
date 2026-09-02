@@ -409,6 +409,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://usealmanac.com/"
+    },
+    {
+      "pending_since": "2026-09-02T19:02:18.845228+00:00",
+      "score": 8,
+      "source": "hn",
+      "summary": "An evaluation showing 9 different harnesses with the same model have up to 17x cost variation, highly relevant to agent/harness engineering and cost optimization.",
+      "title": "Show HN: FrontierHarness Eval \u2013 9 harness, same model, cost per pass varies 17x",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://frontierharness.org"
     }
   ],
   "last_email_at": null

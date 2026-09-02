@@ -28,113 +28,109 @@
       "reason": "seen",
       "title": "Declarative WebGPU with S-Expressions",
       "topic": "data-viz",
-      "ts": "2026-09-01T22:10:10.188595+00:00",
+      "ts": "2026-09-02T01:46:38.376338+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Galaxium, an experimental WebGPU space explorer",
       "topic": "data-viz",
-      "ts": "2026-09-01T22:10:10.188588+00:00",
+      "ts": "2026-09-02T01:46:38.376327+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Watches user sessions, finds bugs that matter, and fixes them",
       "topic": "data-viz",
-      "ts": "2026-09-01T22:10:10.188579+00:00",
+      "ts": "2026-09-02T01:46:38.376315+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Build your own theme park",
       "topic": "data-viz",
-      "ts": "2026-09-01T22:10:10.188571+00:00",
+      "ts": "2026-09-02T01:46:38.376302+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-09-01T22:10:10.188557+00:00",
+      "ts": "2026-09-02T01:46:38.376284+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Showing 'Lake America' in U.S.",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683130+00:00",
+      "ts": "2026-09-02T01:46:37.059823+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Now Shows 'Lake America' in US, Not 'Lake Ontario'",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683122+00:00",
+      "ts": "2026-09-02T01:46:37.059810+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Renames Lake Ontario to Lake America",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683113+00:00",
+      "ts": "2026-09-02T01:46:37.059793+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MapQuest app surges to No. 1 in Navigation after refusing to rename Lake Ontario",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683104+00:00",
+      "ts": "2026-09-02T01:46:37.059752+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Apple Maps Ads Are Here, and There's No Way to Turn Them Off",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683096+00:00",
+      "ts": "2026-09-02T01:46:37.059739+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps changed to show Lake Ontario as Lake America",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683086+00:00",
+      "ts": "2026-09-02T01:46:37.059726+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "NIP-05 maps Nostr public keys to human-readable internet identifiers",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683077+00:00",
+      "ts": "2026-09-02T01:46:37.059712+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "I attended the State of the Map conference",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683067+00:00",
+      "ts": "2026-09-02T01:46:37.059698+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Former OC actor Ben McKenzie on crusade to take down 'stupid' cryptocurrency",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683056+00:00",
+      "ts": "2026-09-02T01:46:37.059683+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps renames \"Lake Ontario\" to \"Lake America\" faster than US Government",
       "topic": "ai-agents",
-      "ts": "2026-09-01T22:10:08.683045+00:00",
+      "ts": "2026-09-02T01:46:37.059665+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-26T16:40:35.685457+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-26T22:33:53.575582+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-09-01T22:09:46.693213+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-09-02T01:46:21.388211+00:00"
     }
   ],
-  "streak": 91,
+  "streak": 92,
   "topics": [
     {
       "collected": 32,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-09-01T22:09:46.693213+00:00"
+  "updated_at": "2026-09-02T01:46:21.388211+00:00"
 }

@@ -419,6 +419,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://frontierharness.org"
+    },
+    {
+      "pending_since": "2026-09-02T22:05:19.968252+00:00",
+      "score": 7,
+      "source": "hn",
+      "summary": "HomeOS is a self-hosted family dashboard for a kitchen touchscreen, which relates to dashboard-style data display.",
+      "title": "HomeOS \u2013 A self-hosted family dashboard for a kitchen touchscreen",
+      "topic": "data-viz",
+      "topic_name": "Data Viz",
+      "url": "https://github.com/danialkhilji/HomeOS"
     }
   ],
   "last_email_at": null

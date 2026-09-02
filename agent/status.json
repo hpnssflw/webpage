@@ -5,13 +5,13 @@
     "ai-agents": {
       "collected": 34,
       "in_window": 34,
-      "kept": 1,
-      "new": 28
+      "kept": 0,
+      "new": 27
     },
     "data-viz": {
-      "collected": 8,
-      "in_window": 8,
-      "kept": 0,
+      "collected": 7,
+      "in_window": 7,
+      "kept": 1,
       "new": 3
     },
     "full-stack": {
@@ -22,120 +22,116 @@
     }
   },
   "last_email_at": null,
-  "pending_email_count": 42,
+  "pending_email_count": 43,
   "recent_events": [
+    {
+      "score": 7,
+      "source": "hn",
+      "title": "HomeOS \u2013 A self-hosted family dashboard for a kitchen touchscreen",
+      "topic": "data-viz",
+      "ts": "2026-09-02T22:05:42.829531+00:00",
+      "verdict": "kept"
+    },
     {
       "reason": "below_relevance",
       "title": "Show HN: SubSmith \u2013 Turn your own videos into language-learning material",
       "topic": "data-viz",
-      "ts": "2026-09-02T19:02:42.457836+00:00",
+      "ts": "2026-09-02T22:05:42.829509+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "WebLLM: high-performance in-browser LLM inference engine",
       "topic": "data-viz",
-      "ts": "2026-09-02T19:02:42.457797+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "HomeOS \u2013 A self-hosted family dashboard for a kitchen touchscreen",
-      "topic": "data-viz",
-      "ts": "2026-09-02T19:02:42.457732+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "seen",
-      "title": "Declarative WebGPU with S-Expressions",
-      "topic": "data-viz",
-      "ts": "2026-09-02T19:02:38.216475+00:00",
+      "ts": "2026-09-02T22:05:42.829437+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Galaxium, an experimental WebGPU space explorer",
       "topic": "data-viz",
-      "ts": "2026-09-02T19:02:38.216439+00:00",
+      "ts": "2026-09-02T22:05:36.689410+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Watches user sessions, finds bugs that matter, and fixes them",
       "topic": "data-viz",
-      "ts": "2026-09-02T19:02:38.216427+00:00",
+      "ts": "2026-09-02T22:05:36.689399+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Build your own theme park",
       "topic": "data-viz",
-      "ts": "2026-09-02T19:02:38.216414+00:00",
+      "ts": "2026-09-02T22:05:36.689386+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Fast drilldown dashboards from a single Parquet file",
       "topic": "data-viz",
-      "ts": "2026-09-02T19:02:38.216395+00:00",
+      "ts": "2026-09-02T22:05:36.689369+00:00",
       "verdict": "drop"
-    },
-    {
-      "score": 8,
-      "source": "hn",
-      "title": "Show HN: FrontierHarness Eval \u2013 9 harness, same model, cost per pass varies 17x",
-      "topic": "ai-agents",
-      "ts": "2026-09-02T19:02:37.107585+00:00",
-      "verdict": "kept"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Showing 'Lake America' in U.S.",
       "topic": "ai-agents",
-      "ts": "2026-09-02T19:02:37.107571+00:00",
+      "ts": "2026-09-02T22:05:35.578423+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Now Shows 'Lake America' in US, Not 'Lake Ontario'",
       "topic": "ai-agents",
-      "ts": "2026-09-02T19:02:37.107558+00:00",
+      "ts": "2026-09-02T22:05:35.578411+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Renames Lake Ontario to Lake America",
       "topic": "ai-agents",
-      "ts": "2026-09-02T19:02:37.107545+00:00",
+      "ts": "2026-09-02T22:05:35.578398+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MapQuest app surges to No. 1 in Navigation after refusing to rename Lake Ontario",
       "topic": "ai-agents",
-      "ts": "2026-09-02T19:02:37.107532+00:00",
+      "ts": "2026-09-02T22:05:35.578385+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Apple Maps Ads Are Here, and There's No Way to Turn Them Off",
       "topic": "ai-agents",
-      "ts": "2026-09-02T19:02:37.107519+00:00",
+      "ts": "2026-09-02T22:05:35.578372+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps changed to show Lake Ontario as Lake America",
       "topic": "ai-agents",
-      "ts": "2026-09-02T19:02:37.107505+00:00",
+      "ts": "2026-09-02T22:05:35.578360+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "NIP-05 maps Nostr public keys to human-readable internet identifiers",
+      "topic": "ai-agents",
+      "ts": "2026-09-02T22:05:35.578347+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "I attended the State of the Map conference",
+      "topic": "ai-agents",
+      "ts": "2026-09-02T22:05:35.578335+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 3,
-      "ts": "2026-08-28T03:53:55.150344+00:00"
-    },
     {
       "kept": 1,
       "ts": "2026-08-28T15:45:01.523799+00:00"
@@ -227,19 +223,23 @@
     {
       "kept": 1,
       "ts": "2026-09-02T19:02:18.845228+00:00"
+    },
+    {
+      "kept": 1,
+      "ts": "2026-09-02T22:05:19.968252+00:00"
     }
   ],
-  "streak": 95,
+  "streak": 96,
   "topics": [
     {
       "collected": 34,
-      "kept": 1,
+      "kept": 0,
       "name": "AI Agents & Engineering",
       "slug": "ai-agents"
     },
     {
-      "collected": 8,
-      "kept": 0,
+      "collected": 7,
+      "kept": 1,
       "name": "Data Viz",
       "slug": "data-viz"
     },
@@ -250,5 +250,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-09-02T19:02:18.845228+00:00"
+  "updated_at": "2026-09-02T22:05:19.968252+00:00"
 }

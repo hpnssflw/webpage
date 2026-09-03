@@ -429,6 +429,16 @@
       "topic": "data-viz",
       "topic_name": "Data Viz",
       "url": "https://github.com/danialkhilji/HomeOS"
+    },
+    {
+      "pending_since": "2026-09-03T08:21:22.772607+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "Technique for running massive LLMs on low-memory Macs via expert offloading, relevant to running AI models in production.",
+      "title": "Show HN: Running 104GB Qwen3.8-Flash-Next on 48GB Mac with at ~12 tok/s",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://github.com/carloslfu/slotstream"
     }
   ],
   "last_email_at": null

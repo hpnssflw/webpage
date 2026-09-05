@@ -28,113 +28,109 @@
       "reason": "below_relevance",
       "title": "Show HN: OwnTime \u2013 a chess clock for your day's priorities",
       "topic": "data-viz",
-      "ts": "2026-09-04T21:55:02.412286+00:00",
+      "ts": "2026-09-05T01:47:11.279799+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "WebLLM: high-performance in-browser LLM inference engine",
       "topic": "data-viz",
-      "ts": "2026-09-04T21:55:02.412221+00:00",
+      "ts": "2026-09-05T01:47:11.279718+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Watches user sessions, finds bugs that matter, and fixes them",
       "topic": "data-viz",
-      "ts": "2026-09-04T21:55:00.511112+00:00",
+      "ts": "2026-09-05T01:47:09.612858+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "Show HN: Build your own theme park",
       "topic": "data-viz",
-      "ts": "2026-09-04T21:55:00.511102+00:00",
+      "ts": "2026-09-05T01:47:09.612846+00:00",
       "verdict": "drop"
     },
     {
       "reason": "seen",
       "title": "HomeOS \u2013 A self-hosted family dashboard for a kitchen touchscreen",
       "topic": "data-viz",
-      "ts": "2026-09-04T21:55:00.511088+00:00",
+      "ts": "2026-09-05T01:47:09.612824+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Showing 'Lake America' in U.S.",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429637+00:00",
-      "verdict": "drop"
-    },
-    {
-      "reason": "below_relevance",
-      "title": "Texas Data Center Map: See where data centers are operating or planned",
-      "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429628+00:00",
+      "ts": "2026-09-05T01:47:08.098292+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "UN to vote on adopting new world map that shows Africa's true scale",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429618+00:00",
+      "ts": "2026-09-05T01:47:08.098279+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Now Shows 'Lake America' in US, Not 'Lake Ontario'",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429605+00:00",
+      "ts": "2026-09-05T01:47:08.098267+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps Renames Lake Ontario to Lake America",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429595+00:00",
+      "ts": "2026-09-05T01:47:08.098251+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "MapQuest app surges to No. 1 in Navigation after refusing to rename Lake Ontario",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429585+00:00",
+      "ts": "2026-09-05T01:47:08.098238+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Apple Maps Ads Are Here, and There's No Way to Turn Them Off",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429574+00:00",
+      "ts": "2026-09-05T01:47:08.098225+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps changed to show Lake Ontario as Lake America",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429549+00:00",
+      "ts": "2026-09-05T01:47:08.098213+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "I attended the State of the Map conference",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429539+00:00",
+      "ts": "2026-09-05T01:47:08.098200+00:00",
       "verdict": "drop"
     },
     {
       "reason": "below_relevance",
       "title": "Google Maps renames \"Lake Ontario\" to \"Lake America\" faster than US Government",
       "topic": "ai-agents",
-      "ts": "2026-09-04T21:54:59.429528+00:00",
+      "ts": "2026-09-05T01:47:08.098187+00:00",
+      "verdict": "drop"
+    },
+    {
+      "reason": "below_relevance",
+      "title": "Google: Lake Ontario/Lake America name change in the U.S. will appear in Maps",
+      "topic": "ai-agents",
+      "ts": "2026-09-05T01:47:08.098174+00:00",
       "verdict": "drop"
     }
   ],
   "run_history": [
-    {
-      "kept": 0,
-      "ts": "2026-08-30T22:12:05.326262+00:00"
-    },
     {
       "kept": 0,
       "ts": "2026-08-31T02:03:09.257484+00:00"
@@ -226,9 +222,13 @@
     {
       "kept": 0,
       "ts": "2026-09-04T21:54:45.881506+00:00"
+    },
+    {
+      "kept": 0,
+      "ts": "2026-09-05T01:46:42.164249+00:00"
     }
   ],
-  "streak": 106,
+  "streak": 107,
   "topics": [
     {
       "collected": 36,
@@ -249,5 +249,5 @@
       "slug": "full-stack"
     }
   ],
-  "updated_at": "2026-09-04T21:54:45.881506+00:00"
+  "updated_at": "2026-09-05T01:46:42.164249+00:00"
 }

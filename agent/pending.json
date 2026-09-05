@@ -449,6 +449,16 @@
       "topic": "ai-agents",
       "topic_name": "AI Agents & Engineering",
       "url": "https://news.ycombinator.com/item?id=49548600"
+    },
+    {
+      "pending_since": "2026-09-05T17:46:35.653723+00:00",
+      "score": 6,
+      "source": "hn",
+      "summary": "Discusses gains, privacy, and cost of using GPT-6 Astra in code review.",
+      "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
+      "topic": "ai-agents",
+      "topic_name": "AI Agents & Engineering",
+      "url": "https://www.coderabbit.ai/blog/gpt-6-astra-code-review-evaluation"
     }
   ],
   "last_email_at": null
